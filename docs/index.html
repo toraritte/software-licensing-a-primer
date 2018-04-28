@@ -12,12 +12,35 @@
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
+
+      @media only screen and (max-width: 400px) {
+        body {
+          margin-left:  5%;
+          margin-right: 5%;
+        }
+      }
+
+      /* Tablet Styles */
+      @media only screen and (min-width: 401px) and (max-width: 960px) {
+        body {
+          margin-left:  15%;
+          margin-right: 15%;
+        }
+      }
+
+      /* Desktop Styles */
+      @media only screen and (min-width: 961px) {
+        body {
+          margin-left:  30%;
+          margin-right: 30%;
+        }
+      }
   </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
-<body style="margin-left: 30%; margin-right: 30%;">
+<body>
 <header>
 <h1 class="title">Software licensing primer</h1>
 <p class="subtitle">A short introduction and reference to open source software licenses</p>
