@@ -1,0 +1,27 @@
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+
+@media only screen and (max-width: 400px) {
+  body {
+    margin-left:  2%;
+    margin-right: 2%;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    margin-left:  15%;
+    margin-right: 15%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    margin-left:  30%;
+    margin-right: 30%;
+  }
+}
