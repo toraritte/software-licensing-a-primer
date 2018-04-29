@@ -100,7 +100,7 @@ Dedicating software to the public domain is somewhat better received. Works in t
 
     Modifications to a public domain work may be protected by copyright[@public-domain-stim] if the modification is non-trivial (i.e., meets the applicable laws' originality and creativity requirements) and this could be interpreted that only the modification itself can be copyrighted.[[@copyleft-guide] - [1.2.1 Public Domain Software](https://copyleft.org/guide/comprehensive-gpl-guidech2.html#x5-110001.2.1)][[@pd-sherpa] - [Item 5](http://www.publicdomainsherpa.com/10-misconceptions-about-the-public-domain.html#five)]
 
-    The meaning of "public domain" also depends on jurisdiction[@quora-os-legal;@wiki-pub-domain] and licenses are necessary that emulate the public domain, such as CC0[@cc0], Unilicense[@unilicense] or WTFPL[@wtfpl].
+    The meaning of "public domain" also depends on jurisdiction[@quora-os-legal;@wiki-pub-domain] and licenses are necessary that emulate the public domain, such as CC0[@cc0], Unlicense[@unlicense] or WTFPL[@wtfpl].
 
 ## 2.5 Copyleft
 
@@ -172,24 +172,23 @@ This classification is used by some sources, but there is no authoritative sourc
 
 Most of the definitions can be found in many places, but they are
 
-  1. vague without examples, and using exact or minimally modified copies of each other[@https://en.wikipedia.org/wiki/Copyleft;@https://books.google.com/books?id=WRAFJNMrSdkC&pg=PA34&lpg=PA34&dq=full+partial+copyleft&source=bl&ots=lg50hOJ0oe&sig=h8i3mjiEPmbazN7mV63v2z2tKs8&hl=en&sa=X&ved=0ahUKEwjWsLWf2ZHXAhVJ2GMKHVvCBK8Q6AEIfzAQ#v=onepage&q=full%20partial%20copyleft&f=false;@http://machines.plannedobsolescence.net/marxwiki/index.php?title=Copyleft#Full_and_partial_copyleft;@http://www.yourdictionary.com/copyleft;@https://wikivisually.com/wiki/Weak_copyleft;@http://encyclopedia2.thefreedictionary.com/Copyleft+licensing;@https://www.pcmag.com/encyclopedia/term/40363/copyleft]
+  1. vague without examples, and using exact or minimally modified copies of each other (cf. [@wiki-copyleft], [[@free-world] - [page 34](https://books.google.com/books?id=WRAFJNMrSdkC&pg=PA34&lpg=PA34&dq=full+partial+copyleft&source=bl&ots=lg50hOJ0oe&sig=h8i3mjiEPmbazN7mV63v2z2tKs8&hl=en&sa=X&ved=0ahUKEwjWsLWf2ZHXAhVJ2GMKHVvCBK8Q6AEIfzAQ#v=onepage&q=full%20partial%20copyleft&f=false)], [[@marxwiki-copyleft] - [Full and partial copyleft](http://machines.plannedobsolescence.net/marxwiki/index.php?title=Copyleft#Full_and_partial_copyleft)], [@yourdict-copyleft], [@wikivis-copyleft], [@freedict-copyleft], [@pcmag-copyleft]).
 
-  2. indistinguishable in meaning from or bear close resemblance to weak/strong copyleft[@https://en.wikipedia.org/wiki/Copyleft;@https://fullmetallinux.wordpress.com/tag/copyleft/]
+  2. indistinguishable in meaning from or bear close resemblance to weak/strong copyleft (cf. [@wiki-copleft;@fullmetal-copyleft] and other citations above).
 
-  3. describing the difference between conventional and "file-level"[@https://www.mozilla.org/en-US/MPL/2.0/FAQ/] (or "per-file"[@https://www.gnu.org/licenses/license-list.en.html]) copyleft[@https://prezi.com/0sdn2cpssmyn/copyleft-prezi/;@https://www.academia.edu/9259737/Demystifying_Copyleft_Creative_Commons_and_Open_Access_Rights_a_little_]
+  3. describing the difference between conventional and "file-level"[[@mpl2] - [MPL 2.0 FAQ](https://www.mozilla.org/en-US/MPL/2.0/FAQ/)] (or "per-file"[@gnu-license-list]) copyleft[@gaz-copyleft].
 
     This category sounds the most plausible, but none of the cited sources bring [_Common Development and Distribution License (CDDL)_](https://opensource.org/licenses/CDDL-1.0) or [_Mozilla Public License_](https://www.mozilla.org/en-US/MPL/2.0/) as an example, even though they fit the bill perfectly.
 
     The Software Freedom Law Center's report[@sflc-cddl] comes closest in supporting this theory as it uses both ["strong" and "partial" to describe CDDL's copyleft properties](https://www.softwarefreedom.org/resources/2016/linux-kernel-cddl.html#cddl).
 
-The adjective "full" is never used by any of the aforementioned entities to describe copyleft licenses[^footnote-osi_cat] and "partial" is used as a synonym to "weak" copyleft (with the exception of [@sflc-cddl]).[@http://oss-watch.ac.uk/resources/licensing-handout.pdf;@http://blog.docracy.com/post/51823372485/software-licensing-what-type-of-license-should-i/embed;@https://www.fsf.org/news/openoffice-apache-libreoffice;@https://books.google.com/books?id=isTBDAAAQBAJ&pg=PA276&lpg=PA276&dq=gnu+partial+copyleft&source=bl&ots=w4PESycpiK&sig=Hsb4A5DAlUVGMOyFoCJIA-8rmxk&hl=en&sa=X&ved=0ahUKEwjd_eWL5JHXAhUP-GMKHW6CCOEQ6AEIgwEwEA#v=onepage&q=gnu%20partial%20copyleft&f=false]
+The adjective "full" is never used by any of the aforementioned entities to describe copyleft licenses[^footnote-osi_cat] and "partial" is used as a synonym to "weak" copyleft (with the exception of [@sflc-cddl]). Cf. [@oss-licensing;@docracy;@openoffice-move], [[@intro-to-tech-computing] - [page 276](https://books.google.com/books?id=isTBDAAAQBAJ&pg=PA276&lpg=PA276&dq=gnu+partial+copyleft&source=bl&ots=w4PESycpiK&sig=Hsb4A5DAlUVGMOyFoCJIA-8rmxk&hl=en&sa=X&ved=0ahUKEwjd_eWL5JHXAhUP-GMKHW6CCOEQ6AEIgwEwEA#v=onepage&q=gnu%20partial%20copyleft&f=false)].
 
 [^footnote-osi_cat]: The Open Source Initiative goes further because it does not even use "weak" or "strong" to categorize copyleft licenses.
 
 Interestingly, the Free Software Foundation has both "copyleft-weak" and "copyleft-partial" as explicit categories in its [license description templates](https://directory.fsf.org/wiki/User:Jgay/license-categorization), but only the latter is used actively to categorize licenses traditionally referred to as "weak" copyleft licenses.
 
-#### Licensing
-##### Proprietary licenses
+## 2.6 Proprietary licenses
 
 "_The primary purpose of a proprietary software license is to limit the use of software according to the rights owner's business strategy_"[@https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3406002/], generally distributed in binary form. They are typically very restrictive for end users as they disallow any action that is not specifically layed out in the license.
 
@@ -244,7 +243,7 @@ The most prominent examples are the versions of the GNU General Public License[^
 
 Choosing a license depends on many factors, such as use cases (e.g., end user product, software module), adopting entities (e.g., company, group of hobby developers), project goals (e.g., commercial product, free or for fee services).[@https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21,@https://softwareengineering.stackexchange.com/questions/107883/agpl-what-you-can-do-and-what-you-cant,@https://news.ycombinator.com/item?id=1273231,@roads-and-bridges]
 
-### 2.3.4 Factors to consider before adoption
+### 2.5.4 Factors to consider before adoption
 
   * **Cost**
 
