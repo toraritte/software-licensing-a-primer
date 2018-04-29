@@ -26,5 +26,6 @@ pandoc                                     \
   --filter pandoc-citeproc                 \
   --csl ieee-with-url.csl                  \
   --css stylesheet.css                     \
+  --include-in-header github-banner.html   \
   ../software-license-primer.md meta.yaml  \
   -o ../docs/index.html

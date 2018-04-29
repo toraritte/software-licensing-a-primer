@@ -1,21 +1,21 @@
 **Disclaimer**: The materials available at this web site are for informational purposes only and not for the purpose of providing legal advice. You should contact your attorney to obtain advice with respect to any particular issue or problem.
 
-# 0 Rationale for yet another write-up
+## 0 Rationale for yet another write-up
 
 
-# 1 Free[^footnote-word_free] and open source software
+## 1 Free[^footnote-word_free] and open source software
 
 [^footnote-word_free]: The usage of the word "free" may be misleading because it both means "freedom" and "zero price". The problem is that English, unlike other languages, does not have a common adjective that unambiguously refers to freedom. French for example has "libre" for "freedom" and "gratuit" for "free of charge".[@gnu-philosophy-category]
 
     In this context, the intended meaning was "freedom", as in "freedom of users".
 
-## 1.1 Brief history
+### 1.1 Brief history
 
-### 1970s
+#### 1970s
 
 Computers are built from scratch by research organizations and custom software has to be written to operate them. "_Software was not yet standardized and was not considered to be a monetizable product._"[@roads-and-bridges]
 
-### 1981[@roads-and-bridges]
+#### 1981[@roads-and-bridges]
 
 IBM introduces the "IBM PC" or "Personal Computer". Industry adoption is high, winnowing out the competition and capturing half of the market share by 1986.[@from-altair-to-ipad]
 
@@ -23,29 +23,29 @@ Standardized hardware brought along the opportunity to standardize software. IBM
 
 Turning software into business proves lucrative, resulting in commercial licenses promoting the creation of proprietary products, preventing users from copying, modifying or redistributing software.
 
-### 1983
+#### 1983
 
 Concern rises among computer scientists "_about the closed and proprietary direction that software was taking_".[@roads-and-bridges] As a response, Richard Stallman launches GNU, a free operating system, also inadvertently laying the foundation for the "free software movement".[@gnu-initial]
 
-### 1985
+#### 1985
 
 Stallman founds the Free Software Foundation to support the objectives of the "free software movement".[@gnu-initial]
 
-### 1992
+#### 1992
 
 The growth of the World Wide Web gains momentum and becomes more widely available.
 
-### 1996
+#### 1996
 
 The commercialization of the web begins with great success and huge gains.
 
-### 1998
+#### 1998
 
 In a move unprecented at the time from a software company, Netscape releases the source code of its high market-share web browser. This event becomes the catalyst to a group of technologists, who have been advocating a more pragmatic approach to the Free Software Foundation's principles, to create the Open Source Initiative. The new organization's focus is to promulgate "_the practical benefits of free software_"[@roads-and-bridges] without "_the ideological and confrontational connotations of the term_"[@open-source-movement-wiki]
 
-## 1.2 Open source versus free software
+### 1.2 Open source versus free software
 
-### 1.2.1 Common ground
+#### 1.2.1 Common ground
 
 Both **free software** and **open source software** do roughly mean the same:
 
@@ -53,7 +53,7 @@ Both **free software** and **open source software** do roughly mean the same:
 
   * The Open Source Initiative defines it as "_software that can be freely accessed, used, changed, and shared (in modified or unmodified form) by anyone. Open source software is made by many people, and distributed under licenses that comply with the Open Source Definition[@osi-osd]._"[[@osi-faq] - [What is "Open Source" software?](https://opensource.org/faq#osd)]
 
-### 1.2.2 Differences
+#### 1.2.2 Differences
 
 "_Open source is a development methodology; free software is a social movement._"[@gnu-os-misses] Although often discussed together, they are politically distinct: "free software" being more closely associated with ethics ("_essential respect for the users' freedom_"[@gnu-os-misses]) and "open source" with pragmatism (i.e., a practical, business-case approach to free software[@osi-history]).
 
@@ -67,9 +67,9 @@ The philosophical differences are also reflected in software licensing approache
 
 Therefore, on the practical side, every existing free software would qualify as open source because the Open Source Initiative allows the more restrictive (or permissive, depending on the perspective) free software licenses, but not vice versa.
 
-# 2 Introduction to licenses
+## 2 Introduction to licenses
 
-## 2.1 Why software licenses are necessary
+### 2.1 Why software licenses are necessary
 
 "_Licenses are important tools for setting specific terms on which software may be used, modified, or distributed_" and they "_can be used to facilitate access to software as well as restrict it_".[@sci-programmer] Because the legal default for original works is exclusive copyright, potential users may become discouraged to use a specific piece of code without a license to avoid future litigations as they do not know which limitations owners may want to enforce.[@sci-programmer] 
 
@@ -77,19 +77,19 @@ Open collaboration also requires legal ground rules to be layed down because "_w
 
 Copyright holders therefore set formal permissions in the form of licenses, especially if they expect their code to be reused.
 
-## 2.2 Copyright
+### 2.2 Copyright
 
 Copyright grants the creator of an original work exclusive, but limited rights[^footnote-copyright_limits] for its use and distribution[@wiki-copyright;@oed-copyright;@cotton-copyleft] by default under the Berne Convention[@wiki-berne;@wiki-berne1886]. Authors therefore have complete authority and they have to explicitly permit any actions that would involve the use of their work.
 
 [^footnote-copyright_limits]: "_Copyright law does not protect the titles of books or movies, nor does it protect short phrases such as, “Make my day.” Copyright protection also doesn’t cover facts, ideas, or theories. These things are free for all to use without authorization._"[@public-domain-stim]
 
-## 2.3 License-free software
+### 2.3 License-free software
 
 Some developers reject the necessity of software licenses altogether and therefore do not use licenses[@license-free] or put their work explicitly in the public domain[@put-public].
 
 License-free software is usually avoided because it is not explicitly in the public domain and the absence of a license makes the software fully copyright-protected according to the Berne Convention.
 
-## 2.4 Public domain software
+### 2.4 Public domain software
 
 Dedicating software to the public domain is somewhat better received. Works in the public domain are creative material that are not protected by copyright, trademark or patent laws and can be modified, distributed, or sold even without any attribution by anyone.[@wiki-pub-domain-sw;@wiki-pub-domain;@public-domain-stim] Legal ambiguities still exist however, especially when it comes to software, such as:
 
@@ -105,11 +105,11 @@ Dedicating software to the public domain is somewhat better received. Works in t
 
     The meaning of "public domain" also depends on jurisdiction[@quora-os-legal;@wiki-pub-domain] and licenses are necessary that emulate the public domain, such as CC0[@cc0], Unlicense[@unlicense] or WTFPL[@wtfpl].
 
-## 2.5 Copyleft
+### 2.5 Copyleft
 
 The most exhaustive resource on this topic is the continuously updated _Copyleft and the GNU General Public License: A Comprehensive Tutorial and Guide_[@copyleft-guide], but the following sections will attempt to give a quick summary.
 
-### 2.5.1 History and rationale
+#### 2.5.1 History and rationale
 
 Since the emergence of computer science, developing and sharing programs was entirely in the public domain, mostly in academia and software was not copyrightable.
 
@@ -123,7 +123,7 @@ The legislation gave rise to the development of proprietary software and helped 
 
 Richard Stallman, himself an academic and alarmed by the growing trend, founded the GNU Project, and with that, the free software movement. He wrote the first version of GNU General Public License in 1989 as a response, to encode public domain rights on software, relying "_on the enforceability of the copyright to be effective_"[@wiki-pub-domain-sw].
 
-### 2.5.2 What is copyleft?
+#### 2.5.2 What is copyleft?
 
 Also referred to as _reciprocal_ or _protective_ licensing. The derogatory adjectives "viral" or "infectious" are also used[@viral-licensing]. (See [Controversies] - TODO).
 
@@ -137,9 +137,9 @@ The stipulation that the "_information necessary for reproducing and modifying t
 
 The idea of copyleft can be also applied to works that are not software. These licenses are usually called share-alike, such as the [Creative Commons](https://creativecommons.org) licenses.
 
-### 2.5.3 Types
+#### 2.5.3 Types
 
-#### 2.5.3.1 Strong and weak copyleft
+##### 2.5.3.1 Strong and weak copyleft
 
 "_“Strong vs. weak” copyleft is not a dichotomy, it’s a spectrum._"[@copyleft-guide] "_The strength of the copyleft governing a work is an expression of the extent that the copyleft provisions can be efficiently imposed on all kinds of derived[sic] works._"[@wiki-copyleft]
 
@@ -169,7 +169,7 @@ There are multiple ways to purposely weaken copyleft restrictions:
 
     https://julien.ponge.org/blog/mozilla-public-license-v2-a-good-middleground/
 
-#### 2.5.3.2 Full and partial copyleft
+##### 2.5.3.2 Full and partial copyleft
 
 This classification is used by some sources, but there is no authoritative source for their definitions by any of the well-established entities (for example, organization such as the [Free Software Foundation](https://www.fsf.org/), [Open Source Initiative](https://opensource.org/), [Mozilla Foundation](https://www.mozilla.org/en-US/foundation/), or licensing websites such as [choosealicense.com](https://choosealicense.com/), [TLDR-legal](https://tldrlegal.com/)).
 
@@ -191,7 +191,7 @@ The adjective "full" is never used by any of the aforementioned entities to desc
 
 Interestingly, the Free Software Foundation has both "copyleft-weak" and "copyleft-partial" as explicit categories in its [license description templates](https://directory.fsf.org/wiki/User:Jgay/license-categorization), but only the latter is used actively to categorize licenses traditionally referred to as "weak" copyleft licenses.
 
-## 2.6 Proprietary licenses
+### 2.6 Proprietary licenses
 
 "_The primary purpose of a proprietary software license is to limit the use of software according to the rights owner's business strategy_"[@https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3406002/], generally distributed in binary form. They are typically very restrictive for end users as they disallow any action that is not specifically layed out in the license.
 
@@ -219,7 +219,7 @@ Examples of limitations:
     What is a derivative work according to the copyright owner?
     Is it allowed to use parts or the entire software in derivative works?
 
-##### 2.3.3.2 Open source licenses
+###### 2.3.3.2 Open source licenses
 
 Open source licenses are licenses that comply with the [Open Source Definition](https://opensource.org/osd) (i.e., they allow software to be freely used, modified, and shared), including non-copyleft licenses that allow proprietary derivative works[@https://opensource.org/faq#permissive]. (A reason why they are also called "permissive" licenses).
 
@@ -228,7 +228,7 @@ As the defintion of open source software is an extension of [the four essential 
 The Open Source Initiative maintains the list of approved licenses:
 <https://opensource.org/licenses>
 
-##### 2.3.3.3 Free software licenses
+###### 2.3.3.3 Free software licenses
 
 Free software licenses are licenses that comply with the [definition of free software](https://www.gnu.org/philosophy/free-sw.html). (TODO: glossary?) The Free Software Foundation's Licensing and Compliance Lab maintains an annotated and categorized list of licenses that can be found at <https://www.gnu.org/licenses/license-list.en.html>.
 
@@ -238,15 +238,15 @@ The most prominent examples are the versions of the GNU General Public License[^
 
 [^footnote-gpl_v3]: The latest version is the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). For an extensive legal analysis is also available by the Software Freedom Law Center[@https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html] or see the de facto guide [@https://copyleft.org/guide/].
 
-##### Controversial licensing practices
-#### Compliance
-##### compatibility
-##### ?
-#### 2.3.3.4 Choosing a license
+###### Controversial licensing practices
+##### Compliance
+###### compatibility
+###### ?
+##### 2.3.3.4 Choosing a license
 
 Choosing a license depends on many factors, such as use cases (e.g., end user product, software module), adopting entities (e.g., company, group of hobby developers), project goals (e.g., commercial product, free or for fee services).[@https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21,@https://softwareengineering.stackexchange.com/questions/107883/agpl-what-you-can-do-and-what-you-cant,@https://news.ycombinator.com/item?id=1273231,@roads-and-bridges]
 
-### 2.5.4 Factors to consider before adoption
+#### 2.5.4 Factors to consider before adoption
 
   * **Cost**
 
@@ -374,10 +374,10 @@ Choosing a license depends on many factors, such as use cases (e.g., end user pr
 
     Building on open source code on the other becomes more complex as each included project may have different (or even multiple) licenses. Fortunately, this requirement has become more and more a standardized and automated process with the lead of large open source non-profits such as the Linux Foundation or the Open Source Initiative.[@https://www.linuxfoundation.org/blog/why-companies-that-use-open-source-need-a-compliance-program/] One example is the Software Composition Analysis methodology[@https://blog.blackducksoftware.com/software-composition-analysis-compatible-agile-devops].
 
-### 2.3.5 Commercial applicability
-#### controversies
+#### 2.3.5 Commercial applicability
+##### controversies
 
-#### 2.3.5.1 Commercial versus proprietary software
+##### 2.3.5.1 Commercial versus proprietary software
 
 It is worth emphasizing:
 
@@ -387,13 +387,13 @@ It is worth emphasizing:
 
 [^footnote-ada_link]: https://en.wikipedia.org/wiki/GNAT
 
-#### 2.3.5.2 Free/open source software versus commercial software
+##### 2.3.5.2 Free/open source software versus commercial software
 
 Commercial software is not the antonym of free and open source software, proprietary software is. Misunderstandings stem from conflicting uses of the adjectives *commercial* and *proprietary*.[@http://peerproduction.net/issues/issue-1/peer-reviewed-papers/why-free-software-is-not-the-antonym-of-commercial-software/]
 
 Software licensed under an open source (or even under a more strict free software) license can be sold for a price or licensed for a fee just like any other product.[@https://blog.codecentric.de/en/2012/05/using-gpl-licensed-components-in-proprietary-projects/,@https://www.gnu.org/licenses/gpl-faq#DoesTheGPLAllowMoney,]
 
-#### 2.3.5.3 Business models for open source software
+##### 2.3.5.3 Business models for open source software
 
 ##### 2.3.5.2.3 Controversies
 

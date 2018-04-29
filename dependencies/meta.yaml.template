@@ -2,7 +2,9 @@
 title:    Software licensing primer
 subtitle: A short introduction and reference to open source software licenses
 
-author:   Attila Gulyas
+author:
+  - Attila Gulyas
+
 date:     last-updated
 
 link-citations:  true

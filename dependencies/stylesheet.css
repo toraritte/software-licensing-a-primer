@@ -10,23 +10,39 @@ body > #refs p {
 body .subtitle {
   text-align: left;
   display: block;
-  font-size: 1.5em;
-  margin-before: 0.83em;
-  margin-after: 0.83em;
-  margin-start: 0px;
-  margin-end: 0px;
+  font-size: 1.2em;
+  margin-top: 0em;
+  margin-bottom: 2em;
   font-weight: bold;
 }
 
+.title {
+  margin-bottom: 0.2em;
+}
+
+.author {
+  margin-bottom: 0em;
+}
+
 .author::before {
-  content: "Author: ";
+  content: "Authors: ";
   font-weight: bold;
+}
+
+.date {
+  margin-top: 0.2em;
+  margin-bottom: 2em;
 }
 
 .date::before {
   content: "Last updated: ";
   font-weight: bold;
 }
+
+#TOC + p {
+  margin-top: 2em;
+  margin-bottom: 2em;
+} 
 
 @media only screen and (max-width: 400px) {
   body {
