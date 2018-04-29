@@ -1,6 +1,10 @@
-p {
+body p {
   text-align: justify;
   text-justify: auto;
+}
+
+body > #refs p {
+  text-align: left;
 }
 
 @media only screen and (max-width: 400px) {

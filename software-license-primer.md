@@ -71,9 +71,9 @@ Therefore, on the practical side, every existing free software would qualify as 
 
 ## 2.1 Why software licenses are necessary
 
-"_Licenses are important tools for setting specific terms on which software may be used, modified, or distributed_" and they "_can be used to facilitate access to software as well as restrict it_".[@] Because the legal default for original works is exclusive copyright, potential users may become discouraged to use a specific piece of code without a license to avoid future litigations as they do not know which limitations owners may want to enforce.[@sci-programmer] 
+"_Licenses are important tools for setting specific terms on which software may be used, modified, or distributed_" and they "_can be used to facilitate access to software as well as restrict it_".[@sci-programmer] Because the legal default for original works is exclusive copyright, potential users may become discouraged to use a specific piece of code without a license to avoid future litigations as they do not know which limitations owners may want to enforce.[@sci-programmer] 
 
-Open collaboration also requires legal ground rules to be layed down because "_without a license, everybody who contributes to the project also becomes an exclusive copyright holder of their work. That means nobody can use, copy, distribute, or modify their contributions – and that “nobody” includes the author as well._"[@github.com/github/opensource.guide]
+Open collaboration also requires legal ground rules to be layed down because "_without a license, everybody who contributes to the project also becomes an exclusive copyright holder of their work. That means nobody can use, copy, distribute, or modify their contributions – and that “nobody” includes the author as well._"[@osg]
 
 Copyright holders therefore set formal permissions in the form of licenses, especially if they expect their code to be reused.
 
