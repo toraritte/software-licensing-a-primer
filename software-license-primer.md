@@ -1,5 +1,8 @@
 **Disclaimer**: The materials available at this web site are for informational purposes only and not for the purpose of providing legal advice. You should contact your attorney to obtain advice with respect to any particular issue or problem.
 
+# 0 Rationale for yet another write-up
+
+
 # 1 Free[^footnote-word_free] and open source software
 
 [^footnote-word_free]: The usage of the word "free" may be misleading because it both means "freedom" and "zero price". The problem is that English, unlike other languages, does not have a common adjective that unambiguously refers to freedom. French for example has "libre" for "freedom" and "gratuit" for "free of charge".[@gnu-philosophy-category]
