@@ -1,0 +1,32 @@
+---
+title:    Software licensing primer
+subtitle: A short introduction and reference to open source software licenses
+
+author:   Attila Gulyas
+
+date:     September 30, 2017
+
+# I found the biblatex style the most straight-forward, but the standard
+# pandoc citation style messy so using a .bib file to keep the bibliography,
+# but using a Zotero csl to format it. The only hitch is that the .bib needs
+# manual formatting to CSL JSON but fortunately `pandoc-citeproc --bib2json`
+# does that:
+#
+# pandoc-citeproc --bib2json bibliography.bib > bibliography.json
+#
+# TODO:
+# 1. create issue at pandoc on github (feature request)
+# 2. write a small package to create proposals
+
+bibliography:    bibliography.json
+csl:             ieee-with-url.csl
+link-citations:  true
+
+urlcolor: blue
+
+# The current build command so far:
+# pandoc --smart --standalone --self-contained --table-of-contents --bibliography bibliography.json --filter pandoc-citeproc --csl ieee-with-url.csl slate2_proposal.md meta.yaml -o output/out.pdf
+
+### old command
+# pandoc --smart --standalone --table-of-contents --bibliography bibliography.json --filter pandoc-citeproc --csl ieee-with-url.csl slate2_proposal.md meta.yaml -o output/out.pdf
+...
