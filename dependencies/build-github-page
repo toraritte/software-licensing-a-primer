@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# https://stackoverflow.com/questions/3349105
+cd "$(dirname "$0")"
+
+# I found the biblatex style the most straight-forward in contrast with
+# the messy standard pandoc citation style messy, therefore using a .bib
+# file to keep the bibliography, but using a Zotero csl to format it. The
+# only hitch is that the .bib needs manual formatting to CSL JSON, but
+# fortunately `pandoc-citeproc --bib2json` does just that.
+#
+# TODO:
+# 1. create issue at pandoc on github (feature request)
+# 2. write a small package to create proposals
+
+pandoc-citeproc --bib2json bibliography.bib > bibliography.json
+
+pandoc                                     \
+  --standalone                             \
+  --self-contained                         \
+  --table-of-contents                      \
+  --bibliography bibliography.json         \
+  --filter pandoc-citeproc                 \
+  --csl ieee-with-url.csl                  \
+  --css stylesheet.css                     \
+  ../software-license-primer.md meta.yaml  \
+  -o ../docs/index.html
