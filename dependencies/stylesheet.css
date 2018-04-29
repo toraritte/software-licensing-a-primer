@@ -7,6 +7,27 @@ body > #refs p {
   text-align: left;
 }
 
+body .subtitle {
+  text-align: left;
+  display: block;
+  font-size: 1.5em;
+  margin-before: 0.83em;
+  margin-after: 0.83em;
+  margin-start: 0px;
+  margin-end: 0px;
+  font-weight: bold;
+}
+
+.author::before {
+  content: "Author: ";
+  font-weight: bold;
+}
+
+.date::before {
+  content: "Last updated: ";
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 400px) {
   body {
     margin-left:  2%;
