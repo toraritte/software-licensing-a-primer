@@ -1,3 +1,5 @@
+**Disclaimer**: The materials available at this web site are for informational purposes only and not for the purpose of providing legal advice. You should contact your attorney to obtain advice with respect to any particular issue or problem.
+
 # 1 Free[^footnote-word_free] and open source software
 
 [^footnote-word_free]: The usage of the word "free" may be misleading because it both means "freedom" and "zero price". The problem is that English, unlike other languages, does not have a common adjective that unambiguously refers to freedom. French for example has "libre" for "freedom" and "gratuit" for "free of charge".[@gnu-philosophy-category]
@@ -80,110 +82,111 @@ Copyright grants the creator of an original work exclusive, but limited rights[^
 
 ## 2.3 License-free software
 
-Some developers reject the necessity of software licenses altogether and therefore do not use licenses[@https://en.wikipedia.org/wiki/License-free_software] or put their work explicitly in the public domain[@http://cr.yp.to/distributors.html].
+Some developers reject the necessity of software licenses altogether and therefore do not use licenses[@license-free] or put their work explicitly in the public domain[@put-public].
 
-License-free software are usually avoided because it is not explicitly in the public domain and the absence of a license makes the software fully copyright-protected according to the Berne Convention.
+License-free software is usually avoided because it is not explicitly in the public domain and the absence of a license makes the software fully copyright-protected according to the Berne Convention.
 
 ## 2.4 Public domain software
 
-Dedicating software to the public domain is somewhat better received. Works in the public domain are creative material that are not protected by copyright, trademark or patent laws and can be modified, distributed, or sold even without any attribution by anyone.[@https://en.wikipedia.org/wiki/Public-domain_software;@https://en.wikipedia.org/wiki/Public_domain;@https://fairuse.stanford.edu/overview/public-domain/welcome/] Legal ambiguities still exist however, especially when it comes to software, such as:
+Dedicating software to the public domain is somewhat better received. Works in the public domain are creative material that are not protected by copyright, trademark or patent laws and can be modified, distributed, or sold even without any attribution by anyone.[@wiki-pub-domain-sw;@wiki-pub-domain;@public-domain-stim] Legal ambiguities still exist however, especially when it comes to software, such as:
 
-  * What is the legally accepted way to place software in the public domain?
+  * **What is the legally accepted way to place software in the public domain?**
 
-    There are four common ways for works to end up in the public domain: the copyright has expired, forfeited, waived or inapplicable.[@https://en.wikipedia.org/wiki/Public_domain;@https://fairuse.stanford.edu/overview/public-domain/welcome/]
+    There are four common ways for works to end up in the public domain: the copyright has expired, forfeited, waived or inapplicable.[@wiki-pub-domain;@public-domain-stim]
 
-    Abandoning the copyright is the most pertinent in this case and there is a debate about what methods are legally accepted[@https://lists.opensource.org/pipermail/license-review/2012-March/001679.html;@http://cr.yp.to/distributors.html] or whether it can be done at all[^footnote-abandon_copyright].
+    Abandoning the copyright is the most pertinent in this case and there is a debate about what methods are legally accepted[@cc0-rosen;@put-public] or whether it can be done at all. A notable legal precedent exists however, but the US Ninth Circuit states in their ruling that "_abandonment of such rights, however, must be manifested by some overt act indicative of a purpose to surrender the rights and allow the public to copy._"[@1960hampton]
 
-[^footnote-abandon_copyright]: There is legal precedent to it, at least by the US Ninth Circuit: "_Abandonment of such rights, however, must be manifested by some overt act indicative of a purpose to surrender the rights and allow the public to copy._"[@1960hampton]
+  * **How can public domain software be re-used in proprietary software?**
 
-  * How can public domain software be re-used in proprietary software?
+    Modifications to a public domain work may be protected by copyright[@public-domain-stim] if the modification is non-trivial (i.e., meets the applicable laws' originality and creativity requirements) and this could be interpreted that only the modification itself can be copyrighted.[[@copyleft-guide] - [1.2.1 Public Domain Software](https://copyleft.org/guide/comprehensive-gpl-guidech2.html#x5-110001.2.1)][[@pd-sherpa] - [Item 5](http://www.publicdomainsherpa.com/10-misconceptions-about-the-public-domain.html#five)]
 
-    Modifications to a public domain work may be protected by copyright[@https://fairuse.stanford.edu/overview/public-domain/trouble-spots/] if the modification is non-trivial (i.e., meets the applicable laws' originality and creativity requirements)[@https://copyleft.org/guide/comprehensive-gpl-guidech2.html#x5-50001.1;@http://www.publicdomainsherpa.com/10-misconceptions-about-the-public-domain.html#five] and this could be interpreted that only the modification itself can copyrighted[@http://www.publicdomainsherpa.com/10-misconceptions-about-the-public-domain.html#five].
+    The meaning of "public domain" also depends on jurisdiction[@quora-os-legal;@wiki-pub-domain] and licenses are necessary that emulate the public domain, such as CC0[@cc0], Unilicense[@unilicense] or WTFPL[@wtfpl].
 
-    The meaning of "public domain" also depends on jurisdiction[@https://www.quora.com/When-you-create-a-proprietary-software-after-using-quite-a-few-open-source-software-projects-as-a-starting-point-how-is-this-legal;@https://en.wikipedia.org/wiki/Public_domain] and licenses are necessary that emulate the public domain, such as CC0[@https://wiki.creativecommons.org/wiki/CC0], Unilicense[@http://unlicense.org/] or WTFPL[@http://www.wtfpl.net/].
+## 2.5 Copyleft
 
-#### 2.3.3.0 Copyleft
+The most exhaustive resource on this topic is the continuously updated _Copyleft and the GNU General Public License: A Comprehensive Tutorial and Guide_[@copyleft-guide], but the following sections will attempt to give a quick summary.
 
-The most exhaustive resource on this topic is the continuously updated Copyleft and the GNU General Public License: A Comprehensive Tutorial and Guide[@https://copyleft.org/guide/] but the following sections try to give a quick summary.
-
-##### 2.3.3.0.1 History and rationale
+### 2.5.1 History and rationale
 
 Since the emergence of computer science, developing and sharing programs was entirely in the public domain, mostly in academia and software was not copyrightable.
 
-In 1974, the US Commission on New Technological Uses of Copyrighted Works (CONTU) decided that "_computer programs, to the extent that they embody an author's original creation, are proper subject matter of copyright_"[@http://www.digital-law-online.info/CONTU/].
+In 1974, the US Commission on New Technological Uses of Copyrighted Works (CONTU) decided that "_computer programs, to the extent that they embody an author's original creation, are proper subject matter of copyright_"[@contu].
 
-The Copyright Act of 1976[@https://www.law.cornell.edu/uscode/text/17/117] (and following legal precedents, such as Apple v. Franklin[@https://openjurist.org/714/f2d/1240/apple-computer-inc-v-franklin-computer-corporation]) "_clarified that the Copyright Act gave computer programs the copyright status of literary works_"[@https://en.wikipedia.org/wiki/Public-domain_software].
+The Copyright Act of 1976[@copyright1976] (and following legal precedents, such as Apple v. Franklin[@apple-franklin]) "_clarified that the Copyright Act gave computer programs the copyright status of literary works_"[@wiki-pub-domain-sw].
 
 The Berne Convention Implementation Act of 1988 puts any original creative works under copyright after creation by default.
 
-The legislation gave rise to the development of proprietary software and helped it become a lucrative business opportunity from the early 1980s, causing the decline of the academic public domain software ecosystem[@https://en.wikipedia.org/wiki/History_of_Unix].
+The legislation gave rise to the development of proprietary software and helped it become a lucrative business opportunity from the early 1980s, causing the decline of the academic public domain software ecosystem[@unix-history].
 
-Richard Stallman, himself an academic and alarmed by the growing trend, founds the GNU Project, and with that, the free software movement. He writes the first version of GNU General Public License in 1989 as a response, to encode public domain rights on software, relying "_on the enforceability of the copyright to be effective_"[@https://en.wikipedia.org/wiki/Public-domain_software].
+Richard Stallman, himself an academic and alarmed by the growing trend, founded the GNU Project, and with that, the free software movement. He wrote the first version of GNU General Public License in 1989 as a response, to encode public domain rights on software, relying "_on the enforceability of the copyright to be effective_"[@wiki-pub-domain-sw].
 
-##### 2.3.3.0.2 What is copyleft?
+### 2.5.2 What is copyleft?
 
-Also referred to as *reciprocal* or *protective* licensing. The derogatory adjectives "viral" or "infectious" are also used[@https://en.wikipedia.org/wiki/Viral_license]. (See [Controversies]).
+Also referred to as _reciprocal_ or _protective_ licensing. The derogatory adjectives "viral" or "infectious" are also used[@viral-licensing]. (See [Controversies] - TODO).
 
-It is a form of licensing that retains the author's exclusive copyrights for works but gives permission to recipients of the work to reproduce, change or distribute it, with the accompanying requirement that any resulting copies or adaptations are also bound by the same licensing agreement. "_In essence, copyleft grants freedom, but forbids others to forbid that freedom to anyone else along the distribution and modification chains._"[@https://copyleft.org/guide].(Hence the term "reciprocal".)
+It is a form of licensing that retains the author's exclusive copyrights for works, but gives permission to recipients of the work to reproduce, change or distribute it, with the accompanying requirement that any resulting copies or adaptations are also bound by the same licensing agreement. "_In essence, copyleft grants freedom, but forbids others to forbid that freedom to anyone else along the distribution and modification chains._"[@copyleft-guide].(Hence the term "reciprocal".)
 
-Copyleft software intentionally shares properties with public domain software and by requiring the same copyleft license downstream is an attempt to close one of its loopholes: "_any nontrivial modification made to the [public domain] work is fully copyrightable_", ergo "_over time, some entities will choose to proprietarize their modified versions_" with little "_incentive to contribute back to the commons_", until "_almost no interesting work is left in the public domain, because nearly all new work is done by proprietarization._"[@https://copyleft.org/guide].
+Copyleft software intentionally shares properties with public domain software and by requiring the same copyleft license downstream is an attempt to close one of its loopholes: "_any nontrivial modification made to the [public domain] work is fully copyrightable_", ergo "_over time, some entities will choose to proprietarize their modified versions_" with little "_incentive to contribute back to the commons_", until "_almost no interesting work is left in the public domain, because nearly all new work is done by proprietarization._"[@copyleft-guide].
 
-"_Copyleft uses functional parts of the copyright system to achieve an unusual result (legal protection for free sharing)_"[@https://copyleft.org/guide/]: it modifies copyright law, which is usually employed to strengthen the rights of authors or publishers by prohibiting "_recipients from reproducing, adapting, or distributing copies of their work_"[@https://en.wikipedia.org/wiki/Copyleft], to strengthen instead the rights of users. This reversal is reflected in its name as a wordplay on "copyright".
+"_Copyleft uses functional parts of the copyright system to achieve an unusual result (legal protection for free sharing)_"[@copyleft-guide]: it modifies copyright law, which is usually employed to strengthen the rights of authors or publishers by prohibiting "_recipients from reproducing, adapting, or distributing copies of their work_"[@wiki-copyleft], to strengthen instead the rights of users. This reversal is reflected in its name as a wordplay on "copyright".
 
-The stipulation that the "_information necessary for reproducing and modifying the work must be made available to recipients of the binaries_"[@https://en.wikipedia.org/wiki/Copyleft] (i.e., source code) is added to prevent the creation of proprietary products[@https://www.gnu.org/copyleft/copyleft.html] and it is probably the most notable difference to public domain software because "_an executable program can be in the public domain but the source code is not available_"[@https://www.gnu.org/philosophy/categories.en.html].
+The stipulation that the "_information necessary for reproducing and modifying the work must be made available to recipients of the binaries_"[@wiki-copyleft] (i.e., source code) is added to prevent the creation of proprietary products[@gnu-copyleft] and it is probably the most notable difference to public domain software because "_an executable program can be in the public domain but the source code is not available_"[@gnu-philosophy-category].
 
-The idea of copyleft can be also applied to works that are not software. These licenses are usually called share-alike (see Creative Commons[@https://creativecommons.org/].
+The idea of copyleft can be also applied to works that are not software. These licenses are usually called share-alike, such as the [Creative Commons](https://creativecommons.org) licenses.
 
-##### 2.3.3.0.3 Types
+### 2.5.3 Types
 
-###### Strong and weak copyleft
+#### 2.5.3.1 Strong and weak copyleft
 
-"_“Strong vs. weak” copyleft is not a dichotomy, it’s a spectrum._"[@https://copyleft.org/guide/] "_The strength of the copyleft governing a work is an expression of the extent that the copyleft provisions can be efficiently imposed on all kinds of derived[sic] works._"[@https://en.wikipedia.org/wiki/Copyleft]
+"_“Strong vs. weak” copyleft is not a dichotomy, it’s a spectrum._"[@copyleft-guide] "_The strength of the copyleft governing a work is an expression of the extent that the copyleft provisions can be efficiently imposed on all kinds of derived[sic] works._"[@wiki-copyleft]
 
-The stronger the license, the more it will seek to ensure that the same license will cover every version of derivative works, making them subject to its requirements.[@https://copyleft.org/guide/] Practically this means that the corresponding source code has to be made available to licensees. The ideological goal is to ensure the propagations of the software freedoms for each user.
+The stronger the license, the more it will seek to ensure that the same license will cover every version of derivative works, making them subject to its requirements.[@copyleft-guide] Practically this means that the corresponding source code has to be made available to licensees. The ideological goal is to ensure the propagations of the software freedoms for each user.
 
-Usually larger end user programs, which cannot be used further as a component, opt in using such licenses to prevent turning them into proprietary products.[^footnote-strong_copyleft_abuse] The versions of the GNU General Public License (GNU GPL) are the most commonly cited examples for strong copyleft.
+Usually larger end user programs, which cannot be used further as a component, opt in using such licenses to prevent turning them into proprietary products.[^footnote-strong_copyleft_abuse] The versions of the _GNU General Public License (GNU GPL)_ are the most commonly cited examples for strong copyleft.
 
 [^footnote-strong_copyleft_abuse]: This is not a rule though and strong copyleft licenses are known to be abused by the industry. See [Controversies].
 
-GNU GPL version 3 with its system library exception is cited (see 9.3.3 in [@https://copyleft.org/guide/]) as an example to prove that the strength of a license is indeed a spectrum.
+GNU GPL version 3 with its system library exception is cited[[@copyleft-guide] - [9.3.3](https://copyleft.org/guide/comprehensive-gpl-guidech10.html#x13-730009.3.3)] as an example to prove that the strength of a license is indeed a spectrum.
 
-As the "copyleft" gets weaker, the license starts to introduce "trade offs" such as allowing cases of derivative works that are permitted to use another license and/or keeping parts of the source closed in order to foster wider adoption but still try to hold on to most of copyleft's principles.[@https://en.wikipedia.org/wiki/Copyleft;@https://copyleft.org/guide/]
+As the "copyleft" gets weaker, the license starts to introduce "trade offs" such as allowing cases of derivative works that are permitted to use another license and/or keeping parts of the source closed in order to foster wider adoption, but still try to hold on to most of copyleft's principles.[@wiki-copyleft;@copyleft-guide]
 
-The most well-known example for this seemingly counter-intuitive rationale is the history of the GNU Lesser General Public License (GNU LGPL) and "glibc", the GNU project's implementation of the C standard library. It was created to provide a common alternative to the world of proliferating proprietary implementations that had limited functionality, sometimes specific only to certain vendors. If it had used a stronger license (such as the GPL), any software created with it would have to be shipped with the same license, thus providing their source code would have been necessary to avoid violation of the license's terms. "_The de-facto standard for the C library on GNU/Linux would likely be not glibc_"[@https://copyleft.org/guide/], a free software, but probably the most popular proprietary one that allows developers to create proprietary software.
+The most well-known example for this seemingly counter-intuitive rationale is the history of the _GNU Lesser General Public License (GNU LGPL)_ and "glibc", the GNU project's implementation of the C standard library. It was created to provide a common alternative to the world of proliferating proprietary implementations that had limited functionality, sometimes specific only to certain vendors. If it had used a stronger license (such as the GPL), any software created with it would have to be shipped with the same license, thus providing their source code would have been necessary to avoid violation of the license's terms. "_The de-facto standard for the C library on GNU/Linux would likely be not glibc_"[@copyleft-guide], a free software, but probably the most popular proprietary one that allows developers to create proprietary software.
 
 There are multiple ways to purposely weaken copyleft restrictions:
 
-  * "The LGPL distinguishes between two classes of works: “works based on the library,” and “works that use the library” and it is generally used for the creation of software libraries.[^footnote-lgpl_terms]
+  * "The LGPL distinguishes between two classes of works: “_works based on the library,_” and “_works that use the library_” and it is generally used for the creation of software libraries.[^footnote-lgpl_terms]
 
-  * The Mozilla Public License version 2.0 (MPL v2.0) is using a "file-level" copyleft instead[@https://www.mozilla.org/en-US/MPL/2.0/FAQ/] that "_treats the source code file as the boundary between MPL-licensed and proprietary parts, meaning that all or none of the code in a given source file falls under the MPL._"[@https://en.wikipedia.org/wiki/Mozilla_Public_License] It also allows sublicensing[@https://softwareengineering.stackexchange.com/questions/189633/what-sublicense-actually-means][^footnote-mpl_extra]
+  * The _Mozilla Public License version 2.0 (MPL v2.0)_ is using a "file-level" copyleft instead[[@mpl2] - [MPL 2.0 FAQ](https://www.mozilla.org/en-US/MPL/2.0/FAQ/)] that "_treats the source code file as the boundary between MPL-licensed and proprietary parts, meaning that all or none of the code in a given source file falls under the MPL._"[@wiki-mpl] It also allows [sublicensing](https://softwareengineering.stackexchange.com/questions/189633/what-sublicense-actually-means).[^footnote-mpl_extra]
 
-[^footnote-lgpl_terms]: The quoted terms are specific to LGPLv2 and has been superseded by LGPLv3. See Chapters 10 and 11 in [@https://copyleft.org/guide/].
+[^footnote-lgpl_terms]: The quoted terms are specific to LGPLv2 and has been superseded by LGPLv3.[[@copyleft-guide] - [Chapter 10](https://copyleft.org/guide/comprehensive-gpl-guidech11.html#x14-9600010) and [Chapter 11](https://copyleft.org/guide/comprehensive-gpl-guidech12.html#x15-10600011)]
 
-[^footnote-mpl_extra]: Extra resources on when choosing MPL v2.0 could be beneficial to a project are [@https://christoph-conrads.name/why-i-chose-the-mozilla-public-license-2-0/;@https://julien.ponge.org/blog/mozilla-public-license-v2-a-good-middleground/].
+[^footnote-mpl_extra]: A couple good resource to help decide whether you need MPL v2.0 or not:
 
-###### Full and partial copyleft
+    https://christoph-conrads.name/why-i-chose-the-mozilla-public-license-2-0/
 
-TODO links!
-This classification is used by some sources but there is no authoritative source for their definitions by any of the well-established entities (for example, organization such as the Free Software Foundation, Open Source Initiative, Mozilla Foundation, or licensing websites such as choosealicense.com, TLDR-legal).
+    https://julien.ponge.org/blog/mozilla-public-license-v2-a-good-middleground/
 
-Most of the definitions can be found in many places but they are
+#### 2.5.3.2 Full and partial copyleft
 
-  * vague without examples, and they are exact or minimally modified copies of each other[@https://en.wikipedia.org/wiki/Copyleft;@https://books.google.com/books?id=WRAFJNMrSdkC&pg=PA34&lpg=PA34&dq=full+partial+copyleft&source=bl&ots=lg50hOJ0oe&sig=h8i3mjiEPmbazN7mV63v2z2tKs8&hl=en&sa=X&ved=0ahUKEwjWsLWf2ZHXAhVJ2GMKHVvCBK8Q6AEIfzAQ#v=onepage&q=full%20partial%20copyleft&f=false;@http://machines.plannedobsolescence.net/marxwiki/index.php?title=Copyleft#Full_and_partial_copyleft;@http://www.yourdictionary.com/copyleft;@https://wikivisually.com/wiki/Weak_copyleft;@http://encyclopedia2.thefreedictionary.com/Copyleft+licensing;@https://www.pcmag.com/encyclopedia/term/40363/copyleft]
+This classification is used by some sources, but there is no authoritative source for their definitions by any of the well-established entities (for example, organization such as the [Free Software Foundation](https://www.fsf.org/), [Open Source Initiative](https://opensource.org/), [Mozilla Foundation](https://www.mozilla.org/en-US/foundation/), or licensing websites such as [choosealicense.com](https://choosealicense.com/), [TLDR-legal](https://tldrlegal.com/)).
 
-  * indistinguishable in meaning from or bear close resemblance to weak/strong copyleft[@https://en.wikipedia.org/wiki/Copyleft;@https://fullmetallinux.wordpress.com/tag/copyleft/]
+Most of the definitions can be found in many places, but they are
 
-  * describing the difference between conventional and "file-level"[@https://www.mozilla.org/en-US/MPL/2.0/FAQ/] (or "per-file"[@https://www.gnu.org/licenses/license-list.en.html]) copyleft[@https://prezi.com/0sdn2cpssmyn/copyleft-prezi/;@https://www.academia.edu/9259737/Demystifying_Copyleft_Creative_Commons_and_Open_Access_Rights_a_little_]
+  1. vague without examples, and using exact or minimally modified copies of each other[@https://en.wikipedia.org/wiki/Copyleft;@https://books.google.com/books?id=WRAFJNMrSdkC&pg=PA34&lpg=PA34&dq=full+partial+copyleft&source=bl&ots=lg50hOJ0oe&sig=h8i3mjiEPmbazN7mV63v2z2tKs8&hl=en&sa=X&ved=0ahUKEwjWsLWf2ZHXAhVJ2GMKHVvCBK8Q6AEIfzAQ#v=onepage&q=full%20partial%20copyleft&f=false;@http://machines.plannedobsolescence.net/marxwiki/index.php?title=Copyleft#Full_and_partial_copyleft;@http://www.yourdictionary.com/copyleft;@https://wikivisually.com/wiki/Weak_copyleft;@http://encyclopedia2.thefreedictionary.com/Copyleft+licensing;@https://www.pcmag.com/encyclopedia/term/40363/copyleft]
 
-    This makes the most sense but none of the sources provide explicit examples to this claim (such as CDDL or MPL as they would perfectly fit those descriptions).
+  2. indistinguishable in meaning from or bear close resemblance to weak/strong copyleft[@https://en.wikipedia.org/wiki/Copyleft;@https://fullmetallinux.wordpress.com/tag/copyleft/]
 
-    The Software Freedom Law Center's report comes closest in supporting this theory as it uses both "strong" and "partial" to describe CDDL's copyleft properties.
+  3. describing the difference between conventional and "file-level"[@https://www.mozilla.org/en-US/MPL/2.0/FAQ/] (or "per-file"[@https://www.gnu.org/licenses/license-list.en.html]) copyleft[@https://prezi.com/0sdn2cpssmyn/copyleft-prezi/;@https://www.academia.edu/9259737/Demystifying_Copyleft_Creative_Commons_and_Open_Access_Rights_a_little_]
 
-The adjective "full" is never used by any of the aforementioned entities to describe copyleft licenses[^footnote-osi_cat] and "partial" is used as a synonym to "weak" copyleft (with the exception mentioned in the last item above).[@http://oss-watch.ac.uk/resources/licensing-handout.pdf;@http://blog.docracy.com/post/51823372485/software-licensing-what-type-of-license-should-i/embed;@https://www.fsf.org/news/openoffice-apache-libreoffice;@https://books.google.com/books?id=isTBDAAAQBAJ&pg=PA276&lpg=PA276&dq=gnu+partial+copyleft&source=bl&ots=w4PESycpiK&sig=Hsb4A5DAlUVGMOyFoCJIA-8rmxk&hl=en&sa=X&ved=0ahUKEwjd_eWL5JHXAhUP-GMKHW6CCOEQ6AEIgwEwEA#v=onepage&q=gnu%20partial%20copyleft&f=false]
+    This category sounds the most plausible, but none of the cited sources bring [_Common Development and Distribution License (CDDL)_](https://opensource.org/licenses/CDDL-1.0) or [_Mozilla Public License_](https://www.mozilla.org/en-US/MPL/2.0/) as an example, even though they fit the bill perfectly.
+
+    The Software Freedom Law Center's report[@sflc-cddl] comes closest in supporting this theory as it uses both ["strong" and "partial" to describe CDDL's copyleft properties](https://www.softwarefreedom.org/resources/2016/linux-kernel-cddl.html#cddl).
+
+The adjective "full" is never used by any of the aforementioned entities to describe copyleft licenses[^footnote-osi_cat] and "partial" is used as a synonym to "weak" copyleft (with the exception of [@sflc-cddl]).[@http://oss-watch.ac.uk/resources/licensing-handout.pdf;@http://blog.docracy.com/post/51823372485/software-licensing-what-type-of-license-should-i/embed;@https://www.fsf.org/news/openoffice-apache-libreoffice;@https://books.google.com/books?id=isTBDAAAQBAJ&pg=PA276&lpg=PA276&dq=gnu+partial+copyleft&source=bl&ots=w4PESycpiK&sig=Hsb4A5DAlUVGMOyFoCJIA-8rmxk&hl=en&sa=X&ved=0ahUKEwjd_eWL5JHXAhUP-GMKHW6CCOEQ6AEIgwEwEA#v=onepage&q=gnu%20partial%20copyleft&f=false]
 
 [^footnote-osi_cat]: The Open Source Initiative goes further because it does not even use "weak" or "strong" to categorize copyleft licenses.
 
-The Free Software Foundation uses both "copyleft-weak" and "copyleft-partial" as explicit categories in its license description templates but only the latter is used[@https://directory.fsf.org/wiki/User:Jgay/license-categorization].
+Interestingly, the Free Software Foundation has both "copyleft-weak" and "copyleft-partial" as explicit categories in its [license description templates](https://directory.fsf.org/wiki/User:Jgay/license-categorization), but only the latter is used actively to categorize licenses traditionally referred to as "weak" copyleft licenses.
 
 #### Licensing
 ##### Proprietary licenses
