@@ -5,9 +5,6 @@ subtitle: A short introduction and reference to open source software licenses
 author:   Attila Gulyas
 date:     September 30, 2017
 
-bibliography:    bibliography.json
-csl:             ieee-with-url.csl
 link-citations:  true
-
 urlcolor: blue
 ...
