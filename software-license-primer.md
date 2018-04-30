@@ -67,7 +67,7 @@ Works in the public domain are creative material that are not protected by copyr
 
     There are four common ways for works to end up in the public domain: the copyright has expired, forfeited, waived or inapplicable.[@wiki-pub-domain;@public-domain-stim]
 
-    Abandoning the copyright is the most pertinent in this case and there is a debate about what methods are legally accepted[@cc0-rosen;@put-public] or whether it can be done at all. A notable legal precedent exists however, but the US Ninth Circuit states in their ruling that "_abandonment of such rights, however, must be manifested by some overt act indicative of a purpose to surrender the rights and allow the public to copy._"[@1960hampton]
+    Abandoning the copyright is the most pertinent in this case and there is a debate about what methods are legally accepted[@put-public] or whether it can be done at all[@@cc0-rosen]. A notable legal precedent exists however, but the US Ninth Circuit states in their ruling that "_abandonment of such rights, however, must be manifested by some overt act indicative of a purpose to surrender the rights and allow the public to copy._"[@1960hampton]
 
   * **How can public domain software be re-used in proprietary software?**
 
@@ -77,25 +77,33 @@ Works in the public domain are creative material that are not protected by copyr
 
 ### 1.5 Copyleft
 
-The most exhaustive resource on this topic is the continuously updated _Copyleft and the GNU General Public License: A Comprehensive Tutorial and Guide_[@copyleft-guide], but the following sections will attempt to give a quick summary.
+The most exhaustive resource on this topic is the continuously updated _Copyleft and the GNU General Public License: A Comprehensive Tutorial and Guide_[@copyleft-guide], but I found that knowing the historical background helps understanding the rationale behind it.
 
-#### 1.5.1 History and rationale
+#### 1.5.1 Historical background
 
 Since the emergence of computer science, developing and sharing programs was entirely in the public domain, mostly in academia and software was not copyrightable.
+
+In the 1970s, computers have been built from scratch by research organizations and custom software had to be written to operate them. "_Software was not yet standardized and was not considered to be a monetizable product._"[@roads-and-bridges]
 
 In 1974, the US Commission on New Technological Uses of Copyrighted Works (CONTU) decided that "_computer programs, to the extent that they embody an author's original creation, are proper subject matter of copyright_"[@contu].
 
 The Copyright Act of 1976[@copyright1976] (and following legal precedents, such as Apple v. Franklin[@apple-franklin]) "_clarified that the Copyright Act gave computer programs the copyright status of literary works_"[@wiki-pub-domain-sw].
 
-The Berne Convention Implementation Act of 1988 puts any original creative works under copyright after creation by default.
+In 1981, IBM introduced the "IBM PC" or "Personal Computer". Industry adoption was high, winnowing out the competition and capturing half of the market share by 1986.[@from-altair-to-ipad] Standardized hardware brought along the opportunity to standardize software. IBM hired Microsoft to write the operating system for their PC and they deliver MS-DOS in the same year. Other companies follow suit to create their own versions.
 
-The legislation gave rise to the development of proprietary software and helped it become a lucrative business opportunity from the early 1980s, causing the decline of the academic public domain software ecosystem[@unix-history].
+The legislation gave rise to the development of proprietary software, helping it to become a lucrative business opportunity. It resulted in commercial licenses promoting the creation of proprietary products, preventing users from copying, modifying or redistributing software, causing the decline of the academic public domain software ecosystem.[@unix-history;@roads-and-bridges]
 
-Richard Stallman, himself an academic and alarmed by the growing trend, founded the GNU Project, and with that, the free software movement. He wrote the first version of GNU General Public License in 1989 as a response, to encode public domain rights on software, relying "_on the enforceability of the copyright to be effective_"[@wiki-pub-domain-sw].
+By 1983, concern started rising among computer scientists "_about the closed and proprietary direction that software was taking_".[@roads-and-bridges] As a response, Richard Stallman, himself an academic and alarmed by the growing trend, launched the GNU Project, a free operating system, also inadvertently laying the foundation for the "free software movement".[@gnu-initial]
+
+In 1985, Stallman founded the Free Software Foundation to support the objectives of the "free software movement".[@gnu-initial]
+
+The Berne Convention Implementation Act of 1988[@wiki-berne;@wiki-berne1886] puts any original creative works under copyright after creation by default.
+
+As a response, Richard Stallman wrote the first version of GNU General Public License (the first and most widely known copyleft license) in 1989, to encode public domain rights on software, relying "_on the enforceability of the copyright to be effective_"[@wiki-pub-domain-sw].
 
 #### 1.5.2 What is copyleft?
 
-Also referred to as _reciprocal_ or _protective_ licensing. The derogatory adjectives "viral" or "infectious" are also used[@viral-licensing]. (See [Controversies] - TODO).
+Also referred to as _reciprocal_ or _protective_ licensing. The derogatory adjectives "viral" or "infectious" are also used[@viral-licensing]. (See [Controversies]).
 
 It is a form of licensing that retains the author's exclusive copyrights for works, but gives permission to recipients of the work to reproduce, change or distribute it, with the accompanying requirement that any resulting copies or adaptations are also bound by the same licensing agreement. "_In essence, copyleft grants freedom, but forbids others to forbid that freedom to anyone else along the distribution and modification chains._"[@copyleft-guide].(Hence the term "reciprocal".)
 
@@ -163,39 +171,7 @@ Interestingly, the Free Software Foundation has both "copyleft-weak" and "copyle
 
 ## 2 Approaches to software licensing
 
-### 2.1 Brief history of the software license landscape
 
-#### 1970s
-
-Computers are built from scratch by research organizations and custom software has to be written to operate them. "_Software was not yet standardized and was not considered to be a monetizable product._"[@roads-and-bridges]
-
-#### 1981
-
-IBM introduces the "IBM PC" or "Personal Computer". Industry adoption is high, winnowing out the competition and capturing half of the market share by 1986.[@from-altair-to-ipad]
-
-Standardized hardware brought along the opportunity to standardize software. IBM hires Microsoft to write the operating system for their PC and they deliver MS-DOS in the same year. Other companies follow suit.
-
-Turning software into business proves lucrative, resulting in commercial licenses promoting the creation of proprietary products, preventing users from copying, modifying or redistributing software.[@roads-and-bridges]
-
-#### 1983
-
-Concern rises among computer scientists "_about the closed and proprietary direction that software was taking_".[@roads-and-bridges] As a response, Richard Stallman launches GNU, a free operating system, also inadvertently laying the foundation for the "free software movement".[@gnu-initial]
-
-#### 1985
-
-Stallman founds the Free Software Foundation to support the objectives of the "free software movement".[@gnu-initial]
-
-#### 1992
-
-The growth of the World Wide Web gains momentum and becomes more widely available.
-
-#### 1996
-
-The commercialization of the web begins with great success and huge gains.
-
-#### 1998
-
-In a move unprecented at the time from a software company, Netscape releases the source code of its high market-share web browser. This event becomes the catalyst to a group of technologists, who have been advocating a more pragmatic approach to the Free Software Foundation's principles, to create the Open Source Initiative. The new organization's focus is to promulgate "_the practical benefits of free software_"[@roads-and-bridges] without "_the ideological and confrontational connotations of the term_"[@open-source-movement-wiki].
 
 ### 2.2 Proprietary licenses
 
@@ -233,6 +209,18 @@ The usage of the word "free" may be misleading because it both means "freedom" a
 In this context, the intended meaning was "freedom", as in "freedom of users".
 </div>
 
+### 2.1 Brief history of the software license landscape
+#### 1992
+
+The growth of the World Wide Web gains momentum and becomes more widely available.
+
+#### 1996
+
+The commercialization of the web begins with great success and huge gains.
+
+#### 1998
+
+In a move unprecented at the time from a software company, Netscape releases the source code of its high market-share web browser. This event becomes the catalyst to a group of technologists, who have been advocating a more pragmatic approach to the Free Software Foundation's principles, to create the Open Source Initiative. The new organization's focus is to promulgate "_the practical benefits of free software_"[@roads-and-bridges] without "_the ideological and confrontational connotations of the term_"[@open-source-movement-wiki].
 #### 2.3.1 Common ground
 
 Both **free software** and **open source software** do roughly mean the same:
