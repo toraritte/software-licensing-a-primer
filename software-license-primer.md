@@ -1,97 +1,67 @@
+<div id="disclaimer">
 **Disclaimer**: The materials available at this web site are for informational purposes only and not for the purpose of providing legal advice. You should contact your attorney to obtain advice with respect to any particular issue or problem.
+</div>
 
-## 0 Rationale for yet another write-up
+<div id="rationale">
+###### Rationale for yet another write-up
 
+There are many good resources, but most assume some basic familiarity with the topic and/or legal terms. I started out with reading the [Understanding Open Source and Free Software Licensing](http://www.oreilly.com/openbook/osfreesoft/) by Andrew M. St. Laurent (which is freely available by courtesy of O'Reilly's [Open Books Project](http://www.oreilly.com/openbook/)), and ended up with, at one point, ca. 120 open browser tabs. 
 
-## 1 Free[^footnote-word_free] and open source software
+If you find any inaccuracies or typos, feel that parts are opinionated, biased even, or have suggestions for improvement, please feel free to [contact me](https://github.com/toraritte), [add an issue](https://github.com/toraritte/software-licensing-primer/issues/new) or create a pull request.
 
-[^footnote-word_free]: The usage of the word "free" may be misleading because it both means "freedom" and "zero price". The problem is that English, unlike other languages, does not have a common adjective that unambiguously refers to freedom. French for example has "libre" for "freedom" and "gratuit" for "free of charge".[@gnu-philosophy-category]
+###### License
 
-    In this context, the intended meaning was "freedom", as in "freedom of users".
+<p xmlns:dct="http://purl.org/dc/terms/">
+  <a rel="license"
+     href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+  </a>
+  <br />
+  To the extent possible under law,
+  <a rel="dct:publisher"
+     href="https://github.com/toraritte">
+    <span property="dct:title">Attila Gulyas</span></a>
+  has waived all copyright and related or neighboring rights to
+  <span property="dct:title"> Software Licensing - A Primer</span>.
+</p>
+</div>
 
-### 1.1 Brief history
+## 1 Types of legal relationships between authors and their works
 
-#### 1970s
+<div class="footnote">
+###### Intellectual property
 
-Computers are built from scratch by research organizations and custom software has to be written to operate them. "_Software was not yet standardized and was not considered to be a monetizable product._"[@roads-and-bridges]
+The initial title has been "Approaches to intellectual property", but as it turns out, "_the term "intellectual property" is widely accepted and used by lawyers, the term also has a fascinating and controversial history_"[@eff-ip]. As Richard M. Stallman puts it, "_it has become fashionable to toss copyright, patents, and trademarks — three separate and different entities involving three separate and different sets of laws — plus a dozen other laws into one pot and call it “intellectual property”._"[@fsf-ip]
 
-#### 1981[@roads-and-bridges]
+Interestingly, the [United States Copyright Office](https://www.copyright.gov) barely mentions the term, even in their [circulars](https://www.copyright.gov/circs/).
+</div>
 
-IBM introduces the "IBM PC" or "Personal Computer". Industry adoption is high, winnowing out the competition and capturing half of the market share by 1986.[@from-altair-to-ipad]
+### 1.1 Why software licenses are necessary
 
-Standardized hardware brought along the opportunity to standardize software. IBM hires Microsoft to write the operating system for their PC and they deliver MS-DOS in the same year. Other companies follow suit.
-
-Turning software into business proves lucrative, resulting in commercial licenses promoting the creation of proprietary products, preventing users from copying, modifying or redistributing software.
-
-#### 1983
-
-Concern rises among computer scientists "_about the closed and proprietary direction that software was taking_".[@roads-and-bridges] As a response, Richard Stallman launches GNU, a free operating system, also inadvertently laying the foundation for the "free software movement".[@gnu-initial]
-
-#### 1985
-
-Stallman founds the Free Software Foundation to support the objectives of the "free software movement".[@gnu-initial]
-
-#### 1992
-
-The growth of the World Wide Web gains momentum and becomes more widely available.
-
-#### 1996
-
-The commercialization of the web begins with great success and huge gains.
-
-#### 1998
-
-In a move unprecented at the time from a software company, Netscape releases the source code of its high market-share web browser. This event becomes the catalyst to a group of technologists, who have been advocating a more pragmatic approach to the Free Software Foundation's principles, to create the Open Source Initiative. The new organization's focus is to promulgate "_the practical benefits of free software_"[@roads-and-bridges] without "_the ideological and confrontational connotations of the term_"[@open-source-movement-wiki]
-
-### 1.2 Open source versus free software
-
-#### 1.2.1 Common ground
-
-Both **free software** and **open source software** do roughly mean the same:
-
-  * According to the [Free Software Foundation](https://www.fsf.org/)'s summary, "_users have the freedom to run, copy, distribute, study, change and improve the software_"[@gnu-what-is-free-software].
-
-  * The Open Source Initiative defines it as "_software that can be freely accessed, used, changed, and shared (in modified or unmodified form) by anyone. Open source software is made by many people, and distributed under licenses that comply with the Open Source Definition[@osi-osd]._"[[@osi-faq] - [What is "Open Source" software?](https://opensource.org/faq#osd)]
-
-#### 1.2.2 Differences
-
-"_Open source is a development methodology; free software is a social movement._"[@gnu-os-misses] Although often discussed together, they are politically distinct: "free software" being more closely associated with ethics ("_essential respect for the users' freedom_"[@gnu-os-misses]) and "open source" with pragmatism (i.e., a practical, business-case approach to free software[@osi-history]).
-
-The groups' relationship towards free and proprietary software is one of the most defining difference:
-
-  * Members of the open source community are willing to coexist with the makers of proprietary software[@open-source-movement-wiki],[[@osi-faq] - [What is a "permissive" Open Source license?](https://opensource.org/faq#permissive)] and feel that the issue of whether software is open source is a matter of practicality[@osi-history]. One example is [tivoization](https://en.wikipedia.org/wiki/Tivoization).
-
-  * In contrast, members of the free software community maintain the vision that all software is a part of freedom of speech and that proprietary software is unethical and unjust, or even downright dangerous at times[@gnu-os-missses;@gnu-proprietary;@gnu-surveillence;@gnu-backdoor].
-
-The philosophical differences are also reflected in software licensing approaches: the open source community allows the use of licenses that permit developing proprietary (i.e., closed sourced) software. This is unacceptable to proponents of free software.
-
-Therefore, on the practical side, every existing free software would qualify as open source because the Open Source Initiative allows the more restrictive (or permissive, depending on the perspective) free software licenses, but not vice versa.
-
-## 2 Introduction to licenses
-
-### 2.1 Why software licenses are necessary
-
-"_Licenses are important tools for setting specific terms on which software may be used, modified, or distributed_" and they "_can be used to facilitate access to software as well as restrict it_".[@sci-programmer] Because the legal default for original works is exclusive copyright, potential users may become discouraged to use a specific piece of code without a license to avoid future litigations as they do not know which limitations owners may want to enforce.[@sci-programmer] 
+"_Licenses are important tools for setting specific terms on which software may be used, modified, or distributed_", and they "_can be used to facilitate access to software as well as restrict it_".[@sci-programmer] Because the legal default for original works is exclusive copyright, potential users may become discouraged to use a specific piece of code without a license to avoid future litigations as they do not know which limitations owners may want to enforce.[@sci-programmer] 
 
 Open collaboration also requires legal ground rules to be layed down because "_without a license, everybody who contributes to the project also becomes an exclusive copyright holder of their work. That means nobody can use, copy, distribute, or modify their contributions – and that “nobody” includes the author as well._"[@osg]
 
 Copyright holders therefore set formal permissions in the form of licenses, especially if they expect their code to be reused.
 
-### 2.2 Copyright
+### 1.2 Copyright
 
-Copyright grants the creator of an original work exclusive, but limited rights[^footnote-copyright_limits] for its use and distribution[@wiki-copyright;@oed-copyright;@cotton-copyleft] by default under the Berne Convention[@wiki-berne;@wiki-berne1886]. Authors therefore have complete authority and they have to explicitly permit any actions that would involve the use of their work.
+Copyright grants the creator of an original work exclusive, but limited rights for its use and distribution[@wiki-copyright;@oed-copyright;@cotton-copyleft] by default under the Berne Convention[@wiki-berne;@wiki-berne1886]. Authors therefore have complete authority and they have to explicitly permit any actions that would involve the use of their work.
 
-[^footnote-copyright_limits]: "_Copyright law does not protect the titles of books or movies, nor does it protect short phrases such as, “Make my day.” Copyright protection also doesn’t cover facts, ideas, or theories. These things are free for all to use without authorization._"[@public-domain-stim]
+The United States Copyright Office defines copyright as "_a form of protection provided by the laws of the United Statesto the authors of “original works of authorship” that are fixed in a tangible form of expression. An original work of authorship is a work that is independently created by a human author and possesses at least some minimal degree of creativity. A work is “fixed” when it is captured (either by or under the authority of an author) in a sufficiently permanent medium such that the work can be perceived, reproduced, or communicated for more than a short time.  Copyright protection in the United States exists automatically from the moment the original work of authorship is fixed._"[@usco-copyright] They quickly add in their [Copyright Basics](https://www.copyright.gov/circs/circ01.pdf) circular that "_the authoritative
+source for U.S. copyright law is the Copyright Act, codified in Title 17 of the United States Code_"[@usco-copyright], available to download [from their website](https://www.copyright.gov/title17/).
 
-### 2.3 License-free software
+As noted above, the rights provided by copyright are limited as it "_does not protect the titles of books or movies, nor does it protect short phrases such as, “Make my day.” Copyright protection also doesn’t cover facts, ideas, or theories. These things are free for all to use without authorization._"[@public-domain-stim] See the United States Copyright Office's [Works Not Protected by Copyright](https://www.copyright.gov/circs/circ33.pdf) for a full treatment on the topic.[@usco-copyright;@usco-limits]
 
-Some developers reject the necessity of software licenses altogether and therefore do not use licenses[@license-free] or put their work explicitly in the public domain[@put-public].
+### 1.3 License-free software
+
+Some developers reject the necessity of software licenses altogether and therefore do not use licenses[@license-free] (or they explicitly put their works in the public domain[@put-public]).
 
 License-free software is usually avoided because it is not explicitly in the public domain and the absence of a license makes the software fully copyright-protected according to the Berne Convention.
 
-### 2.4 Public domain software
+### 1.4 Public domain software
 
-Dedicating software to the public domain is somewhat better received. Works in the public domain are creative material that are not protected by copyright, trademark or patent laws and can be modified, distributed, or sold even without any attribution by anyone.[@wiki-pub-domain-sw;@wiki-pub-domain;@public-domain-stim] Legal ambiguities still exist however, especially when it comes to software, such as:
+Works in the public domain are creative material that are not protected by copyright, trademark or patent laws and can be modified, distributed, or sold even without any attribution by anyone.[@wiki-pub-domain-sw;@wiki-pub-domain;@public-domain-stim] Legal ambiguities still exist however, especially when it comes to software, such as:
 
   * **What is the legally accepted way to place software in the public domain?**
 
@@ -105,11 +75,11 @@ Dedicating software to the public domain is somewhat better received. Works in t
 
     The meaning of "public domain" also depends on jurisdiction[@quora-os-legal;@wiki-pub-domain] and licenses are necessary that emulate the public domain, such as CC0[@cc0], Unlicense[@unlicense] or WTFPL[@wtfpl].
 
-### 2.5 Copyleft
+### 1.5 Copyleft
 
 The most exhaustive resource on this topic is the continuously updated _Copyleft and the GNU General Public License: A Comprehensive Tutorial and Guide_[@copyleft-guide], but the following sections will attempt to give a quick summary.
 
-#### 2.5.1 History and rationale
+#### 1.5.1 History and rationale
 
 Since the emergence of computer science, developing and sharing programs was entirely in the public domain, mostly in academia and software was not copyrightable.
 
@@ -123,7 +93,7 @@ The legislation gave rise to the development of proprietary software and helped 
 
 Richard Stallman, himself an academic and alarmed by the growing trend, founded the GNU Project, and with that, the free software movement. He wrote the first version of GNU General Public License in 1989 as a response, to encode public domain rights on software, relying "_on the enforceability of the copyright to be effective_"[@wiki-pub-domain-sw].
 
-#### 2.5.2 What is copyleft?
+#### 1.5.2 What is copyleft?
 
 Also referred to as _reciprocal_ or _protective_ licensing. The derogatory adjectives "viral" or "infectious" are also used[@viral-licensing]. (See [Controversies] - TODO).
 
@@ -137,9 +107,9 @@ The stipulation that the "_information necessary for reproducing and modifying t
 
 The idea of copyleft can be also applied to works that are not software. These licenses are usually called share-alike, such as the [Creative Commons](https://creativecommons.org) licenses.
 
-#### 2.5.3 Types
+#### 1.5.3 Types
 
-##### 2.5.3.1 Strong and weak copyleft
+##### 1.5.3.1 Strong and weak copyleft
 
 "_“Strong vs. weak” copyleft is not a dichotomy, it’s a spectrum._"[@copyleft-guide] "_The strength of the copyleft governing a work is an expression of the extent that the copyleft provisions can be efficiently imposed on all kinds of derived[sic] works._"[@wiki-copyleft]
 
@@ -169,7 +139,7 @@ There are multiple ways to purposely weaken copyleft restrictions:
 
     https://julien.ponge.org/blog/mozilla-public-license-v2-a-good-middleground/
 
-##### 2.5.3.2 Full and partial copyleft
+##### 1.5.3.2 Full and partial copyleft
 
 This classification is used by some sources, but there is no authoritative source for their definitions by any of the well-established entities (for example, organization such as the [Free Software Foundation](https://www.fsf.org/), [Open Source Initiative](https://opensource.org/), [Mozilla Foundation](https://www.mozilla.org/en-US/foundation/), or licensing websites such as [choosealicense.com](https://choosealicense.com/), [TLDR-legal](https://tldrlegal.com/)).
 
@@ -177,7 +147,7 @@ Most of the definitions can be found in many places, but they are
 
   1. vague without examples, and using exact or minimally modified copies of each other (cf. [@wiki-copyleft], [[@free-world] - [page 34](https://books.google.com/books?id=WRAFJNMrSdkC&pg=PA34&lpg=PA34&dq=full+partial+copyleft&source=bl&ots=lg50hOJ0oe&sig=h8i3mjiEPmbazN7mV63v2z2tKs8&hl=en&sa=X&ved=0ahUKEwjWsLWf2ZHXAhVJ2GMKHVvCBK8Q6AEIfzAQ#v=onepage&q=full%20partial%20copyleft&f=false)], [[@marxwiki-copyleft] - [Full and partial copyleft](http://machines.plannedobsolescence.net/marxwiki/index.php?title=Copyleft#Full_and_partial_copyleft)], [@yourdict-copyleft], [@wikivis-copyleft], [@freedict-copyleft], [@pcmag-copyleft]).
 
-  2. indistinguishable in meaning from or bear close resemblance to weak/strong copyleft (cf. [@wiki-copleft;@fullmetal-copyleft] and other citations above).
+  2. indistinguishable in meaning from or bear close resemblance to weak/strong copyleft (cf. [@wiki-copyleft;@fullmetal-copyleft] and other citations above).
 
   3. describing the difference between conventional and "file-level"[[@mpl2] - [MPL 2.0 FAQ](https://www.mozilla.org/en-US/MPL/2.0/FAQ/)] (or "per-file"[@gnu-license-list]) copyleft[@gaz-copyleft].
 
@@ -191,7 +161,43 @@ The adjective "full" is never used by any of the aforementioned entities to desc
 
 Interestingly, the Free Software Foundation has both "copyleft-weak" and "copyleft-partial" as explicit categories in its [license description templates](https://directory.fsf.org/wiki/User:Jgay/license-categorization), but only the latter is used actively to categorize licenses traditionally referred to as "weak" copyleft licenses.
 
-### 2.6 Proprietary licenses
+## 2 Approaches to software licensing
+
+### 2.1 Brief history of the software license landscape
+
+#### 1970s
+
+Computers are built from scratch by research organizations and custom software has to be written to operate them. "_Software was not yet standardized and was not considered to be a monetizable product._"[@roads-and-bridges]
+
+#### 1981
+
+IBM introduces the "IBM PC" or "Personal Computer". Industry adoption is high, winnowing out the competition and capturing half of the market share by 1986.[@from-altair-to-ipad]
+
+Standardized hardware brought along the opportunity to standardize software. IBM hires Microsoft to write the operating system for their PC and they deliver MS-DOS in the same year. Other companies follow suit.
+
+Turning software into business proves lucrative, resulting in commercial licenses promoting the creation of proprietary products, preventing users from copying, modifying or redistributing software.[@roads-and-bridges]
+
+#### 1983
+
+Concern rises among computer scientists "_about the closed and proprietary direction that software was taking_".[@roads-and-bridges] As a response, Richard Stallman launches GNU, a free operating system, also inadvertently laying the foundation for the "free software movement".[@gnu-initial]
+
+#### 1985
+
+Stallman founds the Free Software Foundation to support the objectives of the "free software movement".[@gnu-initial]
+
+#### 1992
+
+The growth of the World Wide Web gains momentum and becomes more widely available.
+
+#### 1996
+
+The commercialization of the web begins with great success and huge gains.
+
+#### 1998
+
+In a move unprecented at the time from a software company, Netscape releases the source code of its high market-share web browser. This event becomes the catalyst to a group of technologists, who have been advocating a more pragmatic approach to the Free Software Foundation's principles, to create the Open Source Initiative. The new organization's focus is to promulgate "_the practical benefits of free software_"[@roads-and-bridges] without "_the ideological and confrontational connotations of the term_"[@open-source-movement-wiki].
+
+### 2.2 Proprietary licenses
 
 "_The primary purpose of a proprietary software license is to limit the use of software according to the rights owner's business strategy_"[@https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3406002/], generally distributed in binary form. They are typically very restrictive for end users as they disallow any action that is not specifically layed out in the license.
 
@@ -219,7 +225,37 @@ Examples of limitations:
     What is a derivative work according to the copyright owner?
     Is it allowed to use parts or the entire software in derivative works?
 
-###### 2.3.3.2 Open source licenses
+### 2.3 Open source versus free software
+
+<div class=footnote>
+The usage of the word "free" may be misleading because it both means "freedom" and "zero price". The problem is that English, unlike other languages, does not have a common adjective that unambiguously refers to freedom. French for example has "libre" for "freedom" and "gratuit" for "free of charge".[@gnu-philosophy-category]
+
+In this context, the intended meaning was "freedom", as in "freedom of users".
+</div>
+
+#### 2.3.1 Common ground
+
+Both **free software** and **open source software** do roughly mean the same:
+
+  * According to the [Free Software Foundation](https://www.fsf.org/)'s summary, "_users have the freedom to run, copy, distribute, study, change and improve the software_"[@gnu-what-is-free-software].
+
+  * The Open Source Initiative defines it as "_software that can be freely accessed, used, changed, and shared (in modified or unmodified form) by anyone. Open source software is made by many people, and distributed under licenses that comply with the Open Source Definition[@osi-osd]._"[[@osi-faq] - [What is "Open Source" software?](https://opensource.org/faq#osd)]
+
+#### 2.3.2 Differences
+
+"_Open source is a development methodology; free software is a social movement._"[@gnu-os-misses] Although often discussed together, they are politically distinct: "free software" being more closely associated with ethics ("_essential respect for the users' freedom_"[@gnu-os-misses]) and "open source" with pragmatism (i.e., a practical, business-case approach to free software)[@osi-history].
+
+The groups' relationship towards proprietary software is one of the most defining difference:
+
+  * Members of the open source community are willing to coexist with the makers of proprietary software[@open-source-movement-wiki],[[@osi-faq] - [What is a "permissive" Open Source license?](https://opensource.org/faq#permissive)] and feel that the issue of whether software is open source is a matter of practicality[@osi-history]. One example is [tivoization](https://en.wikipedia.org/wiki/Tivoization).
+
+  * In contrast, the free software community maintains the vision that all software is a part of freedom of speech and that proprietary software is unethical and unjust, or even downright dangerous at times[@gnu-os-misses;@gnu-proprietary;@gnu-surveillence;@gnu-backdoor].
+
+The philosophical differences are also reflected in software licensing approaches: the open source community allows the use of licenses that permit developing proprietary (i.e., closed sourced) software. This is unacceptable to proponents of free software.
+
+Therefore, on the practical side, every existing free software would qualify as open source because the Open Source Initiative allows the more restrictive (or permissive, depending on the perspective) free software licenses, but not vice versa.
+
+#### 2.3.3 Open source licenses
 
 Open source licenses are licenses that comply with the [Open Source Definition](https://opensource.org/osd) (i.e., they allow software to be freely used, modified, and shared), including non-copyleft licenses that allow proprietary derivative works[@https://opensource.org/faq#permissive]. (A reason why they are also called "permissive" licenses).
 
@@ -228,7 +264,7 @@ As the defintion of open source software is an extension of [the four essential 
 The Open Source Initiative maintains the list of approved licenses:
 <https://opensource.org/licenses>
 
-###### 2.3.3.3 Free software licenses
+#### 2.3.4 Free software licenses
 
 Free software licenses are licenses that comply with the [definition of free software](https://www.gnu.org/philosophy/free-sw.html). (TODO: glossary?) The Free Software Foundation's Licensing and Compliance Lab maintains an annotated and categorized list of licenses that can be found at <https://www.gnu.org/licenses/license-list.en.html>.
 
