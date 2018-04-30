@@ -4,7 +4,7 @@ A primer that I wrote for a proposal, but mainly to myself to get a better under
 
 Feel free to submit a pull request, if you find any typos or untrue statements, disagree with phrasing or have any suggestions for improvement.
 
-The document uses [Pandoc's markdown](https://pandoc.org/MANUAL.html) format, but I was trying to keep to the standards. The [build script](dependencies/build-github-page) always has the lates commands to generate the HTML output.
+The document uses [Pandoc's markdown](https://pandoc.org/MANUAL.html) format, but I was trying to keep to the standards. The [build script](dependencies/build-github-page) always has the latest commands to generate the HTML output.
 
 [`./dependencies`](dependencies/) holds files that the [build script](dependencies/build-github-page) uses in its arguments to build the [projects Github page](https://toraritte.github.io/software-licensing-primer/).
 
