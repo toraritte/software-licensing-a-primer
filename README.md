@@ -18,8 +18,8 @@ The document uses [Pandoc's markdown](https://pandoc.org/MANUAL.html) format, bu
   <br />
   To the extent possible under law,
   <a rel="dct:publisher"
-     href="https://github.com/toraritte">
-    <span property="dct:title">Attila Gulyas</span></a>
-  has waived all copyright and related or neighboring rights to
+     href="https://toraritte.github.io/software-licensing-a-primer/#authors">
+    <span property="dct:title">authors</span></a>
+  have waived all copyright and related or neighboring rights to
   <span property="dct:title"> Software Licensing - A Primer</span>.
 </p>

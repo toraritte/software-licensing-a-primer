@@ -25,7 +25,7 @@ Please also feel free to browse the [issues](https://github.com/toraritte/softwa
   <br />
   To the extent possible under law,
   <a rel="dct:publisher"
-     href="https://toraritte.github.io/software-licensing-a-primer#authors">
+     href="https://toraritte.github.io/software-licensing-a-primer/#authors">
     <span property="dct:title">authors</span></a>
   have waived all copyright and related or neighboring rights to
   <span property="dct:title"> Software Licensing - A Primer</span>.
