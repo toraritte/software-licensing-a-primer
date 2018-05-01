@@ -6,6 +6,7 @@ cd "$(dirname "$0")"
 # Update `meta.yaml` with current date when building takes place
 last_updated=`date '+%B %d, %Y at %X %Z'`
 sed "s/last-updated/$last_updated/" meta.yaml.template > meta.yaml
+
 # I found the biblatex style the most straight-forward in contrast with
 # the messy standard pandoc citation style messy, therefore using a .bib
 # file to keep the bibliography, but using a Zotero csl to format it. The

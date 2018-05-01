@@ -3,15 +3,19 @@
 </div>
 
 <div id="rationale">
-###### Rationale for yet another write-up
+### Rationale for yet another write-up
 
 There are many good resources, but most assume some basic familiarity with the topic and/or legal terms. I started out with reading the [Understanding Open Source and Free Software Licensing](http://www.oreilly.com/openbook/osfreesoft/) by Andrew M. St. Laurent (which is freely available by courtesy of O'Reilly's [Open Books Project](http://www.oreilly.com/openbook/)), and ended up with, at one point, ca. 120 open browser tabs. 
 
 If you find any inaccuracies or typos, feel that parts are opinionated, biased even, or have suggestions for improvement, please feel free to [contact me](https://github.com/toraritte), [add an issue](https://github.com/toraritte/software-licensing-primer/issues/new) or create a pull request.
 
-Please also feel free to browse [issues](https://github.com/toraritte/software-licensing-primer/issues) and submit a pull request, but make sure that you agree with putting your work in the public domain by adding your name to the list of authors.
+Please also feel free to browse the [issues](https://github.com/toraritte/software-licensing-primer/issues) and submit a pull request, but make sure that you agree with putting your contribution(s) in the public domain (see license below) by adding your name to the list of authors.
 
-###### License
+### Authors
+
+[Attila Gulyas](https://github.com/toraritte), 
+
+### License
 
 <p xmlns:dct="http://purl.org/dc/terms/">
   <a rel="license"
@@ -21,7 +25,7 @@ Please also feel free to browse [issues](https://github.com/toraritte/software-l
   <br />
   To the extent possible under law,
   <a rel="dct:publisher"
-     href="https://github.com/toraritte">
+     href="https://toraritte.github.io/software-licensing-a-primer#authors">
     <span property="dct:title">authors</span></a>
   have waived all copyright and related or neighboring rights to
   <span property="dct:title"> Software Licensing - A Primer</span>.
