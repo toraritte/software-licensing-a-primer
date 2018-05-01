@@ -9,6 +9,8 @@ There are many good resources, but most assume some basic familiarity with the t
 
 If you find any inaccuracies or typos, feel that parts are opinionated, biased even, or have suggestions for improvement, please feel free to [contact me](https://github.com/toraritte), [add an issue](https://github.com/toraritte/software-licensing-primer/issues/new) or create a pull request.
 
+Please also feel free to browse [issues](https://github.com/toraritte/software-licensing-primer/issues) and submit a pull request, but make sure that you agree with putting your work in the public domain by adding your name to the list of authors.
+
 ###### License
 
 <p xmlns:dct="http://purl.org/dc/terms/">
@@ -20,13 +22,13 @@ If you find any inaccuracies or typos, feel that parts are opinionated, biased e
   To the extent possible under law,
   <a rel="dct:publisher"
      href="https://github.com/toraritte">
-    <span property="dct:title">Attila Gulyas</span></a>
-  has waived all copyright and related or neighboring rights to
+    <span property="dct:title">authors</span></a>
+  have waived all copyright and related or neighboring rights to
   <span property="dct:title"> Software Licensing - A Primer</span>.
 </p>
 </div>
 
-## 1 Types of legal relationships between authors and their works
+## 1 Types of legal relationships between software authors and their works
 
 <div class="footnote">
 ###### Intellectual property
@@ -93,7 +95,7 @@ In 1981, IBM introduced the "IBM PC" or "Personal Computer". Industry adoption w
 
 The legislation gave rise to the development of proprietary software, helping it to become a lucrative business opportunity. It resulted in commercial licenses promoting the creation of proprietary products, preventing users from copying, modifying or redistributing software, causing the decline of the academic public domain software ecosystem.[@unix-history;@roads-and-bridges]
 
-By 1983, concern started rising among computer scientists "_about the closed and proprietary direction that software was taking_".[@roads-and-bridges] As a response, Richard Stallman, himself an academic and alarmed by the growing trend, launched the GNU Project, a free operating system, also inadvertently laying the foundation for the "free software movement".[@gnu-initial]
+By 1983, concern started rising among computer scientists "_about the closed and proprietary direction that software was taking_"[@roads-and-bridges]. As a response, Richard Stallman, himself an academic and alarmed by the growing trend, launched the GNU Project, a free operating system, also inadvertently laying the foundation for the "free software movement".[@gnu-initial]
 
 In 1985, Stallman founded the Free Software Foundation to support the objectives of the "free software movement".[@gnu-initial]
 
@@ -156,65 +158,85 @@ There are multiple ways to purposely weaken copyleft restrictions:
 
 ##### 1.5.3.2 Full and partial copyleft
 
-This classification is used by some sources, but there is no authoritative source for their definitions by any of the well-established entities (for example, organization such as the [Free Software Foundation](https://www.fsf.org/), [Open Source Initiative](https://opensource.org/), [Mozilla Foundation](https://www.mozilla.org/en-US/foundation/), or licensing websites such as [choosealicense.com](https://choosealicense.com/), [TLDR-legal](https://tldrlegal.com/)).
+This classification is used by some sources, but there is no authoritative source for their definitions by any of the well-established entities (for example, organizations such as the [Free Software Foundation](https://www.fsf.org/), [Open Source Initiative](https://opensource.org/), [Mozilla Foundation](https://www.mozilla.org/en-US/foundation/), or licensing websites such as [choosealicense.com](https://choosealicense.com/), [TLDR-legal](https://tldrlegal.com/)).
 
 Most of the definitions can be found in many places, but they are
 
-  1. vague without examples, and using exact or minimally modified copies of each other (cf. [@wiki-copyleft], [[@free-world] - [page 34](https://books.google.com/books?id=WRAFJNMrSdkC&pg=PA34&lpg=PA34&dq=full+partial+copyleft&source=bl&ots=lg50hOJ0oe&sig=h8i3mjiEPmbazN7mV63v2z2tKs8&hl=en&sa=X&ved=0ahUKEwjWsLWf2ZHXAhVJ2GMKHVvCBK8Q6AEIfzAQ#v=onepage&q=full%20partial%20copyleft&f=false)], [[@marxwiki-copyleft] - [Full and partial copyleft](http://machines.plannedobsolescence.net/marxwiki/index.php?title=Copyleft#Full_and_partial_copyleft)], [@yourdict-copyleft], [@wikivis-copyleft], [@freedict-copyleft], [@pcmag-copyleft]).
+  1. vague without examples, and using exact or minimally modified copies of each other (cf. [@wiki-copyleft], [[@free-world] - [page 34](https://books.google.com/books?id=WRAFJNMrSdkC&pg=PA34&lpg=PA34&dq=full+partial+copyleft&source=bl&ots=lg50hOJ0oe&sig=h8i3mjiEPmbazN7mV63v2z2tKs8&hl=en&sa=X&ved=0ahUKEwjWsLWf2ZHXAhVJ2GMKHVvCBK8Q6AEIfzAQ#v=onepage&q=full%20partial%20copyleft&f=false)], [[@marxwiki-copyleft] - [Full and partial copyleft](http://machines.plannedobsolescence.net/marxwiki/index.php?title=Copyleft#Full_and_partial_copyleft)], [@yourdict-copyleft], [@wikivis-copyleft], [@freedict-copyleft], [@pcmag-copyleft]),
 
-  2. indistinguishable in meaning from or bear close resemblance to weak/strong copyleft (cf. [@wiki-copyleft;@fullmetal-copyleft] and other citations above).
+  2. indistinguishable in meaning from or bear close resemblance to weak/strong copyleft (cf. [@fullmetal-copyleft] and other citations above),
 
   3. describing the difference between conventional and "file-level"[[@mpl2] - [MPL 2.0 FAQ](https://www.mozilla.org/en-US/MPL/2.0/FAQ/)] (or "per-file"[@gnu-license-list]) copyleft[@gaz-copyleft].
+  <br>
+  <br>
+  This category sounds the most plausible, but none of the cited sources bring [_Common Development and Distribution License (CDDL)_](https://opensource.org/licenses/CDDL-1.0) or [_Mozilla Public License_](https://www.mozilla.org/en-US/MPL/2.0/) as an example, even though they fit the bill perfectly. The Software Freedom Law Center's report[@sflc-cddl] comes closest in supporting this theory as it uses both ["strong" and "partial" to describe CDDL's copyleft properties](https://www.softwarefreedom.org/resources/2016/linux-kernel-cddl.html#cddl).
 
-    This category sounds the most plausible, but none of the cited sources bring [_Common Development and Distribution License (CDDL)_](https://opensource.org/licenses/CDDL-1.0) or [_Mozilla Public License_](https://www.mozilla.org/en-US/MPL/2.0/) as an example, even though they fit the bill perfectly.
+The adjective "full" is never used by any of the aforementioned entities to describe copyleft licenses<sup>FOOTNOTE</sup> and "partial" is used as a synonym to "weak" copyleft (with the exception of The Software Freedom Law Center's report[@sflc-cddl]). Cf. [@oss-licensing;@docracy;@openoffice-move], [[@intro-to-tech-computing] - [page 276](https://books.google.com/books?id=isTBDAAAQBAJ&pg=PA276&lpg=PA276&dq=gnu+partial+copyleft&source=bl&ots=w4PESycpiK&sig=Hsb4A5DAlUVGMOyFoCJIA-8rmxk&hl=en&sa=X&ved=0ahUKEwjd_eWL5JHXAhUP-GMKHW6CCOEQ6AEIgwEwEA#v=onepage&q=gnu%20partial%20copyleft&f=false)].
 
-    The Software Freedom Law Center's report[@sflc-cddl] comes closest in supporting this theory as it uses both ["strong" and "partial" to describe CDDL's copyleft properties](https://www.softwarefreedom.org/resources/2016/linux-kernel-cddl.html#cddl).
-
-The adjective "full" is never used by any of the aforementioned entities to describe copyleft licenses[^footnote-osi_cat] and "partial" is used as a synonym to "weak" copyleft (with the exception of [@sflc-cddl]). Cf. [@oss-licensing;@docracy;@openoffice-move], [[@intro-to-tech-computing] - [page 276](https://books.google.com/books?id=isTBDAAAQBAJ&pg=PA276&lpg=PA276&dq=gnu+partial+copyleft&source=bl&ots=w4PESycpiK&sig=Hsb4A5DAlUVGMOyFoCJIA-8rmxk&hl=en&sa=X&ved=0ahUKEwjd_eWL5JHXAhUP-GMKHW6CCOEQ6AEIgwEwEA#v=onepage&q=gnu%20partial%20copyleft&f=false)].
-
-[^footnote-osi_cat]: The Open Source Initiative goes further because it does not even use "weak" or "strong" to categorize copyleft licenses.
+<div class="footnote">
+FOOTNOTE The Open Source Initiative goes further because it does not even use "weak" or "strong" to categorize copyleft licenses.
+</div>
 
 Interestingly, the Free Software Foundation has both "copyleft-weak" and "copyleft-partial" as explicit categories in its [license description templates](https://directory.fsf.org/wiki/User:Jgay/license-categorization), but only the latter is used actively to categorize licenses traditionally referred to as "weak" copyleft licenses.
 
 ## 2 Approaches to software licensing
 
+### 2.1 Proprietary software
 
-
-### 2.2 Proprietary licenses
-
-"_The primary purpose of a proprietary software license is to limit the use of software according to the rights owner's business strategy_"[@https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3406002/], generally distributed in binary form. They are typically very restrictive for end users as they disallow any action that is not specifically layed out in the license.
+Proprietary programs use copyright licenses exclusively. "_The primary purpose of a proprietary software license is to limit the use of software according to the rights owner's business strategy_"[@sci-programmer], generally distributed in binary form. They are typically very restrictive for end users as they disallow any action that is not specifically layed out in the license.
 
 Examples of limitations:
 
-  * deployment
+  * Deployment
 
-    How many times can a software be installed?
-    How many devices can it be installed?
-    Are simultaneous installations allowed?
+      * How many times can a software be installed?
+      * How many devices can it be installed?
+      * Are simultaneous installations allowed?
 
-  * use
+  * Use
 
-    What are the exact purposes that the software can be used for?
-    Are other users allowed to use a specific installation?
-    How can the functionality of the software be extended?
+      * What are the exact purposes that the software can be used for?
+      * Are other users allowed to use a specific installation?
+      * How can the functionality of the software be extended?
 
-  * distribution
+  * Distribution
 
-    What counts as (re-)distribution?
-    Is it allowed at all?
+      * What counts as (re-)distribution?
+      * Is it allowed at all?
 
-  * derivative works
+  * Derivative works
 
-    What is a derivative work according to the copyright owner?
-    Is it allowed to use parts or the entire software in derivative works?
+      * What is a derivative work according to the copyright owner?
+      * Is it allowed to use parts or the entire software in derivative works?
 
-### 2.3 Open source versus free software
+### 2.2 Free software licenses
 
-<div class=footnote>
-The usage of the word "free" may be misleading because it both means "freedom" and "zero price". The problem is that English, unlike other languages, does not have a common adjective that unambiguously refers to freedom. French for example has "libre" for "freedom" and "gratuit" for "free of charge".[@gnu-philosophy-category]
+As mentioned in section [1.5.1 Historical background], Richard Stallman eventually founded the Free Software Foundation in 1985, as a response to the rising concern among academic circles "_about the closed and proprietary direction that software was taking_"[@roads-and-bridges]. In 1988, the GNU General Public License, the first free software license, is published.
+
+Free software licenses are the ones that comply with the [definition of free software](https://www.gnu.org/philosophy/free-sw.html):
+
+>A program is free software if the program's users have the four essential freedoms: [[1](https://www.gnu.org/philosophy/free-sw.html#f1)]
+>
+>  * The freedom to run the program as you wish, for any purpose (**freedom 0**).
+>
+>  * The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.
+>
+>  * The freedom to redistribute copies so you can help others (freedom 2).
+>
+>  * The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.
+The Free Software Foundation's Licensing and Compliance Lab maintains an annotated and categorized list of licenses that can be found at <https://www.gnu.org/licenses/license-list.en.html>.
+
+Free software tend to be using [copyleft](#glossary) licenses to keep propagating the same freedoms down the line but it is a misconception to think that all copyleft licenses are also automatically qualify as free software licenses (see [Sybase Open Watcom Public License version 1.0](https://www.gnu.org/licenses/license-list.en.html#Watcom)).
+
+The most prominent examples are the versions of the GNU General Public License[^footnote-gpl_v3].
+
+[^footnote-gpl_v3]: The latest version is the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). For an extensive legal analysis is also available by the Software Freedom Law Center[@https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html] or see the de facto guide [@https://copyleft.org/guide/].
+
+### 2.2 Open source software and free software
+
+The usage of the word "free" in "free software" may be misleading because it both means "freedom" and "zero price". The problem is that English, unlike other languages, does not have a common adjective that unambiguously refers to freedom. French for example has "libre" for "freedom" and "gratuit" for "free of charge".[@gnu-philosophy-category]
 
 In this context, the intended meaning was "freedom", as in "freedom of users".
-</div>
 
 ### 2.1 Brief history of the software license landscape
 #### 1992
@@ -258,16 +280,6 @@ As the defintion of open source software is an extension of [the four essential 
 
 The Open Source Initiative maintains the list of approved licenses:
 <https://opensource.org/licenses>
-
-#### 2.3.4 Free software licenses
-
-Free software licenses are licenses that comply with the [definition of free software](https://www.gnu.org/philosophy/free-sw.html). (TODO: glossary?) The Free Software Foundation's Licensing and Compliance Lab maintains an annotated and categorized list of licenses that can be found at <https://www.gnu.org/licenses/license-list.en.html>.
-
-Free software tend to be using [copyleft](#glossary) licenses to keep propagating the same freedoms down the line but it is a misconception to think that all copyleft licenses are also automatically qualify as free software licenses (see [Sybase Open Watcom Public License version 1.0](https://www.gnu.org/licenses/license-list.en.html#Watcom)).
-
-The most prominent examples are the versions of the GNU General Public License[^footnote-gpl_v3].
-
-[^footnote-gpl_v3]: The latest version is the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). For an extensive legal analysis is also available by the Software Freedom Law Center[@https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html] or see the de facto guide [@https://copyleft.org/guide/].
 
 ###### Controversial licensing practices
 ##### Compliance
