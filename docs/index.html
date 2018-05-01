@@ -78,7 +78,7 @@ margin-right: 30%;
 <header>
 <h1 class="title">Software Licensing - A Primer</h1>
 <p class="subtitle">An introduction and reference to software licenses</p>
-<p class="date">April 30, 2018 at 22:28:54 PDT</p>
+<p class="date">April 30, 2018 at 23:47:52 PDT</p>
 </header>
 <nav id="TOC">
 <ul>
@@ -90,11 +90,13 @@ margin-right: 30%;
 <li><a href="#copyleft">1.5 Copyleft</a></li>
 </ul></li>
 <li><a href="#approaches-to-software-licensing">2 Approaches to software licensing</a><ul>
-<li><a href="#proprietary-software">2.1 Proprietary software</a></li>
+<li><a href="#proprietary-software-licenses">2.1 Proprietary software licenses</a></li>
 <li><a href="#free-software-licenses">2.2 Free software licenses</a></li>
-<li><a href="#open-source-software-and-free-software">2.2 Open source software and free software</a></li>
-<li><a href="#brief-history-of-the-software-license-landscape">2.1 Brief history of the software license landscape</a></li>
+<li><a href="#open-source-licenses">2.3 Open source licenses</a></li>
+<li><a href="#open-source-versus-free-software">2.4 Open source versus free software</a></li>
 </ul></li>
+<li><a href="#somewhat-finished-sections">(Somewhat finished sections)</a></li>
+<li><a href="#notes-without-any-structure">(Notes without any structure)</a></li>
 </ul>
 </nav>
 <div id="disclaimer">
@@ -153,7 +155,7 @@ margin-right: 30%;
 <p>The Berne Convention Implementation Act of 1988<span class="citation" data-cites="wiki-berne wiki-berne1886">[<a href="#ref-wiki-berne">8</a>], [<a href="#ref-wiki-berne1886">9</a>]</span> puts any original creative works under copyright after creation by default.</p>
 <p>As a response, Richard Stallman wrote the first version of GNU General Public License (the first and most widely known copyleft license) in 1989, to encode public domain rights on software, relying “<em>on the enforceability of the copyright to be effective</em>”<span class="citation" data-cites="wiki-pub-domain-sw">[<a href="#ref-wiki-pub-domain-sw">15</a>]</span>.</p>
 <h4 id="what-is-copyleft">1.5.2 What is copyleft?</h4>
-<p>Also referred to as <em>reciprocal</em> or <em>protective</em> licensing. The derogatory adjectives “viral” or “infectious” are also used<span class="citation" data-cites="viral-licensing">[<a href="#ref-viral-licensing">32</a>]</span>. (See <a href="#controversies">Controversies</a>).</p>
+<p>Also referred to as <em>reciprocal</em> or <em>protective</em> licensing. The derogatory adjectives “viral” or “infectious” are also used<span class="citation" data-cites="viral-licensing">[<a href="#ref-viral-licensing">32</a>]</span>. (See [Controversies]).</p>
 <p>It is a form of licensing that retains the author’s exclusive copyrights for works, but gives permission to recipients of the work to reproduce, change or distribute it, with the accompanying requirement that any resulting copies or adaptations are also bound by the same licensing agreement. “<em>In essence, copyleft grants freedom, but forbids others to forbid that freedom to anyone else along the distribution and modification chains.</em>”<span class="citation" data-cites="copyleft-guide">[<a href="#ref-copyleft-guide">19</a>]</span>.(Hence the term “reciprocal”.)</p>
 <p>Copyleft software intentionally shares properties with public domain software and by requiring the same copyleft license downstream is an attempt to close one of its loopholes: “<em>any nontrivial modification made to the [public domain] work is fully copyrightable</em>”, ergo “<em>over time, some entities will choose to proprietarize their modified versions</em>” with little “<em>incentive to contribute back to the commons</em>”, until “<em>almost no interesting work is left in the public domain, because nearly all new work is done by proprietarization.</em>”<span class="citation" data-cites="copyleft-guide">[<a href="#ref-copyleft-guide">19</a>]</span>.</p>
 <p>“<em>Copyleft uses functional parts of the copyright system to achieve an unusual result (legal protection for free sharing)</em>”<span class="citation" data-cites="copyleft-guide">[<a href="#ref-copyleft-guide">19</a>]</span>. It modifies copyright law, which is usually employed to strengthen the rights of authors or publishers by prohibiting “<em>recipients from reproducing, adapting, or distributing copies of their work</em>”<span class="citation" data-cites="wiki-copyleft">[<a href="#ref-wiki-copyleft">33</a>]</span>, to strengthen instead the rights of users. This reversal is reflected in its name as a wordplay on “copyright”.</p>
@@ -166,7 +168,7 @@ margin-right: 30%;
 <p>The stronger the license, the more it will seek to ensure that the same license will cover every version of derivative works, making them subject to its requirements.<span class="citation" data-cites="copyleft-guide">[<a href="#ref-copyleft-guide">19</a>]</span> Practically this means that the corresponding source code has to be made available to licensees. The ideological goal is to ensure the propagations of the software freedoms for each user.</p>
 <p>Usually larger end user programs, which cannot be used further as a component, opt in using such strong licenses to prevent turning them into proprietary products<sup>FOOTNOTE</sup>.</p>
 <div class="footnote">
-<p>[FOOTNOTE] This is not a rule though and strong copyleft licenses are known to be abused by the industry. See <a href="#controversies">Controversies</a>.</p>
+<p>[FOOTNOTE] This is not a rule though and strong copyleft licenses are known to be abused by the industry. See [Controversies].</p>
 </div>
 <p>As the “copyleft” gets weaker, the license starts to introduce “trade offs” such as allowing cases of derivative works that are permitted to use another license and/or keeping parts of the source closed in order to foster wider adoption, but still try to hold on to most of copyleft’s principles.<span class="citation" data-cites="wiki-copyleft copyleft-guide">[<a href="#ref-copyleft-guide">19</a>], [<a href="#ref-wiki-copyleft">33</a>]</span></p>
 <p>The most well-known example for this seemingly counter-intuitive rationale is the history of the <strong>GNU Lesser General Public License (GNU LGPL)</strong> and “glibc”, the GNU project’s implementation of the C standard library. It was created to provide a common alternative to the world of proliferating proprietary implementations that had limited functionality, sometimes specific only to certain vendors. If it had used a stronger license (such as the GPL), any software created with it would have to be shipped with the same license, thus providing their source code would have been necessary to avoid violation of the license’s terms. “<em>The de-facto standard for the C library on GNU/Linux would likely be not glibc</em>”<span class="citation" data-cites="copyleft-guide">[<a href="#ref-copyleft-guide">19</a>]</span>, a free software, but probably the most popular proprietary one that allows developers to create proprietary software.</p>
@@ -193,13 +195,13 @@ margin-right: 30%;
 <li><p>indistinguishable in meaning from or bear close resemblance to weak/strong copyleft (cf. <span class="citation" data-cites="fullmetal-copyleft">[<a href="#ref-fullmetal-copyleft">44</a>]</span> and other citations above),</p></li>
 <li><p>describing the difference between conventional and “file-level”[<span class="citation" data-cites="mpl2">[<a href="#ref-mpl2">36</a>]</span> - <a href="https://www.mozilla.org/en-US/MPL/2.0/FAQ/">MPL 2.0 FAQ</a>] (or “per-file”<span class="citation" data-cites="gnu-license-list">[<a href="#ref-gnu-license-list">45</a>]</span>) copyleft<span class="citation" data-cites="gaz-copyleft">[<a href="#ref-gaz-copyleft">46</a>]</span>. <br> <br> This category sounds the most plausible, but none of the cited sources bring <a href="https://opensource.org/licenses/CDDL-1.0"><em>Common Development and Distribution License (CDDL)</em></a> or <a href="https://www.mozilla.org/en-US/MPL/2.0/"><em>Mozilla Public License</em></a> as an example, even though they fit the bill perfectly. The Software Freedom Law Center’s report<span class="citation" data-cites="sflc-cddl">[<a href="#ref-sflc-cddl">47</a>]</span> comes closest in supporting this theory as it uses both <a href="https://www.softwarefreedom.org/resources/2016/linux-kernel-cddl.html#cddl">“strong” and “partial” to describe CDDL’s copyleft properties</a>.</p></li>
 </ol>
-<p>The adjective “full” is never used by any of the aforementioned entities to describe copyleft licenses<sup>FOOTNOTE</sup> and “partial” is used as a synonym to “weak” copyleft (with the exception of The Software Freedom Law Center’s report<span class="citation" data-cites="sflc-cddl">[<a href="#ref-sflc-cddl">47</a>]</span>). Cf. <span class="citation" data-cites="oss-licensing docracy openoffice-move">[<a href="#ref-oss-licensing">48</a>]–[<a href="#ref-openoffice-move">50</a>]</span>, [<span class="citation" data-cites="intro-to-tech-computing">[<a href="#ref-intro-to-tech-computing">51</a>]</span> - <a href="https://books.google.com/books?id=isTBDAAAQBAJ&amp;pg=PA276&amp;lpg=PA276&amp;dq=gnu+partial+copyleft&amp;source=bl&amp;ots=w4PESycpiK&amp;sig=Hsb4A5DAlUVGMOyFoCJIA-8rmxk&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjd_eWL5JHXAhUP-GMKHW6CCOEQ6AEIgwEwEA#v=onepage&amp;q=gnu%20partial%20copyleft&amp;f=false">page 276</a>].</p>
+<p>The adjective “full” is never used by any of the aforementioned entities to describe copyleft licenses<sup>FOOTNOTE</sup> and “partial” is used as a synonym to “weak” copyleft (with the exception of the Software Freedom Law Center’s report<span class="citation" data-cites="sflc-cddl">[<a href="#ref-sflc-cddl">47</a>]</span>). Cf. <span class="citation" data-cites="oss-licensing docracy openoffice-move">[<a href="#ref-oss-licensing">48</a>]–[<a href="#ref-openoffice-move">50</a>]</span>, [<span class="citation" data-cites="intro-to-tech-computing">[<a href="#ref-intro-to-tech-computing">51</a>]</span> - <a href="https://books.google.com/books?id=isTBDAAAQBAJ&amp;pg=PA276&amp;lpg=PA276&amp;dq=gnu+partial+copyleft&amp;source=bl&amp;ots=w4PESycpiK&amp;sig=Hsb4A5DAlUVGMOyFoCJIA-8rmxk&amp;hl=en&amp;sa=X&amp;ved=0ahUKEwjd_eWL5JHXAhUP-GMKHW6CCOEQ6AEIgwEwEA#v=onepage&amp;q=gnu%20partial%20copyleft&amp;f=false">page 276</a>].</p>
 <div class="footnote">
 <p>FOOTNOTE The Open Source Initiative goes further because it does not even use “weak” or “strong” to categorize copyleft licenses.</p>
 </div>
 <p>Interestingly, the Free Software Foundation has both “copyleft-weak” and “copyleft-partial” as explicit categories in its <a href="https://directory.fsf.org/wiki/User:Jgay/license-categorization">license description templates</a>, but only the latter is used actively to categorize licenses traditionally referred to as “weak” copyleft licenses.</p>
 <h2 id="approaches-to-software-licensing">2 Approaches to software licensing</h2>
-<h3 id="proprietary-software">2.1 Proprietary software</h3>
+<h3 id="proprietary-software-licenses">2.1 Proprietary software licenses</h3>
 <p>Proprietary programs use copyright licenses exclusively. “<em>The primary purpose of a proprietary software license is to limit the use of software according to the rights owner’s business strategy</em>”<span class="citation" data-cites="sci-programmer">[<a href="#ref-sci-programmer">3</a>]</span>, generally distributed in binary form. They are typically very restrictive for end users as they disallow any action that is not specifically layed out in the license.</p>
 <p>Examples of limitations:</p>
 <ul>
@@ -227,143 +229,477 @@ margin-right: 30%;
 </ul></li>
 </ul>
 <h3 id="free-software-licenses">2.2 Free software licenses</h3>
-<p>As mentioned in section <a href="#historical-background">1.5.1 Historical background</a>, Richard Stallman eventually founded the Free Software Foundation in 1985, as a response to the rising concern among academic circles “<em>about the closed and proprietary direction that software was taking</em>”<span class="citation" data-cites="roads-and-bridges">[<a href="#ref-roads-and-bridges">25</a>]</span>. In 1988, the GNU General Public License, the first free software license, is published.</p>
-<p>Free software licenses are the ones that comply with the <a href="https://www.gnu.org/philosophy/free-sw.html">definition of free software</a>:</p>
+<p>The usage of the word “free” in “free software” may be misleading because it both means “freedom” and “zero price”. The problem is that English, unlike other languages, does not have a common adjective that unambiguously refers to freedom. French for example has “libre” for “freedom” and “gratuit” for “free of charge”.<span class="citation" data-cites="gnu-philosophy-category">[<a href="#ref-gnu-philosophy-category">35</a>]</span></p>
+<p>In this context, the intended meaning was “freedom”, as in “freedom of users”.</p>
+<h4 id="history">2.2.1 History</h4>
+<p>As mentioned in section <a href="#historical-background">1.5.1 Historical background</a>, Richard Stallman eventually founded the Free Software Foundation in 1985, as a response to the rising concern among academic circles “<em>about the closed and proprietary direction that software was taking</em>”<span class="citation" data-cites="roads-and-bridges">[<a href="#ref-roads-and-bridges">25</a>]</span>. In 1989, the GNU General Public License, the first free software license, is published.</p>
+<h4 id="description">2.2.2 Description</h4>
+<p>Free software licenses are the ones that comply with the <a href="https://www.gnu.org/philosophy/free-sw.html">definition of free software</a><span class="citation" data-cites="gnu-what-is-free-software">[<a href="#ref-gnu-what-is-free-software">52</a>]</span>:</p>
 <blockquote>
 <p>A program is free software if the program’s users have the four essential freedoms: [<a href="https://www.gnu.org/philosophy/free-sw.html#f1">1</a>]</p>
 <ul>
 <li><p>The freedom to run the program as you wish, for any purpose (<strong>freedom 0</strong>).</p></li>
-<li><p>The freedom to study how the program works, and change it so it does your computing as you wish (freedom 1). Access to the source code is a precondition for this.</p></li>
-<li><p>The freedom to redistribute copies so you can help others (freedom 2).</p></li>
-<li><p>The freedom to distribute copies of your modified versions to others (freedom 3). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this. The Free Software Foundation’s Licensing and Compliance Lab maintains an annotated and categorized list of licenses that can be found at <a href="https://www.gnu.org/licenses/license-list.en.html" class="uri">https://www.gnu.org/licenses/license-list.en.html</a>.</p></li>
+<li><p>The freedom to study how the program works, and change it so it does your computing as you wish (<strong>freedom 1</strong>). Access to the source code is a precondition for this.</p></li>
+<li><p>The freedom to redistribute copies so you can help others (<strong>freedom 2</strong>).</p></li>
+<li><p>The freedom to distribute copies of your modified versions to others (<strong>freedom 3</strong>). By doing this you can give the whole community a chance to benefit from your changes. Access to the source code is a precondition for this.</p></li>
 </ul>
 </blockquote>
-<p>Free software tend to be using <a href="#glossary">copyleft</a> licenses to keep propagating the same freedoms down the line but it is a misconception to think that all copyleft licenses are also automatically qualify as free software licenses (see <a href="https://www.gnu.org/licenses/license-list.en.html#Watcom">Sybase Open Watcom Public License version 1.0</a>).</p>
-<p>The most prominent examples are the versions of the GNU General Public License<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
-<h3 id="open-source-software-and-free-software">2.2 Open source software and free software</h3>
-<p>The usage of the word “free” in “free software” may be misleading because it both means “freedom” and “zero price”. The problem is that English, unlike other languages, does not have a common adjective that unambiguously refers to freedom. French for example has “libre” for “freedom” and “gratuit” for “free of charge”.<span class="citation" data-cites="gnu-philosophy-category">[<a href="#ref-gnu-philosophy-category">35</a>]</span></p>
-<p>In this context, the intended meaning was “freedom”, as in “freedom of users”.</p>
-<h3 id="brief-history-of-the-software-license-landscape">2.1 Brief history of the software license landscape</h3>
-<h4 id="section">1992</h4>
-<p>The growth of the World Wide Web gains momentum and becomes more widely available.</p>
-<h4 id="section-1">1996</h4>
-<p>The commercialization of the web begins with great success and huge gains.</p>
-<h4 id="section-2">1998</h4>
-<p>In a move unprecented at the time from a software company, Netscape releases the source code of its high market-share web browser. This event becomes the catalyst to a group of technologists, who have been advocating a more pragmatic approach to the Free Software Foundation’s principles, to create the Open Source Initiative. The new organization’s focus is to promulgate “<em>the practical benefits of free software</em>”<span class="citation" data-cites="roads-and-bridges">[<a href="#ref-roads-and-bridges">25</a>]</span> without “<em>the ideological and confrontational connotations of the term</em>”<span class="citation" data-cites="open-source-movement-wiki">[<a href="#ref-open-source-movement-wiki">52</a>]</span>. #### 2.3.1 Common ground</p>
+<p>Free software tend to be copyleft licenses to keep propagating the same freedoms down the line, but it is a misconception to think that all copyleft licenses are also automatically qualify as free software licenses (e.g., <a href="https://www.gnu.org/licenses/license-list.en.html#Watcom">Sybase Open Watcom Public License version 1.0</a>) or that copyright ones won’t (one exception is the <a href="https://www.gnu.org/licenses/license-list.en.html#StandardMLofNJ">Standard ML of New Jersey Copyright License</a>).</p>
+<p>The Free Software Foundation’s Licensing and Compliance Lab maintains an annotated and categorized list of licenses that can be found at <a href="https://www.gnu.org/licenses/license-list.en.html" class="uri">https://www.gnu.org/licenses/license-list.en.html</a>. It also lists the license’s compatibility to versions of the GNU General Public Licenses, that are the progressive, legal embodiment of the free software movement’s governing philosophies.</p>
+<p>To date, the latest version is the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License v3.0</a>. An <a href="https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html">extensive legal analysis is also available by the Software Freedom Law Center</a><span class="citation" data-cites="sflc-gpl2">[<a href="#ref-sflc-gpl2">53</a>]</span> or see the de facto <a href="https://copyleft.org/guide/">copyleft guide</a><span class="citation" data-cites="copyleft-guide">[<a href="#ref-copyleft-guide">19</a>]</span>.</p>
+<h3 id="open-source-licenses">2.3 Open source licenses</h3>
+<h4 id="history-1">2.3.1 History</h4>
+<p>To recapitulate the last mentioned events of our historical timeline, the Free Software Foundation (FSF) is founded and their license (GNU GPL) is published in 1989. By the time the World Wide Web gains momentum and become more widely available around 1992, FSF has already publishes the second version of the GNU GPL. The race to commercialize the web begins with huge gains.<span class="citation" data-cites="roads-and-bridges">[<a href="#ref-roads-and-bridges">25</a>]</span></p>
+<p>In 1998, in a move unprecented at the time from a software company, Netscape releases the source code of its high market-share web browser. This event becomes the catalyst to a group of technologists, who have been advocating a more pragmatic approach to the Free Software Foundation’s principles, to create the <strong>Open Source Initiative</strong>. The new organization’s focus is to promulgate “<em>the practical benefits of free software</em>”<span class="citation" data-cites="roads-and-bridges">[<a href="#ref-roads-and-bridges">25</a>]</span> without “<em>the ideological and confrontational connotations of the term</em>”<span class="citation" data-cites="open-source-movement-wiki">[<a href="#ref-open-source-movement-wiki">54</a>]</span>.</p>
+<h4 id="description-1">2.3.2 Description</h4>
+<p>Open source licenses are licenses that comply with the <a href="https://opensource.org/osd">Open Source Definition</a><span class="citation" data-cites="osi-osd">[<a href="#ref-osi-osd">55</a>]</span>, <a href="https://opensource.org/faq#permissive">including non-copyleft licenses that allow proprietary derivative works</a>. (A reason why they are also called “permissive” licenses).</p>
+<p>As the defintion of open source software is an extension of <a href="https://www.gnu.org/philosophy/free-sw.html">the four essential freedoms of the Free Software Definition</a>, all copyleft licenses are also open source licenses.</p>
+<p>The list of approved licenses is maintained by the Open Source Initiative that can be found at <a href="https://opensource.org/licenses" class="uri">https://opensource.org/licenses</a>.</p>
+<h3 id="open-source-versus-free-software">2.4 Open source versus free software</h3>
+<h4 id="common-ground">2.4.1 Common ground</h4>
 <p>Both <strong>free software</strong> and <strong>open source software</strong> do roughly mean the same:</p>
 <ul>
-<li><p>According to the <a href="https://www.fsf.org/">Free Software Foundation</a>’s summary, “<em>users have the freedom to run, copy, distribute, study, change and improve the software</em>”<span class="citation" data-cites="gnu-what-is-free-software">[<a href="#ref-gnu-what-is-free-software">53</a>]</span>.</p></li>
-<li><p>The Open Source Initiative defines it as “<em>software that can be freely accessed, used, changed, and shared (in modified or unmodified form) by anyone. Open source software is made by many people, and distributed under licenses that comply with the Open Source Definition<span class="citation" data-cites="osi-osd">[<a href="#ref-osi-osd">54</a>]</span>.</em>”[<span class="citation" data-cites="osi-faq">[<a href="#ref-osi-faq">55</a>]</span> - <a href="https://opensource.org/faq#osd">What is “Open Source” software?</a>]</p></li>
+<li><p>According to the <a href="https://www.fsf.org/">Free Software Foundation</a>’s summary, “<em>users have the freedom to run, copy, distribute, study, change and improve the software</em>”<span class="citation" data-cites="gnu-what-is-free-software">[<a href="#ref-gnu-what-is-free-software">52</a>]</span>.</p></li>
+<li><p>The Open Source Initiative defines it as “<em>software that can be freely accessed, used, changed, and shared (in modified or unmodified form) by anyone. Open source software is made by many people, and distributed under licenses that comply with the Open Source Definition<span class="citation" data-cites="osi-osd">[<a href="#ref-osi-osd">55</a>]</span>.</em>”[<span class="citation" data-cites="osi-faq">[<a href="#ref-osi-faq">56</a>]</span> - <a href="https://opensource.org/faq#osd">What is “Open Source” software?</a>]</p></li>
 </ul>
-<h4 id="differences">2.3.2 Differences</h4>
-<p>“<em>Open source is a development methodology; free software is a social movement.</em>”<span class="citation" data-cites="gnu-os-misses">[<a href="#ref-gnu-os-misses">56</a>]</span> Although often discussed together, they are politically distinct: “free software” being more closely associated with ethics (“<em>essential respect for the users’ freedom</em>”<span class="citation" data-cites="gnu-os-misses">[<a href="#ref-gnu-os-misses">56</a>]</span>) and “open source” with pragmatism (i.e., a practical, business-case approach to free software)<span class="citation" data-cites="osi-history">[<a href="#ref-osi-history">57</a>]</span>.</p>
+<h4 id="differences">2.4.2 Differences</h4>
+<p>“<em>Open source is a development methodology; free software is a social movement.</em>”<span class="citation" data-cites="gnu-os-misses">[<a href="#ref-gnu-os-misses">57</a>]</span> Although often discussed together, they are politically distinct: “free software” being more closely associated with ethics (“<em>essential respect for the users’ freedom</em>”<span class="citation" data-cites="gnu-os-misses">[<a href="#ref-gnu-os-misses">57</a>]</span>) and “open source” with pragmatism (i.e., a practical, business-case approach to free software)<span class="citation" data-cites="osi-history">[<a href="#ref-osi-history">58</a>]</span>.</p>
 <p>The groups’ relationship towards proprietary software is one of the most defining difference:</p>
 <ul>
-<li><p>Members of the open source community are willing to coexist with the makers of proprietary software<span class="citation" data-cites="open-source-movement-wiki">[<a href="#ref-open-source-movement-wiki">52</a>]</span>,[<span class="citation" data-cites="osi-faq">[<a href="#ref-osi-faq">55</a>]</span> - <a href="https://opensource.org/faq#permissive">What is a “permissive” Open Source license?</a>] and feel that the issue of whether software is open source is a matter of practicality<span class="citation" data-cites="osi-history">[<a href="#ref-osi-history">57</a>]</span>. One example is <a href="https://en.wikipedia.org/wiki/Tivoization">tivoization</a>.</p></li>
-<li><p>In contrast, the free software community maintains the vision that all software is a part of freedom of speech and that proprietary software is unethical and unjust, or even downright dangerous at times<span class="citation" data-cites="gnu-os-misses gnu-proprietary gnu-surveillence gnu-backdoor">[<a href="#ref-gnu-os-misses">56</a>], [<a href="#ref-gnu-proprietary">58</a>]–[<a href="#ref-gnu-backdoor">60</a>]</span>.</p></li>
+<li><p>Members of the open source community are willing to coexist with the makers of proprietary software<span class="citation" data-cites="open-source-movement-wiki">[<a href="#ref-open-source-movement-wiki">54</a>]</span>,[<span class="citation" data-cites="osi-faq">[<a href="#ref-osi-faq">56</a>]</span> - <a href="https://opensource.org/faq#permissive">What is a “permissive” Open Source license?</a>] and feel that the issue of whether software is open source is a matter of practicality<span class="citation" data-cites="osi-history">[<a href="#ref-osi-history">58</a>]</span>. One example is <a href="https://en.wikipedia.org/wiki/Tivoization">tivoization</a>.</p></li>
+<li><p>In contrast, the free software community maintains the vision that all software is a part of freedom of speech and that proprietary software is unethical and unjust, or even downright dangerous at times<span class="citation" data-cites="gnu-os-misses gnu-proprietary gnu-surveillence gnu-backdoor">[<a href="#ref-gnu-os-misses">57</a>], [<a href="#ref-gnu-proprietary">59</a>]–[<a href="#ref-gnu-backdoor">61</a>]</span>.</p></li>
 </ul>
 <p>The philosophical differences are also reflected in software licensing approaches: the open source community allows the use of licenses that permit developing proprietary (i.e., closed sourced) software. This is unacceptable to proponents of free software.</p>
 <p>Therefore, on the practical side, every existing free software would qualify as open source because the Open Source Initiative allows the more restrictive (or permissive, depending on the perspective) free software licenses, but not vice versa.</p>
-<h4 id="open-source-licenses">2.3.3 Open source licenses</h4>
-<p>Open source licenses are licenses that comply with the <a href="https://opensource.org/osd">Open Source Definition</a> (i.e., they allow software to be freely used, modified, and shared), including non-copyleft licenses that allow proprietary derivative works<span class="citation" data-cites="https://opensource.org/faq#permissive"><span class="citeproc-not-found" data-reference-id="https://opensource.org/faq#permissive"><strong>???</strong></span></span>. (A reason why they are also called “permissive” licenses).</p>
-<p>As the defintion of open source software is an extension of <a href="https://www.gnu.org/philosophy/free-sw.html">the four essential freedoms of the Free Software Definition</a>, all copyleft licenses are also open source licenses.</p>
-<p>The Open Source Initiative maintains the list of approved licenses: <a href="https://opensource.org/licenses" class="uri">https://opensource.org/licenses</a></p>
-<h6 id="controversial-licensing-practices">Controversial licensing practices</h6>
-<h5 id="compliance">Compliance</h5>
-<h6 id="compatibility">compatibility</h6>
-<h6 id="section-3">?</h6>
-<h5 id="choosing-a-license">2.3.3.4 Choosing a license</h5>
-<p>Choosing a license depends on many factors, such as use cases (e.g., end user product, software module), adopting entities (e.g., company, group of hobby developers), project goals (e.g., commercial product, free or for fee services).<span class="citation" data-cites="https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21"><span class="citeproc-not-found" data-reference-id="https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21"><strong>???</strong></span>,<span class="citation" data-cites="https://softwareengineering.stackexchange.com/questions/107883/agpl-what-you-can-do-and-what-you-cant">@https://softwareengineering.stackexchange.com/questions/107883/agpl-what-you-can-do-and-what-you-cant</span>,<span class="citation" data-cites="https://news.ycombinator.com/item?id">@https://news.ycombinator.com/item?id</span>=1273231,<span class="citation" data-cites="roads-and-bridges">@roads-and-bridges</span></span></p>
-<h4 id="factors-to-consider-before-adoption">2.5.4 Factors to consider before adoption</h4>
-<ul>
-<li><p><strong>Cost</strong></p>
-<p>Proprietary software is always more expensive because a company has to pay for development, distribution, support, legal fees etc.</p>
-<p>On the contrary, open source code can be obtained free of charge but all sources agree that there are hidden costs (if not about their extent).<span class="citation" data-cites="https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider https://jaxenter.com/think-open-source-software-free-think-131436.html https://crowdsourcedtesting.com/resources/pros-cons-open-source-software http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider http://entrepreneurhandbook.co.uk/open-source-software https://crowdsourcedtesting.com/resources/pros-cons-open-source-software roads-and-bridges"><span class="citeproc-not-found" data-reference-id="https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider"><strong>???</strong></span>/, <span class="citeproc-not-found" data-reference-id="https://jaxenter.com/think-open-source-software-free-think-131436.html"><strong>???</strong></span>, <span class="citeproc-not-found" data-reference-id="https://crowdsourcedtesting.com/resources/pros-cons-open-source-software"><strong>???</strong></span>/, <span class="citeproc-not-found" data-reference-id="http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software"><strong>???</strong></span>, <span class="citeproc-not-found" data-reference-id="https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider"><strong>???</strong></span>/, <span class="citeproc-not-found" data-reference-id="http://entrepreneurhandbook.co.uk/open-source-software"><strong>???</strong></span>/, <span class="citeproc-not-found" data-reference-id="https://crowdsourcedtesting.com/resources/pros-cons-open-source-software"><strong>???</strong></span>/, [<a href="#ref-roads-and-bridges">25</a>]</span> and the next items expand on the nature of these. Their categorization into pros and cons is not straightforward because it depends on the scope of the adopting organization and the parties involved making their case.</p></li>
-<li><p><strong>Risk of abandonment of dependent projects.</strong></p>
-<p>The argument stems from the fear of the decentralized open source workflow and that project governance is unclear in many cases.</p>
-<p>On the other hand this fear is also valid regarding proprietary software: companies phase out older products or functionality (sometimes without any notice) regardless of users relying on them (e.g., subsequent iterations of Microsoft products routinely defy assumptions based on previous versions) and even profiting from offering additional transitional support.</p></li>
-<li><p><strong>Support and ongoing maintenance</strong></p>
-<p>Commercial proprietary products are traditionally shipped with guaranteed support whereas open source is perceived to lack this level of care<span class="citation" data-cites="http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software"><span class="citeproc-not-found" data-reference-id="http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software"><strong>???</strong></span></span>. This may be due to the fact that it is not stated explicitly in every project but is an intrinsic part of open source culture:</p>
-<ul>
-<li><p>documentation is kept up to date</p></li>
-<li><p>communities around a project have mailing lists, chat rooms, meet-ups set up (even regular office hours specified!<span class="citation" data-cites="https://make.wordpress.org/community/handbook/wordcamp-organizer/planning-details/gpl-primer"><span class="citeproc-not-found" data-reference-id="https://make.wordpress.org/community/handbook/wordcamp-organizer/planning-details/gpl-primer"><strong>???</strong></span>/</span></p></li>
-<li><p>sites dedicated to answering questions of almost any nature, such as Stackoverflow or Quora</p></li>
-<li><p>issues and feature requests can be directly opened on the project’s source code repository (e.g., on Github)</p></li>
-<li><p>as a last resort, the source code is always available</p></li>
-</ul>
-<p>Open source companies also offer commercial support as part of their business model.</p></li>
-</ul>
-<p>Commercial support for proprietary software on the other hand can be so poor that another company needs to be hired for deployment and for ongoing operations. The worst case scenario is that local staff takes up the mantle even though they had no role in development and have little ability to do anything else other than coming up with workarounds by trial and error as the implementation details are not known.<span class="citation" data-cites="osmovement">[<a href="#ref-osmovement">61</a>]</span></p>
-<pre><code>This brings up the issue of control:</code></pre>
-<ul>
-<li><p><strong>Control</strong></p>
-<p>Proprietary vendors have iron grip over the software’s functionality and future evolution. Monopolies eliminate any upstart innovators, effectively locking the organizations into a platform with the ability to demand any price.</p>
-<p>Open source’s alluring promise is to return control. over the tools one would like to use and how one would like to use them.</p>
-<p>Examples to the former are alternatives to proprietary software such as Control over the choice of tools one would like to use:</p>
-<ul>
-<li><p>OpenOffice instead of Microsoft Office</p></li>
-<li><p>Linux, BSD or other open source operating systems instead of Microsoft Windows or Apple Mac OS X<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p></li>
-<li><p>FreeSWITCH instead of Avaya IP Office</p></li>
-</ul>
-<p>Control over how one would like to use these tools:</p>
-<ul>
-<li><p>Restrictions of proprietary software licenses are able to limit any aspect of a program (such as JAWS, Raiser’s Edge, EyeCare, Microsoft Office): the number of times a software can be installed, the number of computers it can be present simultaneously, the number of database records, the date until it can be used and so on.</p>
-<p>Alternatives, such as NVDA, CiviCRM, OpenERM, OpenOffice etc. do not have these restrictions.</p></li>
-<li><p>Avaya IP Office phone system only allows certain functionality in combination with specific hardware (and even then it is not guaranteed).</p>
-<p>FreeSWITCH may be compiled on any commodity hardware and can be extended programmatically or by community modules.</p></li>
-</ul>
-<p>Control over one’s own data because by the lack of regulations, users’ have little authority over what should happen to their voluntarily supplied information to large corporations<span class="citation" data-cites="https://www.economist.com/news/leaders/21721656-data-economy-demands-new-approach-antitrust-rules-worlds-most-valuable-resource"><span class="citeproc-not-found" data-reference-id="https://www.economist.com/news/leaders/21721656-data-economy-demands-new-approach-antitrust-rules-worlds-most-valuable-resource"><strong>???</strong></span></span>. Open Stack is one solution to create a private or public cloud on any available hardware.</p></li>
-</ul>
-<ul>
-<li><p><strong>Standards and tools</strong></p>
-<p>Ever since the business opportunity of selling software has been recognized, companies have been creating programs to solve a specific problem (networking, data management, etc.) with the intent of successful commercial distribution. Many times the problem domains have been complex enough to develop a proprietary standard solution and patent it, leading the way to reinvent the wheel over and over. Overall secrecy made it difficult to prove the superiority of one product over the other and typically the corporation with the most resources and/or better marketing campaign prevailed.</p>
-<p>Adopting organizations still require long periods of deliberation before purchasing any proprietary software suite because:</p>
-<ul>
-<li><p>The rigidness of the tools would require adjusting organizational processes and workflows (i.e., serving the tool instead of the other way around)</p></li>
-<li><p>It would lock them in in the long haul. Reasons include:</p>
-<ul>
-<li><p>information is stored in a proprietary format</p></li>
-<li><p>no interoperation with other vendor’s products</p></li>
-<li><p>accumulated experience would not translate to other similar solutions requiring re-training and/or new hires</p></li>
-</ul></li>
-</ul>
-<p>With the emergence of the free and the open source movement large-scale collaboration on <em>open standards</em> became the norm. Proprietary software could still be built upon them but many went down the open source path. Of course this led to the proliferation of tools but now one had a choice even if in the end a proprietary product ended up being use. Open standards also incentivized corporations to get involved as more and more customers started to trust the new process of laying down the foundations of a new technology in the open.</p></li>
-<li><p><strong>Qualified labor</strong></p>
-<p>Proprietary software usually has one setup for each use case (because many times they are tied to a specific proprietary hardware) that makes life easier but this ease comes with the aforementioned costs. Vendors usually sell trainings and certifications for individuals and/or they provide support services to help operations. Such specialization comes with high prices and limits the mobility of the workforce (i.e., seek opportunitites only at companies with the same equipment or setup).</p>
-<p>The learning curve of open source is steeper but becoming versed in its ways may yield many advantages:</p>
-<ul>
-<li><p>Individuals get a reusable set of skills and a more holistic view of how principles from multiple fields can be tied together.</p>
-<p>Specialization to proprietary systems is easier using this path because companies use their own obfuscated terminology based on marketing buzzwords whereas the underlying principles have their standard terminology rooted in (academic) research. Open standards used the latter as clarity is crucial in wide-spread adoption.</p></li>
-<li><p>Organizations lay down a foundation for future flexibility and continuous improvement.</p>
-<p>Open source has a vibrant community based around popular and well documented programming languages and frameworks with their own support support networks sharing the same infrastructure (e.g., Github, Stackoverflow, Slack). Switches between <em>technology stacks</em> are common and seamless because the underlying tools are the same and/or based on similar principles.</p>
-<p>Adopted tools can also be further specialized/improved and these modifications can be contributed back to the larger community.</p></li>
-<li><p>Wide-spread availability promotes easy entry for anyone interested</p></li>
-<li><p>Most people working on open source projects are characterized mostly by enthusiasm<span class="citation" data-cites="https://ocw.mit.edu/courses/sloan-school-of-management/15-352-managing-innovation-emerging-trends-spring-2005/readings/lakhaniwolf.pdf"><span class="citeproc-not-found" data-reference-id="https://ocw.mit.edu/courses/sloan-school-of-management/15-352-managing-innovation-emerging-trends-spring-2005/readings/lakhaniwolf.pdf"><strong>???</strong></span></span></p></li>
-</ul></li>
-<li><p><strong>Security</strong></p>
-<p>Proponents of open source believe in <a href="https://en.wikipedia.org/wiki/Linus%27s_Law">Linus’ Law</a><span class="citation" data-cites="bazaar">[<a href="#ref-bazaar">62</a>]</span>: open source project are more widely available to the publicand more eyes mean higher chances to discover a (security) bug.</p></li>
-</ul>
-<p>Although this statement has not been proved by any major research and it relies on questionable assumptions.<span class="citation" data-cites="http://www.zdnet.com/article/six-open-source-security-myths-debunked-and-eight-real-challenges-to-consider"><span class="citeproc-not-found" data-reference-id="http://www.zdnet.com/article/six-open-source-security-myths-debunked-and-eight-real-challenges-to-consider"><strong>???</strong></span>/</span> The most widely publicized open source vulnerability was the OpenSSL Heartbleed bug<span class="citation" data-cites="http://heartbleed.com"><span class="citeproc-not-found" data-reference-id="http://heartbleed.com"><strong>???</strong></span>/</span> but the causes leading up to it are more complex than a simple oversight.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>. Security issues tend to be disclosed almost as soon as they are discovered though, as opposed to proprietary bugs.</p>
-<ul>
-<li><p><strong>Compliance requirements</strong></p>
-<p>Software compliance means to keep track of all the copyright notices and licenses, and oblige to their requirements. Compliance tracking is also important to document the software supply chain (e.g. to be able to produce a Bill of Materials on request) and to respond quickly to a newly disclosed security vulnerability (i.e., to know which parts are affected, if any).</p>
-<p>From a software development standpoint, large corporations have advantage as they usually own all of the source code. Even if they incorporate open source projects in their closed source product(s), they have the legal apparatus to tip the scale to their favour should it come to a legal dispute over license ambiguities. Therefore in the case of proprietary software, the burden of compliance falls to the users, especially if the products are going to be used in a commercial setting.</p>
-<p>With open source software the users are the clear winners because they have complete freedom on how to use the products and they only have to satisfy license obligations if they are planning on commercial re-distribution of the (modified) works or if they would like to create a proprietary product from open source projects.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a></p></li>
-</ul>
-<h4 id="commercial-applicability">2.3.5 Commercial applicability</h4>
-<h5 id="controversies">controversies</h5>
-<h5 id="commercial-versus-proprietary-software">2.3.5.1 Commercial versus proprietary software</h5>
-<p>It is worth emphasizing:</p>
-<blockquote>
-<p>“Commercial” and “proprietary” are not the same! Commercial software is software developed by a business as part of its business. Most commercial software is proprietary, but there is commercial free software, and there is noncommercial nonfree software.</p>
-<p>For example, GNU Ada<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> is developed by a company. It is always distributed under the terms of the GNU GPL, and every copy is free software; but its developers sell support contracts. When their salesmen speak to prospective customers, sometimes the customers say, “We would feel safer with a commercial compiler.” The salesmen reply, “GNU Ada is a commercial compiler; it happens to be free software.”<span class="citation" data-cites="GNU"><span class="citeproc-not-found" data-reference-id="GNU"><strong>???</strong></span>’s “Categories of free and nonfree software” https://www.gnu.org/philosophy/categories.en.html#commercialSoftware</span></p>
-</blockquote>
-<h5 id="freeopen-source-software-versus-commercial-software">2.3.5.2 Free/open source software versus commercial software</h5>
-<p>Commercial software is not the antonym of free and open source software, proprietary software is. Misunderstandings stem from conflicting uses of the adjectives <em>commercial</em> and <em>proprietary</em>.<span class="citation" data-cites="http://peerproduction.net/issues/issue-1/peer-reviewed-papers/why-free-software-is-not-the-antonym-of-commercial-software"><span class="citeproc-not-found" data-reference-id="http://peerproduction.net/issues/issue-1/peer-reviewed-papers/why-free-software-is-not-the-antonym-of-commercial-software"><strong>???</strong></span>/</span></p>
-<p>Software licensed under an open source (or even under a more strict free software) license can be sold for a price or licensed for a fee just like any other product.<span class="citation" data-cites="https://blog.codecentric.de/en/2012/05/using-gpl-licensed-components-in-proprietary-projects"><span class="citeproc-not-found" data-reference-id="https://blog.codecentric.de/en/2012/05/using-gpl-licensed-components-in-proprietary-projects"><strong>???</strong></span>/,<span class="citation" data-cites="https://www.gnu.org/licenses/gpl-faq#DoesTheGPLAllowMoney">@https://www.gnu.org/licenses/gpl-faq#DoesTheGPLAllowMoney</span>,</span></p>
-<h5 id="business-models-for-open-source-software">2.3.5.3 Business models for open source software</h5>
-<h5 id="controversies-1">2.3.5.2.3 Controversies</h5>
-<p>It can be especially hard if one would like to choose an open source license for a commercial project as some of them are historically abused for unethical business practices<span class="citation" data-cites="http://www.dr-chuck.com/csev-blog/2014/09/how-to-achieve-vendor-lock-in-with-a-legit-open-source-license-affero-gpl http://www.davewentzel.com/content/open-source-licensing"><span class="citeproc-not-found" data-reference-id="http://www.dr-chuck.com/csev-blog/2014/09/how-to-achieve-vendor-lock-in-with-a-legit-open-source-license-affero-gpl"><strong>???</strong></span>/, <span class="citeproc-not-found" data-reference-id="http://www.davewentzel.com/content/open-source-licensing"><strong>???</strong></span></span> and some have pejorative connotations associated with them by negative campaigns at the time when open source practices where perceived as a threat by corporations (e.g., adjectives “viral” and “infectious” used for copyleft licenses<span class="citation" data-cites="https://en.wikipedia.org/wiki/Viral_license"><span class="citeproc-not-found" data-reference-id="https://en.wikipedia.org/wiki/Viral_license"><strong>???</strong></span></span>).</p>
+<h2 id="somewhat-finished-sections">(Somewhat finished sections)</h2>
+<pre><code>###### Controversial licensing practices
+##### Compliance
+###### compatibility
+###### ?
+##### 2.3.3.4 Choosing a license
+
+Choosing a license depends on many factors, such as use cases (e.g., end user product, software module), adopting entities (e.g., company, group of hobby developers), project goals (e.g., commercial product, free or for fee services).[@https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21,@https://softwareengineering.stackexchange.com/questions/107883/agpl-what-you-can-do-and-what-you-cant,@https://news.ycombinator.com/item?id=1273231,@roads-and-bridges]
+
+#### 2.5.4 Factors to consider before adoption
+
+  * **Cost**
+
+    Proprietary software is always more expensive because a company has to pay for development, distribution, support, legal fees etc.
+
+    On the contrary, open source code can be obtained free of charge but all sources agree that there are hidden costs (if not about their extent).[@https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider/;@https://jaxenter.com/think-open-source-software-free-think-131436.html;@https://crowdsourcedtesting.com/resources/pros-cons-open-source-software/;@http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software;@https://www.americanexpress.com/us/small-business/openforum/articles/the-open-source-conundrum-3-benefits-and-drawbacks-to-consider/;@http://entrepreneurhandbook.co.uk/open-source-software/;@https://crowdsourcedtesting.com/resources/pros-cons-open-source-software/;@roads-and-bridges,@osmovement] and the next items expand on the nature of these. Their categorization into pros and cons is not straightforward because it depends on the scope of the adopting organization and the parties involved making their case.
+
+  * **Risk of abandonment of dependent projects.**
+
+    The argument stems from the fear of the decentralized open source workflow and that project governance is unclear in many cases.
+
+    On the other hand this fear is also valid regarding proprietary software: companies phase out older products or functionality (sometimes without any notice) regardless of users relying on them (e.g., subsequent iterations of Microsoft products routinely defy assumptions based on previous versions) and even profiting from offering additional transitional support.
+
+  * **Support and ongoing maintenance**
+
+    Commercial proprietary products are traditionally shipped with guaranteed support whereas open source is perceived to lack this level of care[@http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software]. This may be due to the fact that it is not stated explicitly in every project but is an intrinsic part of open source culture:
+
+    * documentation is kept up to date
+
+    * communities around a project have mailing lists, chat rooms, meet-ups set up (even regular office hours specified![@https://make.wordpress.org/community/handbook/wordcamp-organizer/planning-details/gpl-primer/]
+
+    * sites dedicated to answering questions of almost any nature, such as Stackoverflow or Quora
+
+    * issues and feature requests can be directly opened on the project's source code repository (e.g., on Github)
+
+    * as a last resort, the source code is always available
+
+    Open source companies also offer commercial support as part of their business model.
+
+  Commercial support for proprietary software on the other hand can be so poor that another company needs to be hired for deployment and for ongoing operations. The worst case scenario is that local staff takes up the mantle even though they had no role in development and have little ability to do anything else other than coming up with workarounds by trial and error as the implementation details are not known.[@osmovement]
+
+    This brings up the issue of control:
+
+  * **Control**
+
+    Proprietary vendors have iron grip over the software's functionality and future evolution. Monopolies eliminate any upstart innovators, effectively locking the organizations into a platform with the ability to demand any price.
+
+    Open source's alluring promise is to return control.
+    over the tools one would like to use and how one would like to use them.
+
+    Examples to the former are alternatives to proprietary software such as
+    Control over the choice of tools one would like to use:
+
+      * OpenOffice instead of Microsoft Office
+
+      * Linux, BSD or other open source operating systems instead of Microsoft Windows or Apple Mac OS X[^footnote-macosx_open]
+
+      * FreeSWITCH instead of Avaya IP Office
+
+    Control over how one would like to use these tools:
+
+      * Restrictions of proprietary software licenses are able to limit any aspect of a program (such as JAWS, Raiser's Edge, EyeCare, Microsoft Office): the number of times a software can be installed, the number of computers it can be present simultaneously, the number of database records, the date until it can be used and so on.
+
+        Alternatives, such as NVDA, CiviCRM, OpenERM, OpenOffice etc. do not have these restrictions.
+
+      * Avaya IP Office phone system only allows certain functionality in combination with specific hardware (and even then it is not guaranteed).
+
+        FreeSWITCH may be compiled on any commodity hardware and can be extended programmatically or by community modules.
+
+    Control over one's own data because by the lack of regulations, users' have little authority over what should happen to their voluntarily supplied information to large corporations[@https://www.economist.com/news/leaders/21721656-data-economy-demands-new-approach-antitrust-rules-worlds-most-valuable-resource]. Open Stack is one solution to create a private or public cloud on any available hardware.
+
+[^footnote-macosx_open]: Even though Apple recently open sourced the kernel of Mac OS X but it is only responsible for booting up the computer - all the useful programs are still proprietary and are not included[@https://www.techrepublic.com/article/why-apple-open-sourcing-mac-os-x-isnt-terribly-exciting/]
+
+  * **Standards and tools**
+
+    Ever since the business opportunity of selling software has been recognized, companies have been creating programs to solve a specific problem (networking, data management, etc.) with the intent of successful commercial distribution. Many times the problem domains have been complex enough to develop a proprietary standard solution and patent it, leading the way to reinvent the wheel over and over. Overall secrecy made it difficult to prove the superiority of one product over the other and typically the corporation with the most resources and/or better marketing campaign prevailed.
+
+    Adopting organizations still require long periods of deliberation before purchasing any proprietary software suite because:
+
+    * The rigidness of the tools would require adjusting organizational processes and workflows (i.e., serving the tool instead of the other way around)
+
+    * It would lock them in in the long haul. Reasons include:
+
+        * information is stored in a proprietary format
+
+        * no interoperation with other vendor's products
+
+        * accumulated experience would not translate to other similar solutions requiring re-training and/or new hires
+
+    With the emergence of the free and the open source movement large-scale collaboration on *open standards* became the norm. Proprietary software could still be built upon them but many went down the open source path. Of course this led to the proliferation of tools but now one had a choice even if in the end a proprietary product ended up being use. Open standards also incentivized corporations to get involved as more and more customers started to trust the new process of laying down the foundations of a new technology in the open.
+
+  * **Qualified labor**
+
+    Proprietary software usually has one setup for each use case (because many times they are tied to a specific proprietary hardware) that makes life easier but this ease comes with the aforementioned costs. Vendors usually sell trainings and certifications for individuals and/or they provide support services to help operations. Such specialization comes with high prices and limits the mobility of the workforce (i.e., seek opportunitites only at companies with the same equipment or setup).
+
+    The learning curve of open source is steeper but becoming versed in its ways may yield many advantages:
+
+      * Individuals get a reusable set of skills and a more holistic view of how principles from multiple fields can be tied together.
+
+        Specialization to proprietary systems is easier using this path because companies use their own obfuscated terminology based on marketing buzzwords whereas the underlying principles have their standard terminology rooted in (academic) research. Open standards used the latter as clarity is crucial in wide-spread adoption.
+
+      * Organizations lay down a foundation for future flexibility and continuous improvement.
+
+        Open source has a vibrant community based around popular and well documented programming languages and frameworks with their own support support networks sharing the same infrastructure (e.g., Github, Stackoverflow, Slack). Switches between *technology stacks* are common and seamless because the underlying tools are the same and/or based on similar principles.
+
+        Adopted tools can also be further specialized/improved and these modifications can be contributed back to the larger community.
+
+      * Wide-spread availability promotes easy entry for anyone interested
+
+      * Most people working on open source projects are characterized mostly by enthusiasm[@https://ocw.mit.edu/courses/sloan-school-of-management/15-352-managing-innovation-emerging-trends-spring-2005/readings/lakhaniwolf.pdf]
+
+  * **Security**
+
+    Proponents of open source believe in [Linus' Law](https://en.wikipedia.org/wiki/Linus%27s_Law)[@bazaar]: open source project are more widely available to the publicand more eyes mean higher chances to discover a (security) bug.
+
+  Although this statement has not been proved by any major research and it relies on questionable assumptions.[@http://www.zdnet.com/article/six-open-source-security-myths-debunked-and-eight-real-challenges-to-consider/] The most widely publicized open source vulnerability was the OpenSSL Heartbleed bug[@http://heartbleed.com/] but the causes leading up to it are more complex than a simple oversight.[^footnote-heartbleed]. Security issues tend to be disclosed almost as soon as they are discovered though, as opposed to proprietary bugs.
+
+[^footnote-heartbleed]: The report titled &quot;Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure&quot;[@roads-and-bridges] written by Nadia Eghbal for the [Ford Foundation](http://www.fordfoundation.org)[^footnote-cc_license] gives an extensive treatment of the issue and open source infrastructure in general. (See chapters &quot;Introduction&quot; and &quot;The hidden costs of ignoring infrastructure&quot;.)
+
+    Opponents argue that &quot;proprietary programs whose code is closed cannot be as easily inspected by malicious hackers who are looking for security holes to exploit&quot;[@http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software].
+
+    Proprietary software is most often tied to business interests and therefore withhold disclosure for certain period of time or entirely until revealed by a leak. Examples include the Equifax breach[@https://www.wired.com/story/equifax-breach-no-excuse/], Yahoo breach[@https://techcrunch.com/2017/10/03/yahoo-says-all-3b-accounts-were-impacted-by-2013-breach-not-1b-as-thought/] or a Microsoft breach that remained undisclosed since 2013[@https://ca.reuters.com/article/technologyNews/idCAKBN1CM0D0-OCATC]. The exploits could have been easily prevented because the open source projects, that the proprietary solutions were building upon, had their security holes already fixed but these patches haven't been applied due to neglect.[@https://jaxenter.com/think-open-source-software-free-think-131436.html] Aside from business misconducts, the &quot;United States National Institute of Standards and Technology (NIST) specifically recommends against using closed source as a way to secure the software (i.e. “security through obscurity”)&quot;[@https://www.efrontlearning.com/blog/2012/04/open-source-and-the-security-through-obscurity-fallacy.html], and they state, “system security should not depend on the secrecy of the implementation or its components” [@https://csrc.nist.gov/publications/detail/sp/800-123/final].
+
+    A recent (10/16/2017) flaw in the WPA2 protocol[@https://www.krackattacks.com/] (a protocol that secures all modern protected Wi-Fi networks) proves that security bugs sometimes stem from accepted industry standards therefore any correct implementation would be affected, regardless of being an open source or a proprietary product.
+
+  * **Compliance requirements**
+
+    Software compliance means to keep track of all the copyright notices and licenses, and oblige to their requirements. Compliance tracking is also important to document the software supply chain (e.g. to be able to produce a Bill of Materials on request) and to respond quickly to a newly disclosed security vulnerability (i.e., to know which parts are affected, if any).
+
+    From a software development standpoint, large corporations have advantage as they usually own all of the source code. Even if they incorporate open source projects in their closed source product(s), they have the legal apparatus to tip the scale to their favour should it come to a legal dispute over license ambiguities. Therefore in the case of proprietary software, the burden of compliance falls to the users, especially if the products are going to be used in a commercial setting.
+
+    With open source software the users are the clear winners because they have complete freedom on how to use the products and they only have to satisfy license obligations if they are planning on commercial re-distribution of the (modified) works or if they would like to create a proprietary product from open source projects.[^footnote-proprietary_opensource]
+
+[^footnote-proprietary_opensource]: Although if they steer clear of strong copylefted code than their situation becomes magnitudes easier.
+
+    Building on open source code on the other becomes more complex as each included project may have different (or even multiple) licenses. Fortunately, this requirement has become more and more a standardized and automated process with the lead of large open source non-profits such as the Linux Foundation or the Open Source Initiative.[@https://www.linuxfoundation.org/blog/why-companies-that-use-open-source-need-a-compliance-program/] One example is the Software Composition Analysis methodology[@https://blog.blackducksoftware.com/software-composition-analysis-compatible-agile-devops].
+
+#### 2.3.5 Commercial applicability
+##### controversies
+
+##### 2.3.5.1 Commercial versus proprietary software
+
+It is worth emphasizing:
+
+&gt;“Commercial” and “proprietary” are not the same! Commercial software is software developed by a business as part of its business. Most commercial software is proprietary, but there is commercial free software, and there is noncommercial nonfree software.
+&gt;
+&gt;For example, GNU Ada[^footnote-ada_link] is developed by a company. It is always distributed under the terms of the GNU GPL, and every copy is free software; but its developers sell support contracts. When their salesmen speak to prospective customers, sometimes the customers say, “We would feel safer with a commercial compiler.” The salesmen reply, “GNU Ada is a commercial compiler; it happens to be free software.”[@GNU's &quot;Categories of free and nonfree software&quot;  https://www.gnu.org/philosophy/categories.en.html#commercialSoftware]
+
+[^footnote-ada_link]: https://en.wikipedia.org/wiki/GNAT
+
+##### 2.3.5.2 Free/open source software versus commercial software
+
+Commercial software is not the antonym of free and open source software, proprietary software is. Misunderstandings stem from conflicting uses of the adjectives *commercial* and *proprietary*.[@http://peerproduction.net/issues/issue-1/peer-reviewed-papers/why-free-software-is-not-the-antonym-of-commercial-software/]
+
+Software licensed under an open source (or even under a more strict free software) license can be sold for a price or licensed for a fee just like any other product.[@https://blog.codecentric.de/en/2012/05/using-gpl-licensed-components-in-proprietary-projects/,@https://www.gnu.org/licenses/gpl-faq#DoesTheGPLAllowMoney,]
+
+##### 2.3.5.3 Business models for open source software
+
+##### 2.3.5.2.3 Controversies
+
+It can be especially hard if one would like to choose an open source license for a commercial project as some of them are historically abused for unethical business practices[@http://www.dr-chuck.com/csev-blog/2014/09/how-to-achieve-vendor-lock-in-with-a-legit-open-source-license-affero-gpl/;@http://www.davewentzel.com/content/open-source-licensing] and some have pejorative connotations associated with them by negative campaigns at the time when open source practices where perceived as a threat by corporations (e.g., adjectives &quot;viral&quot; and &quot;infectious&quot; used for copyleft licenses[@https://en.wikipedia.org/wiki/Viral_license]).</code></pre>
+<h2 id="notes-without-any-structure">(Notes without any structure)</h2>
+<pre><code>commercial vs open source / free
+================================
+
+http://peerproduction.net/issues/issue-1/peer-reviewed-papers/why-free-software-is-not-the-antonym-of-commercial-software/
+NOTE: free and open source software is not an antonym of commercial software (proprietary is)
+
+In other words, for this developer all the software covered by the GPL should be considered as a specific form of commercial software, to the extent that developers are entitled by the license to distribute copies of the software asking for a payment. This definition (FLOSS as commercial software), states the developer, is also supported by concrete examples such as the GNU/Linux commercial distributions.
+
+NOTE: so you can sell it but you have to provide the source code and the buyer (or licensee) can further distribute the product with the same license (and its restrictions). The next quote further emphasizes that free/open source is not against commercial use:
+
+Open Design Alliance members have created the following free utilities, based on the OpenDWG Libraries, for your unrestricted, non-commercial use. Please note that inclusion of any utility in a commercial product does require commercial licensing [14]
+This post clarifies to GRASS developers that it is not possible for them to use the OpenDWG Library together with GRASS, due to the clear commercial nature of GRASS granted by the terms of the GPL (for instance by the term 1 ). Indeed, the OpenDWG source code can be freely used, as it is clearly stated above, but only for non-commercial purposes. Therefore we have an opposition between FLOSS and non-commercial software and not between FLOSS and commercial software.
+
+
+Lessons for creating good open source software[edit]
+====================================================
+
+@bazaar
+Raymond points to 19 &quot;lessons&quot; learned from various software development efforts, each describing attributes associated with good practice in open source software development:[3]
+Every good work of software starts by scratching a developer's personal itch.
+Good programmers know what to write. Great ones know what to rewrite (and reuse).
+Plan to throw one [version] away; you will, anyhow. (Copied from Frederick Brooks' The Mythical Man-Month)
+If you have the right attitude, interesting problems will find you.
+When you lose interest in a program, your last duty to it is to hand it off to a competent successor.
+Treating your users as co-developers is your least-hassle route to rapid code improvement and effective debugging.
+Release early. Release often. And listen to your customers.
+Given a large enough beta-tester and co-developer base, almost every problem will be characterized quickly and the fix obvious to someone.
+Smart data structures and dumb code works a lot better than the other way around.
+If you treat your beta-testers as if they're your most valuable resource, they will respond by becoming your most valuable resource.
+The next best thing to having good ideas is recognizing good ideas from your users. Sometimes the latter is better.
+Often, the most striking and innovative solutions come from realizing that your concept of the problem was wrong.
+Perfection (in design) is achieved not when there is nothing more to add, but rather when there is nothing more to take away. (Attributed to Antoine de Saint-Exupéry)
+Any tool should be useful in the expected way, but a truly great tool lends itself to uses you never expected.
+When writing gateway software of any kind, take pains to disturb the data stream as little as possible—and never throw away information unless the recipient forces you to!
+When your language is nowhere near Turing-complete, syntactic sugar can be your friend.
+A security system is only as secure as its secret. Beware of pseudo-secrets.
+To solve an interesting problem, start by finding a problem that is interesting to you.
+Provided the development coordinator has a communications medium at least as good as the Internet, and knows how to lead without coercion, many heads are inevitably better than one.
+
+
+# controversies, copyleft shakedowns, bait and switch etc
+
+## https://www.infoworld.com/article/2616665/open-source-software/what-s-next-after-gpl-and-apache-.amp.html
+
+The software that resulted worked really well, but when it came time to move to production, most companies asked for legal advice. As always happens when you ask your lawyer for business advice (instead of making business decisions and asking your lawyer to help you achieve them legally), they were told to play safe and buy a proprietary license to MySQL and Red Hat Enterprise Linux. Despite open source licenses offering everyone the freedom to use the software for any purpose, many companies were concerned that the GPL might force them to open up all their internal workings to the world.
+
+A number of software entrepreneurs chose to base their business models on this fear. They selected the GPL for their software projects, not to promote some vision of digital liberty, but rather to exploit the fears of corporate legal advisers about the GPL. Called the dual-license model (referring to the software being available under both an open source license and a proprietary license), it depends on the software developer owning all the copyrights so that they can provide different license terms for paying and nonpaying users, and on the use of the most scary open source license possible in the eyes of inexperienced legal advisers. Today this means use of the AGPL, a variant of the GPL that is also triggered by Web deployment, unlike the GPL itself.
+
+Open core as a business model
+As the scare value of the GPL declined, some business ventures switched to another approach. They tended to retain the GPL for the core project, hoping still to scare up a little revenue. However, more and more of them added proprietary layers on top, becoming little better than the proprietary vendors they claimed to replace. By making the features essential to enterprise deployment proprietary, they hoped to force adopters into their revenue funnel.
+Moreover, since the proprietary software couldn't be used by the community, they faced no direct competition from community members offering better value points to their customers. The combination of enterprise compulsion and lock-in was very attractive, and many projects in the late years of the decade moved to this &quot;open core&quot; approach.
+
+For the customer, the problem is that instead of delivering and cultivating software freedom, the open-core business model induces dependency on closed software and lock-in to a vendor. Open-core businesses hope you'll be willing to trade your freedom for tangible short-term benefits or even just for &quot;shiny.&quot;
+
+They stand to benefit massively from having you locked in; they want to trade your freedom for their profit. While open-core businesses truthfully say they are sustaining open source core software, their actual business has nothing to do with open source. It’s a bait-and-switch, wrapping the same old lock-in under the flag of open source and hoping you won't notice.
+
+## http://wso2.com/blogs/thesource/2011/04/what-we-mean-by-no-gimmicks-open-source-licensing/
+
+Dual License
+
+Because GPL’s copyleft provisions can be scary, many GPL-based open source companies have evolved a profitable workaround.  In many cases you can acquire GPL software under a separate commercial license.  That alternative license removes the viral copyleft feature, and replaces it with normal commercial restrictions – including license fees.
+
+For many enterprises, this negates the advantages of open source software in the first place – avoiding lock-in to a specific vendor, having no control over pricing, and so forth.  What originally appeared as a free open source license has become in effect a paid proprietary license.  We classify that bait-and-switch as a gimmick.
+
+It annoys us even more that many companies offer some products as open source (the “community edition”) and then reserve the real product (the “enterprise edition”) completely under a commercial license.  For serious users that’s not free software – just a free taste.  Often turning your proof of concept into a production deployment involves installing new software instead of flipping a switch – what a drag!
+
+No Gimmicks
+
+So when WSO2 claims we have a “no gimmicks” approach here’s the commitment we make:
+
+Our software line is available completely under the Apache license.
+
+There are no “community”, “light”, or “demo” versions – every edition is enterprise ready from day one.  Even our WSO2 Stratos cloud platform is Apache-licensed – the obvious high-value candidate for a dual-licensed model.
+
+We welcome you to join the community, ask questions on our forum, even become a committer.  If you don’t want or need a commercial support relationship with WSO2, we are still happy you are using our technology.  Just please tell your friends!
+
+We have to work consistently for your business, not lock you in.  Our success and business model is based entirely on providing the highest quality support services and doing everything we can to ensure your project is successful.
+
+Our support includes creation of patches for your deployed version of the product – so you don’t have to upgrade to the latest version to get a critical fix.  While these patches are created specifically for you under the terms of our Production Support agreement and are not redistributable, you are free to continue to keep them installed should you discontinue Production Support services.
+
+## https://www.infoworld.com/article/2627153/software-licensing/profiting-from-open-source----without-selling-out.html
+
+Yet for all of this wealth, there's a feeling that these businesses succeeded by being hybrids. They use the open source vision to attract users, but their business success comes by pushing proprietary options. Thus, the dark secret is that their open source version are merely a form of marketing.
+
+Calling this a bait-and-switch may be too cynical, but all users can feel the commercial tilt. Many companies, for example, find it is cheaper to buy a full commercial license for MySQL than to hire a lawyer to see if they are in compliance with the open source license. Red Hat makes a big distinction between the free version, distributed under the name Fedora, and its enterprise products sold under the name Red Hat. Lest there be any expectation that their software is truly free, both MySQL and Red Hat offer 30-day trials, a phrase that's not usually associated with the ideals of open source. Remember Oracle CEO Larry Ellison's famous interview with the Financial Times where he said, &quot;If an open source product gets good enough, we'll simply take it.&quot;
+
+exchange of work and software: &quot;Free software and open source exist in a market (or ecosystem) where each of the participants needs to give and receive value. To understand what business models work around open source, we need to understand what each participant in the market stands to gain, what exchange they are making and what the effect is on the market.&quot;
+
+While this approach sounds like it was drafted by an accountant, Greant points out that the gains and the exchanges may not be obvious. A freeloader who complains vociferously may be annoying, but such demands are also a stream of free bug reports. The challenge for businesses is to find viable mechanisms for aligning the interests of the users and the programmers -- a complex task of social engineering.
+
+about?
+
+Open source business model 1: Work with friends
+Open source business model 2: Work with colleagues
+
+Open source business model 3: Sell documentation
+This model may become very limited as paper documentation is replaced by digital instructions. For example, the iText package, 
+The books are still available, but version 5.0 of the software was released under the Affero General Public License (AGPL): People who wanted to upgrade needed to either release the source code to their entire application or buy a commercial license.
+
+Open source business model 4: Sell support
+Bob Bickel, an advisor to and board member of several software companies, says there are no good examples of support companies that offer both profitability and growth. The names that first come to mind, such as Red Hat and Swing, rely heavily on proprietary enhancements such as the Red Hat Network and tcServer to entice customers to pay for the enhanced version, he says -- &quot;it's not the support.&quot;
+
+Support is a difficult sell because the costs seem outrageously high: $200 for a phone call sounds steep until you realize that a basic engineer needs to field two to three per day to cover the costs of salary and overhead.
+
+Then there's the problem of competition. Red Hat's stock plunged in 2008 after Oracle started offering support at half the price. Companies may hate this competition, but customers love it. And at the end of the day, it's better to be in a competitive field where there are customers than to have a lock on an expensive product without any customers.
+
+Knowing the poor economic history of support-funded open source, Monty Widenius' new company MariaDB won't handle support at all, instead concentrating on what he calls &quot;custom engineering.&quot; This is a form of support with lots of extra code writing mixed in -- in other words, big-ticket contracts to enterprises that want specially tuned versions.
+
+But others point out that support is a perfectly viable small, sustainable business. It may never offer explosive growth, but it can still pay the rent. &quot;Support and professional services can be great businesses,&quot; says Luke Kanies, CEO of Puppet Labs. &quot;They're just difficult businesses to get funding for, which means they're slower to build and harder to exit.&quot;
+
+Open source business model 5: Sell hardware
+Open source business model 6: Don't sell software
+Open source business model 7: Sell FUD
+Open source business model 8: Cripple your product
+
+Open source business model 8: Cripple your product
+The word &quot;cripple&quot; sounds negative, so no one uses that word. It's better to &quot;enhance&quot; the enterprise version and give away the community version -- crippling without the nasty name.
+
+Of course, this model gets pretty close to the &quot;open source as marketing ploy&quot; approach that is so bothersome to open source believers. James Phillips, one of the co-founders of NorthScale, says, &quot;There are companies that require a supplier relationship and will pay for open source software. Holding back feature sets, in my opinion, just confuses the customer.&quot;
+
+Puppet Labs' Kanies rebuts these purists: &quot;You absolutely have to have something to sell -- no one will pay you just because they use their awesome software.&quot; He adds, &quot;If you happen to make usable, simple software that just gets out of their way, you won't even know the users exist.&quot; So, he suggests, rather than remove features from the free version, you might get the same push to paid by making the free version onerous to use.
+
+## http://www.tritsch.org/2008/11/11/open-core-licensing-moving-from-bait.html
+
+Open Core Licensing - moving from &quot;bait-and-switch&quot; to &quot;suggest-and-complement&quot;
+
+Nov 11, 2008
+
+The Open Core Licensing discussion is really refreshing! Lots of good ideas and lots of good energy. Obviously the &quot;earlier&quot; versions of the model were more oriented towards a &quot;bait-and-switch&quot; approach (get a good stack for free, but then if you want to do real/serious enterprise computing, you have to to buy the real thing :)). Right now the models have evolved into more mature &quot;suggest-and-complement&quot; models (aka. Open Core Licensing). And I am using the word &quot;mature&quot;, because talking about it (the desire the make money with open source) like this, should be the norm and not the exception.
+
+## https://blogs.the451group.com/opensource/2008/10/13/open-source-is-not-a-business-model/
+
+Last month I noted that Matt Asay, one of the highest profile proponents of open source software, had changed his position on the use of proprietary extensions as a means of attracting paying customers to software based on open source code.
+
+“How do vendors generate revenue from open source software?”.
+
+The report also busted some other open source-related myths, such as the idea that open source vendors are reliant on ad hoc support services, and that open source eliminates the need for direct sales. We found that:
+
+Ad hoc support services are used by nearly 70% of the vendors assessed, but represent the primary revenue stream for fewer than 8% of open-source-related vendors.
+
+Most vendors generating revenue from open source software are reliant on direct sales staff to bring in the largest proportion of revenue.
+
+As for the overall conclusion. I have already hinted at the findings in acouple of posts, noting that:
+
+“Open source is a business tactic, not a business model. Open source is not a market in and of itself, nor is it a vertical segment of the market. Open source is a software development and/or distribution model that is enabled by a licensing tactic.”
+
+“The cat is already out of the bag when it comes to open source related business models and there is no way it is going back in.”
+
+“There is very little money being made out of open source software that doesn’t involve proprietary software and services.”
+
+The line between proprietary software and open source software is becoming increasingly blurred as open source software is embedded in broader proprietary hardware and software products and proprietary extensions are used to attract more customers.
+
+## http://www.davewentzel.com/content/open-source-licensing
+
+I have personal reservations about Intellectual Property (IP) rights.  But even though I don't like IP, I have to respect it in my daily dealings.  Open source licensing, in general, disgusts me because if you are a bit lax, even accidentally, your OSS vendor can swoop in and claim large portions of your profits as its own, legally.  In many regards these licenses are far more punitive and Draconian than anything I've ever seen from a closed-source vendor like M$ or Oracle.  Why is this?
+
+OSS vendors have to Make Money.  Choice-of-license is how they do it
+
+Some people believe that OSS vendors chose the open source model because of some kind of altruism.  &quot;We provide our software for free to make the world a better place.&quot;  Bullshit!  Every company has to make money.  How a vendor chooses to license their product is how they make it.  There are open source licenses that foster &quot;building a community&quot; prior to building sustaining revenue (example, Apache licensing) and there are licenses meant to generate revenue first, often sneakily (example, GPL).  
+
+GPL vs Apache
+Let's take two examples.  Company A develops some software and decides the best way it can make money with it is to build a community of avid users of the software.  &quot;Build it and they will come&quot;, if you will.  The Apache License best meets that goal.  As a business-owner and independent consultant for ISVs I look first for software with Apache licensing (or BSD, MIT, or similar).  These licenses are business-friendly.  I'm not an attorney and I bear no responsibility for any misinformation given in this post, but essentially an Apache License gives the licensee full control to do with the software anything it wants to do with it, as long as the copyright notice is preserved.  It's about as close to free as it gets.  No royalties necessary.  In this case Company A believes the Apache License affords it the best method of gaining market momentum.  So, how does Company A make money if its software is &quot;free&quot;?  There are many ways, but in-app advertising and paid services (support) are the two most common.  This example is straightforward and is what most people think of with OSS.  You really have to do something stupid to get in trouble using this variety of OSS.  
+
+GPL, &quot;Copyleft&quot;, and Derivatives
+
+￼Company B would rather sustain its business with licensing revenue (just like Oracle or M$) but it still wants to call itself OSS.  Just my opinion, but this is sneaky and bordering on dishonest.  Here's how it works.  Company B chooses a &quot;copyleft&quot; licensing scheme like GPL or AGPL.  Again, I'm not a lawyer but copyleft works by saying the license is just like an Apache license except that derived works must also be released as open-sourced, copyleft works.  Said differently, the license must be moved forward.  
+
+Huh?  Company C is an ISV that would like to use some open source software to augment its closed source software.  If Company C uses an Apache-licensed piece of software then they may continue to keep their software closed-sourced without paying royalties.  But if they decide to use a GPL license then Company C *must* open source its software or it will be in violation of the GPL.  That means the GPL &quot;moves forward&quot;.  
+
+So, how does Company C use GPL'd software in its closed-source product?  Carefully.  All &quot;copyleft&quot; ISVs like Company B will offer both a GPL version of its product and then another version with a non-open-source license that the licensee can then use in its closed-source product without having to open source everything or violate the GPL. The GPL'd version is still &quot;free&quot;, the alternatively-licensed version can have whatever royalties and terms that it desires, just like a closed source product.  By &quot;version&quot; I don't mean a separate set of binaries (like Windows Standard vs Enterprise), rather a different &quot;version&quot; of the license. 
+
+A True Horror Story
+
+An ISV I worked for loved using OSS whenever it could.  The OSS always used Apache licensing (or equivalent) whenever we redistributed our code.  If it was software used in-house for administration or development only then nobody really cared about the licensing covenants.  There was a secret push to begin using a NoSQL alternative to SQL Server for some aspects of data persistence for a skunkworks project.  Cost was the reason.  SQL Server was deemed too expensive.  I was not involved in the evaluation or recommendation of the OSS product but a company-that-shall-remain-nameless gave a demo of their &quot;free&quot; distributed document store software to the skunkworks team.  I was not invited.  The product worked well and our developers coded a bunch of stuff against it that was not yet released.  
+
+There are industry horror stories with this particular OSS vendor.  This vendor is known for touting its free OSS and then strong-arming ISVs into huge licensing fees at a later time once your software was coded and released.  You either paid this vendor for the closed-source license, or you open sourced your ENTIRE application.  Even if only a small corner of your application used the vendor's product they threatened that your WHOLE APPLICATION needed to be open sourced.  Most ISVs get scared and do not want to open source their product and rely solely on services revenue.  This would be a dramatic change for most ISV business models.  So these ISVs usually relent and pay the equivalent of shakedown money for a non-free, non-GPL license for the product.  It is either that, or rip out the GPL'd product and start over.  That would be equally unappealing.  
+
+Soon the secret was out that there was a group developing against a new data persistence engine.  This is when I found out.  I knew this OSS package was GPL and its use could radically alter our business model.  The vendor would not give me a straight answer as to exactly how much of our product would need to be open-sourced if we took on their product.  At this point I could've gotten our legal department involved but that tends to be slow.  Much better to have the vendor speak to our management team directly.  
+
+I organized another presentation with the NoSQL vendor and they started out touting the free, open source nature of their product, case studies of its success, etc.  This time the audience was the senior architects and the management team.  About 10 minutes into it I raised my hand and asked very pointedly, &quot;How much will your product cost us in licensing if we choose NOT to open source our product under the terms of the GPL?&quot;  The vendor attempted to deflect but I kept pushing.  Eventually the vendor opened a different Prezi that discussed alternative closed source licensing arrangements.  Clearly they had different presentations based on where the customer was in its implementation of their product.  The vendor did not realize that I did my homework and knew this was going to happen.  Neither did our management.  Or our architects.  &quot;Deer in the headlights&quot; does not do justice to the looks on everyone's faces.  
+
+The alternative licensing was MORE EXPENSIVE per node than SQL Server, not to mention it was a distributed document store which would have meant LOTS of small, little licenses for small, little nodes.  It was eye-opening for management.  There would be no cost savings.  We quickly had our developers pick a document store that was Apache licensed and we delayed our release for a few months until we could rewrite.  
+
+From then on there were policies on which OSS licenses we could use and rules regarding what could be redistributed.  Our Legal Department was now required to sign off on ANY third party tool where the code was checked in and integrated with our source code.  This event scared management so much that they brought in Black Duck Software to make sure our exisitng software portfolio wasn't hiding any other potential OSS timebombs.  (It was).  
+
+Since then customers of our software have also performed the equivalent of Black Duck audits on our software to make sure we were being thorough and honest.  This is mission-critical software.  With GPL software it isn't just the licensee that can get caught up in a licensing battle, it is the &quot;licensee or assigns&quot;, which means anyone who purchases our software.  The ramifications of this is really scary.  You could purchase a piece of software and through no fault of your own find yourself on the receiving end of a lawsuit because your vendor was improperly using GPL'd software.  This is another reason why IP rights are so dangerous.  
+
+All hail Apache?
+Apache licensing has problems too, IMHO, that you should be aware of.  The business model for Apache licensed software brings its sustainability into question, always.  An example is OpenSSL.  It is Apache licensed and is supported by the equivalent of a handful of full-time developers.  It has almost ZERO revenue to sustain the software.  Something like Heartbleed was bound to happen under this situation.  OpenSSL has a large, avid following.  Cisco and M$ use it...heck, it's embedded in EVERYTHING.  And very few users have given ANY money to the project to sustain it because it is Apache licensed (IMHO) and therefore viewed as totally free (without cost).  &quot;Let someone else pay for it&quot;.  The very backbone of security on the internet is in the hands of a few OpenSSL developers because no one wants to contribute money.  It is an 800 lb gorilla.  In this case maybe GPL software is a bit better.  If the price isn't too steep.  And since Heartbleed there are some new GPL'd alternatives to OpenSSL that may be safer and more sustainable simply because the revenue-generation model is better.  Only time will tell of course.  Others have pointed out that something as critical as OpenSSL should be closed source anyway.  Again, time will tell.  Perhaps the best answer is a consortium of vendors that can take over OpenSSL and give it the care and feeding it needs, without resorting to GPL.  I'm certainly no expert in any of this.  But it is fascinating.  
+
+Why is this so gd complicated?  Another story
+
+Now you see why I think IP rights cause more grief than they solve and why EVERYTHING I do on this website is public domain with ZERO licensing, not even Apache licensing.  (I always appreciate an attribution, but I'm not going to sue you if you don't).  It's just not worth it to me to deal with all of this licensing.  I don't even have a copyright notice on this site, although I probably should.  
+
+￼I do some side work as a Drupal consultant.  Drupal is GPL.  Yet there is a lot of Drupal code out there that is available only for a fee.  Especially themes.  People often wonder how that arrangement is possible.  If GPL forces derivational products to also be GPL'd, then how can a themer charge for a Drupal theme?  Very easily.  The themer must provide the source code for any theme and therefore the customer can do anything with it thereafter, including give it away for free.  
+
+Sounds goofy doesn't it?  
+
+I once bought a theme for $50 because it had everything my customer wanted...cool graphics, the ability to skin minutae, it was &quot;responsive&quot; (the ability to resize dynamically to the new form-factor devices coming to market daily), and had lots of other features not available elsewhere.  After I got the code for the theme I realized I was sold a lemon.  The theme did nothing advertised and had ZERO documentation.  I politely asked for my money back and was denied by the vendor, who spoke little English.  I then threatened to simply follow the terms of the GPL license and modify a few bits and re-release the new theme as my own and give it away for free.  
+
+I had his attention now.  He told that was not legal that his theme was his, not mine.  &quot;Nope, sorry, you supplied me with a Drupal theme.  Drupal is GPL therefore your theme is GPL too.  I can modify it however I choose and re-release it to the world.  I can't wait to give your hard work away under my name.&quot;  Needless to say my $50 was promptly refunded.  
+
+## https://blog.p2pfoundation.net/why-apache-defeated-the-gpl-license-developer-freedom-vs-user-freedom/2013/01/21
+
+the early open source business model, which used the GPL to essentially build a proprietary software business from free software licensing. That is, with the GPL, an open source vendor could give away its software under a license that many viewed as radioactive, to the extent that it was completely open… and effectively proprietary. Given that the GPL requires any derivative works to also be licensed under the GPL, including third-party software that links to GPL software, depending on how the developer links the software, the GPL puts fear into the heart of legal counsel of would-be users and commercial developers of GPL software. It is free to use, but the possibility of “tainting” one’s code is a risk many simply refuse to take. As such, it is open but closed to such companies, that is, impossible for them to accept using without purchasing a proprietary license to use the GPL software.
+
+# open source business models
+
+## https://medium.com/@stephenrwalli/there-is-no-open-source-business-model-cdc4cc20238
+
+Well run open source software communities are interesting buckets of technology. If they evolve to a particular size they become ecosystems of products, services (support, consulting, training), books and other related-content. To use an organic model, open source is trees, out of which people create lumber, out of which they build a myriad of other products.
+
+Soon after Fedora was delivered such that a Red Hat focused developer community would have an active place to collaborate while Red Hat maintained stability for enterprise customers on RHEL.
+
+Harvard economist Theodore Levitt once observed that a customer didn’t want a quarter inch drill, what they wanted was a quarter inch hole. 
+
+comment
+Applause from Stephen Walli (author)
+￼
+balaji bal
+Jan 6
+An article of its time, and one I wished had been written earlier. Have been speaking to a number of OSS companies in the past 3 months (especially smaller breakthrough projects) and found most of them struggling with the ‘OSS as business model’ question — rather than IMHO viewing Open Sourcing as a ‘production methodology’. The de facto ‘enhancement and services based’ model is increasingly being challenged with the entrance of institutional investors into the OSS space. The root cause of which seems to be the institutional investors dislike of ‘transactional models’ vs ‘subscription based models’. The net result is a large number of companies building SaaS products (at least in the Cloud Space) instead of Standalone (self-hosted) software. My observation based on speaking to the companies behind OSS (some 20–30) of them is that the next 2–3 years will be a defining period in the further development of “OSS Business Models”.
+
+## https://techcrunch.com/2016/02/09/the-money-in-open-source-software/
+
+### Think about a business model from day one
+
+This seems obvious, but you’d be surprised how often open-source entrepreneurs think of their business model only after their free-software downloads are off the charts. In contrast, our experience suggests that some of the best open-source companies had a clear idea of how they were going to make money from their early days.
+
+Companies often do this by selling enterprise versions of open-source projects with extra security and management features. These are designed to appeal to the large enterprises that are big IT spenders. Another option is to offer a premium SaaS service, essentially a pay-as-you-go model. While delivering a reliable service can be difficult — namely, packaging many open-source components together into one compelling, cloud-based offering — SaaS can be another route to revenue.
+
+So while Red Hat maintained a vibrant open-source community around Fedora, updating it with new features and releases every six months, the company marketed enterprise-grade security and optimization on standard Intel hardware to people using the paid enterprise product. This allowed Red Hat to build a recurring revenue stream of more than $1 billion from enterprise customers; it also, more broadly, helped Linux become the most widely adopted server operating system.
+
+### Pick a licensing model aligned with your monetization strategy
+
+Keep in mind that even open-source software is always owned by someone, usually either a for-profit company or a non-profit foundation (kumbaya only goes so far). Licenses range from permissive (Apache) to restrictive (General Public License, or GPL, variants, with Affero GPL the most restrictive), and everything in between.
+
+### Ancillary services and “hand holding” may be necessary, but don’t get hooked on them for revenue
+
+Open-source software has disrupted some of the most important technologies in enterprise infrastructure: think MongoDB and Cassandra taking on legacy Oracle databases, OpenStack and Docker threatening virtualization giant VMware and Linux displacing Solaris and Windows Server software. What helped these open-source underdogs grow was real-world successes — not, as some entrepreneurs think, pricey consulting services to augment deployments.
+
+In the early days of open-source adoption, of course, some professional services and “hand holding” may be necessary to get open-source systems off the ground, especially when customers are dealing with integrating legacy software. Indeed, some of the earliest Hadoop, OpenStack and Cloud Foundry deployments needed consulting services to make key customers successful.
+
+But don’t try to build your business on services revenue. It carries a lower gross profit margin than other revenue streams — perhaps 20-30 percent, as opposed to 90 percent for product-related revenue — and it’s not generally repeatable. Ultimately, if you’re successful, you’ll have millions of users, but you’ll only be able to tap perhaps a few hundred of them for services revenue.
+
+Plus, if you chase services revenue too aggressively you could wind up competing with services partners (e.g., Accenture, IBM) that could help bring you new users. Our advice: Focus on building your recurring revenue from subscriptions, which should be your high-margin core product. Build your services organization to support customer success and partner success, not to drive revenue. What’s more, we would even support aggressively cannibalizing your services business by making your product easier to use and your partners more capable, so that they can take over running it themselves in the longer term.
+
+### Ongoing customer satisfaction trumps upfront sales
+
+Sales cycles in open source are very different from those in traditional, enterprise software. With regular, enterprise software, it’s often hard to convince customers to use the technology; on top of that, they have to pay for it. In open source, that decision process is often bifurcated, happening in two separate steps. Convincing people to use your software is often much easier, because the product may be initially free. But then you face a separate task, later, to convince them to pay.
+
+This shift can be disorienting for those who are used to traditional enterprise-software sales and marketing. Reps can spend lots of time trying to convince someone to use your software — and succeeding — but then not wind up with any revenue for their effort. In the early days of your company, that might be okay, because you’re also trying to build your user base, which could turn into revenue later.
+
+But even after you grow, and start racking up sales, you need to become very disciplined about getting your sales team to focus on ongoing customer satisfaction, because happy customers buy more, and buy products with higher ASPs (average selling prices). This, in turn, helps subsidize your ongoing R&amp;D. Overall, this is quite different than most enterprise-sales models, which focus on making the sale and moving on to the next prospect.
+
+Salespeople need to be measured on the subscription revenue they are bringing in, while a separate team focused on community should nurture adoption growth. This may mean hiring a different type of salesperson — someone who may not be from the high-pressure Oracle mold, for instance, though those folks can still succeed with the right type of training.
+
+At MongoDB, we had a very successful salesperson who had previously started a sports-uniform business and another business to clean roof gutters. He may not have had a lot of software experience, but he was fanatical about customer satisfaction.
+
+## https://opensource.com/business/16/4/refactoring-open-source-business-models
+we switched to a higher touch &quot;customer success&quot; model that involves encouraging customers to ask questions, regardless of whether they would be traditionally triaged as support questions. For instance, in our old, traditional support model, we might only handle requests related to stack traces and production issues, but not business/developer issues, such as how best to improve the quality of results or how to incorporate machine learning into an application. Today, we routinely answer all types of questions, as they help the customer be successful. For those cases in which the answer is more involved or the client wants detailed help, we offer consulting. In many cases, the customer just needed a point in the right direction when implementing a feature. This may seem obvious, but most support centers at most companies are geared toward call deflection, not engagement. Our approach has yielded a significant improvement in renewal rates for us on the pure support side of our business. Care must be taken to make sure support expenses don't spiral out of control, however, and that these touchpoints don't turn into hours of free consulting.
+
+Open core or commercial extensions
+
+Many companies go this route hoping they can get people to pay for value-add capabilities, such as better administration tools. The challenge for companies in this space usually falls under the category of fear of vendor lock-in (never mind that any choice locks you in). Or the community builds similar features, which you're also forced to support and differentiate against. If you find a sweet spot, you can maintain margins while still being good stewards of the community, but it takes a keen eye for product development, and is often grown into after doing a fair bit of consulting and support to better understand what users actually need. For example, in our first iteration of our product (Lucidworks Search), it was developed mainly by looking at features of the previous generation of search products on the market, and it was tightly coupled to Solr, which prevented users from taking advantage of Solr's full feature set.
+
+Although the product wasn't completely designed in a vacuum, feedback often focused on how we were hiding too much of Solr or that their plugins didn't work with it. Internally, even our own developers often felt conflicted working on it because it was competing too much with the open source project itself instead of complementing it. With our new architecture and product (Lucidworks Fusion), we can connect and work with a number of different versions of the main project (Solr) we support, and we also integrate other key open source projects, like Apache Spark. We look at it as an extension of, not a replacement for the open source. We also look for more ways to capture and use more data intelligently, as opposed to writing smarter, proprietary algorithms.</code></pre>
 <div id="refs" class="references">
 <div id="ref-eff-ip">
 <p>[1] E. F. Foundation, “Intellectual property: The term.” [Online]. Available: <a href="https://www.eff.org/issues/intellectual-property/the-term" class="uri">https://www.eff.org/issues/intellectual-property/the-term</a>. [Accessed: 28-Apr-2018]</p>
@@ -518,53 +854,36 @@ margin-right: 30%;
 <div id="ref-intro-to-tech-computing">
 <p>[51] F. T. Willmore, E. Jankowski, and C. Colina, “Introduction to scientific and technical computing,” 03-Aug-2016. [Online]. Available: <a href="https://books.google.com/books?id=isTBDAAAQBAJ" class="uri">https://books.google.com/books?id=isTBDAAAQBAJ</a>. [Accessed: 28-Apr-2018]</p>
 </div>
-<div id="ref-open-source-movement-wiki">
-<p>[52] “Open-source software movement,” 29-Mar-2018. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Open-source_software_movement" class="uri">https://en.wikipedia.org/wiki/Open-source_software_movement</a>. [Accessed: 28-Apr-2018]</p>
-</div>
 <div id="ref-gnu-what-is-free-software">
-<p>[53] R. M. Stallman, “What is free software?” 23-Apr-2018. [Online]. Available: <a href="https://www.gnu.org/philosophy/free-sw.en.html" class="uri">https://www.gnu.org/philosophy/free-sw.en.html</a>. [Accessed: 28-Apr-2018]</p>
+<p>[52] R. M. Stallman, “What is free software?” 23-Apr-2018. [Online]. Available: <a href="https://www.gnu.org/philosophy/free-sw.en.html" class="uri">https://www.gnu.org/philosophy/free-sw.en.html</a>. [Accessed: 28-Apr-2018]</p>
+</div>
+<div id="ref-sflc-gpl2">
+<p>[53] E. Moglen and M. Choudhary, “Software freedom law center guide to gpl compliance 2nd edition,” 31-Oct-2014. [Online]. Available: <a href="https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html" class="uri">https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html</a>. [Accessed: 28-Apr-2018]</p>
+</div>
+<div id="ref-open-source-movement-wiki">
+<p>[54] “Open-source software movement,” 29-Mar-2018. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Open-source_software_movement" class="uri">https://en.wikipedia.org/wiki/Open-source_software_movement</a>. [Accessed: 28-Apr-2018]</p>
 </div>
 <div id="ref-osi-osd">
-<p>[54] O. S. Initiative, “The open source definition (annotated).” [Online]. Available: <a href="https://opensource.org/osd-annotated" class="uri">https://opensource.org/osd-annotated</a>. [Accessed: 28-Apr-2018]</p>
+<p>[55] O. S. Initiative, “The open source definition (annotated).” [Online]. Available: <a href="https://opensource.org/osd-annotated" class="uri">https://opensource.org/osd-annotated</a>. [Accessed: 28-Apr-2018]</p>
 </div>
 <div id="ref-osi-faq">
-<p>[55] O. S. Initiative, “Frequently asked questions.” [Online]. Available: <a href="https://opensource.org/faq" class="uri">https://opensource.org/faq</a>. [Accessed: 28-Apr-2018]</p>
+<p>[56] O. S. Initiative, “Frequently asked questions.” [Online]. Available: <a href="https://opensource.org/faq" class="uri">https://opensource.org/faq</a>. [Accessed: 28-Apr-2018]</p>
 </div>
 <div id="ref-gnu-os-misses">
-<p>[56] R. M. Stallman, “Why open source misses the point of free software,” 18-Nov-2016. [Online]. Available: <a href="https://www.gnu.org/philosophy/open-source-misses-the-point.en.html" class="uri">https://www.gnu.org/philosophy/open-source-misses-the-point.en.html</a>. [Accessed: 28-Apr-2018]</p>
+<p>[57] R. M. Stallman, “Why open source misses the point of free software,” 18-Nov-2016. [Online]. Available: <a href="https://www.gnu.org/philosophy/open-source-misses-the-point.en.html" class="uri">https://www.gnu.org/philosophy/open-source-misses-the-point.en.html</a>. [Accessed: 28-Apr-2018]</p>
 </div>
 <div id="ref-osi-history">
-<p>[57] O. S. Initiative, “History of the osi.” [Online]. Available: <a href="https://opensource.org/history" class="uri">https://opensource.org/history</a>. [Accessed: 28-Apr-2018]</p>
+<p>[58] O. S. Initiative, “History of the osi.” [Online]. Available: <a href="https://opensource.org/history" class="uri">https://opensource.org/history</a>. [Accessed: 28-Apr-2018]</p>
 </div>
 <div id="ref-gnu-proprietary">
-<p>[58] F. S. Foundation, “Proprietary software is often malware,” 10-Feb-2018. [Online]. Available: <a href="https://www.gnu.org/proprietary/proprietary.en.html" class="uri">https://www.gnu.org/proprietary/proprietary.en.html</a>. [Accessed: 28-Apr-2018]</p>
+<p>[59] F. S. Foundation, “Proprietary software is often malware,” 10-Feb-2018. [Online]. Available: <a href="https://www.gnu.org/proprietary/proprietary.en.html" class="uri">https://www.gnu.org/proprietary/proprietary.en.html</a>. [Accessed: 28-Apr-2018]</p>
 </div>
 <div id="ref-gnu-surveillence">
-<p>[59] F. S. Foundation, “Proprietary surveillance,” 26-Apr-2018. [Online]. Available: <a href="https://www.gnu.org/proprietary/proprietary-surveillance.en.html" class="uri">https://www.gnu.org/proprietary/proprietary-surveillance.en.html</a>. [Accessed: 28-Apr-2018]</p>
+<p>[60] F. S. Foundation, “Proprietary surveillance,” 26-Apr-2018. [Online]. Available: <a href="https://www.gnu.org/proprietary/proprietary-surveillance.en.html" class="uri">https://www.gnu.org/proprietary/proprietary-surveillance.en.html</a>. [Accessed: 28-Apr-2018]</p>
 </div>
 <div id="ref-gnu-backdoor">
-<p>[60] F. S. Foundation, “Proprietary back doors,” 09-Apr-2018. [Online]. Available: <a href="https://www.gnu.org/proprietary/proprietary-back-doors.en.html" class="uri">https://www.gnu.org/proprietary/proprietary-back-doors.en.html</a>. [Accessed: 28-Apr-2018]</p>
-</div>
-<div id="ref-osmovement">
-<p>[61] </p>
-</div>
-<div id="ref-bazaar">
-<p>[62] E. S. Raymond, <em>The cathedral and the bazaar</em>. O’Reilly Media, 2000 [Online]. Available: <a href="http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/" class="uri">http://www.catb.org/~esr/writings/cathedral-bazaar/cathedral-bazaar/</a>. [Accessed: 12-Oct-2017]</p>
+<p>[61] F. S. Foundation, “Proprietary back doors,” 09-Apr-2018. [Online]. Available: <a href="https://www.gnu.org/proprietary/proprietary-back-doors.en.html" class="uri">https://www.gnu.org/proprietary/proprietary-back-doors.en.html</a>. [Accessed: 28-Apr-2018]</p>
 </div>
 </div>
-<section class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><p>The latest version is the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License v3.0</a>. For an extensive legal analysis is also available by the Software Freedom Law Center<span class="citation" data-cites="https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html"><span class="citeproc-not-found" data-reference-id="https://www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html"><strong>???</strong></span></span> or see the de facto guide <span class="citation" data-cites="https://copyleft.org/guide"><span class="citeproc-not-found" data-reference-id="https://copyleft.org/guide"><strong>???</strong></span>/</span>.<a href="#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p>Even though Apple recently open sourced the kernel of Mac OS X but it is only responsible for booting up the computer - all the useful programs are still proprietary and are not included<span class="citation" data-cites="https://www.techrepublic.com/article/why-apple-open-sourcing-mac-os-x-isnt-terribly-exciting"><span class="citeproc-not-found" data-reference-id="https://www.techrepublic.com/article/why-apple-open-sourcing-mac-os-x-isnt-terribly-exciting"><strong>???</strong></span>/</span><a href="#fnref2" class="footnote-back">↩</a></p></li>
-<li id="fn3"><p>The report titled “Roads and Bridges: The Unseen Labor Behind Our Digital Infrastructure”<span class="citation" data-cites="roads-and-bridges">[<a href="#ref-roads-and-bridges">25</a>]</span> written by Nadia Eghbal for the <a href="http://www.fordfoundation.org">Ford Foundation</a>[^footnote-cc_license] gives an extensive treatment of the issue and open source infrastructure in general. (See chapters “Introduction” and “The hidden costs of ignoring infrastructure”.)</p>
-<p>Opponents argue that “proprietary programs whose code is closed cannot be as easily inspected by malicious hackers who are looking for security holes to exploit”<span class="citation" data-cites="http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software"><span class="citeproc-not-found" data-reference-id="http://thevarguy.com/open-source-application-software-companies/reasons-organizations-opt-not-use-open-source-software"><strong>???</strong></span></span>.</p>
-<p>Proprietary software is most often tied to business interests and therefore withhold disclosure for certain period of time or entirely until revealed by a leak. Examples include the Equifax breach<span class="citation" data-cites="https://www.wired.com/story/equifax-breach-no-excuse"><span class="citeproc-not-found" data-reference-id="https://www.wired.com/story/equifax-breach-no-excuse"><strong>???</strong></span>/</span>, Yahoo breach<span class="citation" data-cites="https://techcrunch.com/2017/10/03/yahoo-says-all-3b-accounts-were-impacted-by-2013-breach-not-1b-as-thought"><span class="citeproc-not-found" data-reference-id="https://techcrunch.com/2017/10/03/yahoo-says-all-3b-accounts-were-impacted-by-2013-breach-not-1b-as-thought"><strong>???</strong></span>/</span> or a Microsoft breach that remained undisclosed since 2013<span class="citation" data-cites="https://ca.reuters.com/article/technologyNews/idCAKBN1CM0D0-OCATC"><span class="citeproc-not-found" data-reference-id="https://ca.reuters.com/article/technologyNews/idCAKBN1CM0D0-OCATC"><strong>???</strong></span></span>. The exploits could have been easily prevented because the open source projects, that the proprietary solutions were building upon, had their security holes already fixed but these patches haven’t been applied due to neglect.<span class="citation" data-cites="https://jaxenter.com/think-open-source-software-free-think-131436.html"><span class="citeproc-not-found" data-reference-id="https://jaxenter.com/think-open-source-software-free-think-131436.html"><strong>???</strong></span></span> Aside from business misconducts, the “United States National Institute of Standards and Technology (NIST) specifically recommends against using closed source as a way to secure the software (i.e. “security through obscurity”)“<span class="citation" data-cites="https://www.efrontlearning.com/blog/2012/04/open-source-and-the-security-through-obscurity-fallacy.html"><span class="citeproc-not-found" data-reference-id="https://www.efrontlearning.com/blog/2012/04/open-source-and-the-security-through-obscurity-fallacy.html"><strong>???</strong></span></span>, and they state, “system security should not depend on the secrecy of the implementation or its components” <span class="citation" data-cites="https://csrc.nist.gov/publications/detail/sp/800-123/final"><span class="citeproc-not-found" data-reference-id="https://csrc.nist.gov/publications/detail/sp/800-123/final"><strong>???</strong></span></span>.</p>
-<p>A recent (10/16/2017) flaw in the WPA2 protocol<span class="citation" data-cites="https://www.krackattacks.com"><span class="citeproc-not-found" data-reference-id="https://www.krackattacks.com"><strong>???</strong></span>/</span> (a protocol that secures all modern protected Wi-Fi networks) proves that security bugs sometimes stem from accepted industry standards therefore any correct implementation would be affected, regardless of being an open source or a proprietary product.<a href="#fnref3" class="footnote-back">↩</a></p></li>
-<li id="fn4"><p>Although if they steer clear of strong copylefted code than their situation becomes magnitudes easier.</p>
-<p>Building on open source code on the other becomes more complex as each included project may have different (or even multiple) licenses. Fortunately, this requirement has become more and more a standardized and automated process with the lead of large open source non-profits such as the Linux Foundation or the Open Source Initiative.<span class="citation" data-cites="https://www.linuxfoundation.org/blog/why-companies-that-use-open-source-need-a-compliance-program"><span class="citeproc-not-found" data-reference-id="https://www.linuxfoundation.org/blog/why-companies-that-use-open-source-need-a-compliance-program"><strong>???</strong></span>/</span> One example is the Software Composition Analysis methodology<span class="citation" data-cites="https://blog.blackducksoftware.com/software-composition-analysis-compatible-agile-devops"><span class="citeproc-not-found" data-reference-id="https://blog.blackducksoftware.com/software-composition-analysis-compatible-agile-devops"><strong>???</strong></span></span>.<a href="#fnref4" class="footnote-back">↩</a></p></li>
-<li id="fn5"><p>https://en.wikipedia.org/wiki/GNAT<a href="#fnref5" class="footnote-back">↩</a></p></li>
-</ol>
-</section>
 </body>
 </html>
