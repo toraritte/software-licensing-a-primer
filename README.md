@@ -6,7 +6,7 @@ Feel free to submit a pull request, if you find any typos or untrue statements, 
 
 The document uses [Pandoc's markdown](https://pandoc.org/MANUAL.html) format, but I was trying to keep to the standards. The [build script](dependencies/build-github-page) always has the latest commands to generate the HTML output.
 
-[`./dependencies`](dependencies/) holds files that the [build script](dependencies/build-github-page) uses in its arguments to build the [projects Github page](https://toraritte.github.io/software-licensing-primer/).
+[`./dependencies`](dependencies/) holds files that the [build script](dependencies/build-github-page) uses in its arguments to build the [projects Github page](https://toraritte.github.io/software-licensing-a-primer/).
 
 [`./scratchpad`](scratchpad/) contains notes and other resources waiting to be incorporated.
 
